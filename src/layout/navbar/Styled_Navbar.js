@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Secondary, Grey, Border } from '../index.scss';
+import { Secondary, Grey, Border, ToRight } from '../index.scss';
 
 const StyledNavbar = styled.nav`
   ul {
@@ -11,12 +11,11 @@ const StyledNavbar = styled.nav`
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: .9em;
       &::after {
         content: '';
         width: 100%;
         height: 1px;
-        background: radial-gradient(ellipse at right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+        background: ${ToRight};
       }
       &:nth-last-child(1) {
         &::after {

@@ -9,6 +9,8 @@ $red: rgb(255, 0, 0);
 $transition: all 0.3s linear;
 $spacing: 2px;
 $border: 4px;
+$bgToRight: radial-gradient(ellipse at right, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
+$bgToLeft: radial-gradient(ellipse at left, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
 
 :export {
   Primary: $primary;
@@ -20,6 +22,8 @@ $border: 4px;
   Transition: $transition;
   Spacing: $spacing;
   Border: $border;
+  ToLeft: $bgToLeft;
+  ToRight: $bgToRight;
 }
 
 * {
