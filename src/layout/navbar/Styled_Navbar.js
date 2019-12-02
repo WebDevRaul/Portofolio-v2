@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Secondary, Grey, Border, ToRight } from '../index.scss';
+import { Secondary, Grey, Border, ToRight, Transition } from '../index.scss';
 
 const StyledNavbar = styled.nav`
   ul {
@@ -28,6 +28,7 @@ const StyledNavbar = styled.nav`
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: ${Transition};
         &:hover {
           cursor: pointer;
           color: ${Secondary};

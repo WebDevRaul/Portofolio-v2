@@ -2,7 +2,8 @@
 
 $primary: rgb(120, 204, 109);
 $secondary: rgb(114, 192, 105);
-$white: rgb(178, 178, 178);
+$lightWhite: rgb(225, 225, 225);
+$darkWhite: rgb(178, 178, 178);
 $black: rgb(38, 38, 45);
 $grey: rgb(49, 49, 58);
 $red: rgb(255, 0, 0);
@@ -15,7 +16,8 @@ $bgToLeft: radial-gradient(ellipse at left, rgba(255, 255, 255, .2) 0%, rgba(255
 :export {
   Primary: $primary;
   Secondary: $secondary;
-  White: $white;
+  LightWhite: $lightWhite;
+  DarkWhite: $darkWhite;
   Black: $black;
   Grey: $grey;
   Red: $red;
@@ -39,14 +41,18 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  margin-bottom: 1.25rem;
+  margin-bottom: 16px;
   letter-spacing: $spacing;
 }
 
-a:hover {
+a {
   text-decoration: none;
-  color: $secondary;
-  cursor: pointer;
+  color: unset !important;
+  :hover {
+    transition: $transition;
+    color: $secondary;
+    cursor: pointer;
+  }
 }
 
 button, input {
@@ -67,7 +73,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus {
   -webkit-text-fill-color: $black;
-  box-shadow: 0 0 0px 1000px $white inset;
-  -webkit-box-shadow: 0 0 0px 1000px $white inset;
+  box-shadow: 0 0 0px 1000px $lightWhite inset;
+  -webkit-box-shadow: 0 0 0px 1000px $lightWhite inset;
   transition: background-color 5000s ease-in-out 0s;
 }

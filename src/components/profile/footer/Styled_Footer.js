@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Secondary, Spacing, ToRight, ToLeft } from '../../../layout/index.scss';
+import { Secondary, Spacing, ToRight, ToLeft, Transition } from '../../../layout/index.scss';
 
 const StyledFooter = styled.div`
   display: flex;
@@ -35,6 +35,7 @@ const StyledFooter = styled.div`
       margin: 10px;
       font-weight: 600;
       letter-spacing: ${Spacing};
+      transition: ${Transition};
       :hover {
         color: ${Secondary};
         cursor: pointer;
