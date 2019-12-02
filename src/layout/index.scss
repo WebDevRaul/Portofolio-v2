@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap');
+
+$primary: rgb(120, 204, 109);
+$secondary: rgb(114, 192, 105);
+$white: rgb(178, 178, 178);
+$black: rgb(38, 38, 45);
+$grey: rgb(49, 49, 58);
+$red: rgb(255, 0, 0);
+$transition: all 0.3s linear;
+$spacing: 2px;
+$border: 4px;
+
+:export {
+  Primary: $primary;
+  Secondary: $secondary;
+  White: $white;
+  Black: $black;
+  Grey: $grey;
+  Red: $red;
+  Transition: $transition;
+  Spacing: $spacing;
+  Border: $border;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 1.25rem;
+  letter-spacing: $spacing;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $secondary;
+  cursor: pointer;
+}
+
+button, input {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+ul {
+  margin-bottom: 0px;
+  li{
+    list-style: none;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: $black;
+  box-shadow: 0 0 0px 1000px $white inset;
+  -webkit-box-shadow: 0 0 0px 1000px $white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

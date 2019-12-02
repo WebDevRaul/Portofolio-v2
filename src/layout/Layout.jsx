@@ -1,14 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StyledLayout from './Styled_Layout';
 import Navbar from './navbar/Navbar';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss';
+import StyledLayout from './Styled_Layout';
 
 const Layout = ({ children }) => {
   return (
     <StyledLayout>
-      <Navbar>
-        <main>{children}</main>
-      </Navbar>
+      <div className='layout'>
+        <div className='row no-gutters'>
+          <div className='col-12 col-sm-1'>
+            <Navbar />
+          </div>
+          <div className='col-12 col-sm-10 mr-auto'>
+            {children}
+          </div>
+        </div>
+      </div>
     </StyledLayout>
   )
 }

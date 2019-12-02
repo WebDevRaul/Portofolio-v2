@@ -1,16 +1,15 @@
 import React from 'react';
 import StyledNavbar from './Styled_Navbar';
+import Li from './Li';
 
 const Navbar = () => (
   <StyledNavbar>
-    <div>
-      <ul>
-        <li>About <span className="material-icons">perm_identity_outline</span></li>
-        <li>Resume  <span className="material-icons">list_alt</span></li>
-        <li>Works  <span className="material-icons">build</span></li>
-        <li>Contact <span>@</span></li>
-      </ul>
-    </div>
+    <ul>
+      <Li text='About' icon='person' />
+      <Li text='Resume' icon='list_alt' />
+      <Li text='Works' icon='build' />
+      <Li text='Contact' icon='recent_actors' />
+    </ul>
   </StyledNavbar>
 )
 
