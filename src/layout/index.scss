@@ -12,6 +12,7 @@ $spacing: 2px;
 $border: 4px;
 $bgToRight: radial-gradient(ellipse at right, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
 $bgToLeft: radial-gradient(ellipse at left, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
+$bgFromTop: radial-gradient(ellipse at top, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
 
 :export {
   Primary: $primary;
@@ -26,6 +27,7 @@ $bgToLeft: radial-gradient(ellipse at left, rgba(255, 255, 255, .2) 0%, rgba(255
   Border: $border;
   ToLeft: $bgToLeft;
   ToRight: $bgToRight;
+  FromTop: $bgFromTop;
 }
 
 * {

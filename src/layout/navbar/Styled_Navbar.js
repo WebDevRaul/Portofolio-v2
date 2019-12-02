@@ -7,6 +7,7 @@ const StyledNavbar = styled.nav`
     background-color: ${Grey};
     border-radius: ${Border};
     margin: 15px 5px 0 auto;
+    z-index: 20;
     li {
       display: flex;
       flex-direction: column;
