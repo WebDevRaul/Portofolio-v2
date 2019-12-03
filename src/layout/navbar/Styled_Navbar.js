@@ -25,13 +25,14 @@ const StyledNavbar = styled.nav`
         }
       }
       div {
-        width: 100%;
-        padding: 14px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 14px 0px;
         transition: ${Transition};
-        &:hover {
+        text-transform: capitalize;
+        :hover {
           cursor: pointer;
           color: ${Secondary};
         }
@@ -42,6 +43,9 @@ const StyledNavbar = styled.nav`
         .material-icons {
           font-size: 1.7em;
         }
+      }
+      .active {
+        color: ${Secondary};
       }
     }
   }
