@@ -12,6 +12,7 @@ const StyledProfile = styled.section`
     background: ${Grey};
     border-radius: ${Border};
     z-index: 10;
+    max-width: 500px;
     ::before {
       content: '';
       position: absolute;
@@ -28,7 +29,7 @@ const StyledProfile = styled.section`
       position: relative;
       width: 150px;
       height: 150px;
-      margin-bottom: 14px;
+      margin-bottom: 24px;
       ::before {
         content: '';
         position: absolute;
@@ -50,7 +51,7 @@ const StyledProfile = styled.section`
     ul {
       display: flex;
       justify-content: center;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       li {
         margin: 0 5px;
         color: ${DarkWhite}
