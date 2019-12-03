@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-import { Secondary, Grey, Border, ToRight, Transition } from '../index.scss';
+import { bootstrap } from '../../utils/responsive';
+import { Secondary, Grey, DarkWhite, Border, ToRight, Transition } from '../index.scss';
 
 const StyledNavbar = styled.nav`
   ul {
     max-width: 70px;
     background-color: ${Grey};
     border-radius: ${Border};
-    margin: 15px 5px 0 auto;
-    z-index: 20;
+    margin: 15px 10px 0 auto;
     li {
       display: flex;
       flex-direction: column;
@@ -17,6 +17,7 @@ const StyledNavbar = styled.nav`
         width: 100%;
         height: 1px;
         background: ${ToRight};
+        z-index: 20;
       }
       &:nth-last-child(1) {
         &::after {
@@ -40,6 +41,28 @@ const StyledNavbar = styled.nav`
         }
         .material-icons {
           font-size: 1.7em;
+        }
+      }
+    }
+  }
+  @media ${bootstrap.sm} {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      max-width: 100%;
+      margin: 0 0 25px 0;
+      li {
+        width: 100%;
+        border-top: none !important;
+        border-bottom: 1px solid ${DarkWhite};
+        :nth-child(2) {
+          border: 1px solid ${DarkWhite};
+        }
+        :nth-child(3) {
+          border-right: 1px solid ${DarkWhite};
+        }
+        ::after {
+          display: none;
         }
       }
     }

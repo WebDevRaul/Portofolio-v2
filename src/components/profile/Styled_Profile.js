@@ -51,7 +51,7 @@ const StyledProfile = styled.section`
     ul {
       display: flex;
       justify-content: center;
-      margin-bottom: 30px;
+      margin-bottom: 45px;
       li {
         margin: 0 5px;
         color: ${DarkWhite}

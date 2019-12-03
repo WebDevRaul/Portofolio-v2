@@ -17,7 +17,7 @@ const StyledBckground = styled.div`
     .background {
       display: block;
       width: 100%;
-      height: 280px;
+      height: 315px;
       ::after {
         content: '';
         display: block;
