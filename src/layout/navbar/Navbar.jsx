@@ -7,7 +7,7 @@ const Navbar = () => (
     <ul>
       <Li text='About' icon='person' />
       <Li text='Resume' icon='list_alt' />
-      <Li text='Works' icon='build' />
+      <Li text='Projects' icon='build' />
       <Li text='Contact' icon='recent_actors' />
     </ul>
   </StyledNavbar>
