@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { BgColor, ToLeft, LightWhite, Border } from '../../../layout/index.scss';
 
-const StyledTitle = styled.div`
+const StyledTitle = styled.h5`
   h5 {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     padding-left: 30px;
     color: ${LightWhite};
     span {
@@ -17,7 +17,7 @@ const StyledTitle = styled.div`
     content: '';
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background: ${ToLeft};
   }
 `
