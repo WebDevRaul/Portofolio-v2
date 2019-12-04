@@ -7,7 +7,7 @@ import StyledProjects from './Styled_Projects';
 const Projects = ({ projects }) => {
   return (
     <StyledProjects>
-       <div className={classnames('', {'slideInRight': projects, 'slideOutRight': !projects})}>
+       <div className={classnames('projects', {'slideInRight': projects, 'slideOutRight': !projects})}>
          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus corrupti in architecto. Ad enim nobis perferendis sapiente et ipsum, eius labore dolorum at architecto? Magnam voluptas soluta possimus incidunt.
        </div>
     </StyledProjects>

@@ -6,16 +6,14 @@ import Resume from './resume/Resume';
 import Projects from './projects/Projects';
 import Contact from './contact/Contact';
 
-import StyledCard from './Styled_Card';
-
 const Card = ({ about, resume, projects, contact }) => {
   return (
-    <StyledCard>
+    <div style={{ position: 'relative', margin: '15px 0' }}>
       <About about={about} />
       <Resume resume={resume} />
       <Projects projects={projects} />
       <Contact contact={contact} />
-    </StyledCard>
+    </div>
   )
 }
 

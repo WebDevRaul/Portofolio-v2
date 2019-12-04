@@ -17,12 +17,12 @@ const Wrapper = () => {
             <div className='col-12 col-sm-2 ml-auto'>
               <Navbar state={state} setState={setState} />
             </div>
-            <div className='col-11 col-sm-8 m-auto ml-sm-0'>
+            <div className='col-11 col-sm-10 m-auto ml-sm-0'>
               <Profile />
             </div>
           </div>
         </div>
-        <div className='col-11 col-lg-6'>
+        <div className='col-12 col-lg-6'>
           <Card {...state} />
         </div>
       </div>
