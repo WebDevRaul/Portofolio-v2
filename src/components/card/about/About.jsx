@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import AboutMe from './about_me/About_Me';
+import Services from './service/Services';
 
 import StyledAbout from './Styled_About';
 
@@ -11,6 +12,7 @@ const About = ({ about }) => {
     <StyledAbout>
       <div className={classnames('about', {'slideInRight': about, 'slideOutRight': !about})}>
         <AboutMe />
+        <Services />
       </div>
     </StyledAbout>
   )

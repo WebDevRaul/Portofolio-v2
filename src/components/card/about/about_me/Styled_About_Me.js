@@ -3,6 +3,7 @@ import { DarkWhite, Spacing, ToLeft, ToRight, FromTop } from '../../../../layout
 
 const StyledAboutMe = styled.div`
   .about-me {
+    margin-bottom: 30px;
     .row {
       .col-6 {
         :nth-child(1) {
