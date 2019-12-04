@@ -6,6 +6,7 @@ import AboutMe from './about_me/About_Me';
 import Services from './service/Services';
 
 import StyledAbout from './Styled_About';
+import Pricing from './pricing/Pricing';
 
 const About = ({ about }) => {
   return (
@@ -13,6 +14,7 @@ const About = ({ about }) => {
       <div className={classnames('about', {'slideInRight': about, 'slideOutRight': !about})}>
         <AboutMe />
         <Services />
+        <Pricing />
       </div>
     </StyledAbout>
   )

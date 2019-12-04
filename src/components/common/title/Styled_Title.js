@@ -6,6 +6,7 @@ const StyledTitle = styled.h5`
     display: flex;
     padding-left: 30px;
     color: ${LightWhite};
+    font-weight: 600;
     span {
       padding: 5px 10px;
       background: ${BgColor};
