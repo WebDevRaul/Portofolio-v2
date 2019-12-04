@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classname';
+import classnames from 'classnames';
 
 const Li = ({ text, icon, onClick, active }) => (
   <li>

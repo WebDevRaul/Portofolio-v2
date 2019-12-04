@@ -11,10 +11,10 @@ import StyledCard from './Styled_Card';
 const Card = ({ about, resume, projects, contact }) => {
   return (
     <StyledCard>
-      { about && <About />}
-      { resume && <Resume />}
-      { projects && <Projects />}
-      { contact && <Contact />}
+      <About about={about} />
+      <Resume resume={resume} />
+      <Projects projects={projects} />
+      <Contact contact={contact} />
     </StyledCard>
   )
 }
