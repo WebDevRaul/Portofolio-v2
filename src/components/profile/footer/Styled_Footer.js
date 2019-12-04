@@ -1,54 +1,47 @@
 import styled from 'styled-components';
-import { Secondary, Spacing, ToRight, ToLeft, FromTop, Transition } from '../../../layout/index.scss';
+import { Secondary, Spacing, ToRight, ToLeft, FromTop } from '../../../layout/index.scss';
 
 const StyledFooter = styled.div`
   display: flex;
   width: 100%;
-  position: relative;
-  div {
+  .right, .left {
+    position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    text-align: center;
-    :nth-child(1) {
-      ::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: ${ToRight};
-      }
-    }
-    :nth-child(3) {
-      ::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: ${ToLeft};
-      }
-    }
-    p {
+    .btn {
+      margin: 15px 0;
       display: flex;
-      justify-content: center;
       align-items: center;
-      text-transform: capitalize;
-      padding: 10px 0;
-      margin: 10px;
-      font-weight: 600;
-      letter-spacing: ${Spacing};
-      transition: ${Transition};
-      :hover {
-        color: ${Secondary};
-        cursor: pointer;
-      }
     }
   }
-  i {
-    ::before {
+  .right, .left, .middle {
+    ::after {
       content: '';
       display: block;
       position: absolute;
+    }
+  }
+  .right, .left {
+    ::after {
+      width: 100%;
+      height: 1px;
+    }
+  }
+  .right {
+    ::after {
+      background: ${ToRight};
+    }
+  }
+  .left {
+    ::after {
+      background: ${ToLeft};
+    }
+  }
+  .middle {
+    ::after {
       width: 1px;
-      height: 100%;
+      height: 68px;
       background: ${FromTop};
     }
   }

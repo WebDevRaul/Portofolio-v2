@@ -4,52 +4,61 @@ import { Primary, DarkWhite, ToRight, ToLeft, FromTop, FromBottom } from '../../
 const StyledPricing = styled.div`
   margin-bottom: 30px;
   position: relative;
-  .pricing {
-    display: flex;
-    justify-content: space-around;
-    .box {
+  .wrapper {
+    position: relative;
+    .pricing {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px 10px;
-      .logo, .hour, h5 {
-        margin-bottom: 25px;
-      }
-      .logo {
-        color: ${Primary};
-      }
-      h5 {
-        :nth-last-child(1) {
+      justify-content: space-around;
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        .logo, .hour, h5 {
+          margin-bottom: 25px;
+        }
+        .logo {
+          color: ${Primary};
+        }
+        h5 {
+          :nth-last-child(1) {
+            margin-bottom: 0px;
+          }
+        }
+        h1, p {
           margin-bottom: 0px;
         }
-      }
-      h1, p {
-        margin-bottom: 0px;
-      }
-      .hour {
-        display: flex;
-        align-items: baseline;
-        h1 {
-          margin-right: 5px;
+        .hour {
+          display: flex;
+          align-items: baseline;
+          h1 {
+            margin-right: 5px;
+          }
+          span {
+            margin: 5px;
+            margin-bottom: auto;
+            font-size: 1.2em;
+          }
+          p {
+            color: ${DarkWhite};
+          }
         }
-        span {
-          margin: 5px;
-          margin-bottom: auto;
+        h5 {
           font-size: 1.2em;
         }
-        p {
-          color: ${DarkWhite};
+        .basic {
+          text-decoration: line-through;
+          opacity: 0.5;
         }
-      }
-      h5 {
-        font-size: 1.2em;
-      }
-      .basic {
-        text-decoration: line-through;
-        opacity: 0.5;
       }
     }
   }
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0;
+  }
+
   .top-right, .top-left, .bottom-right, .bottom-left {
     ::after, ::before {
       content: '';

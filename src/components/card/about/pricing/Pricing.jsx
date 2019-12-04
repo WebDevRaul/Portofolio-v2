@@ -2,21 +2,33 @@ import React from 'react';
 
 import Title from '../../../common/title/Title';
 import Box from './Box';
+import CustomButton from '../../../common/button/Custom_Button';
 
 import StyledPricing from './Styled_Pricing';
 
-const Pricing = () => (
-  <StyledPricing>
-    <Title text='Pricing' />
-    <i className='top-right' />
-    <i className='top-left' />
-    <div className='pricing pl-4 pr-4'>
-      <Box icon='people'option='Basic' price='15' basic={true} />
-      <Box icon='people'option='Pro' price='30' />
-    </div>
-    <i className='bottom-right' />
-    <i className='bottom-left' />
-  </StyledPricing>
-)
+const Pricing = () => {
+
+  const onClick = () => {}
+
+  return (
+    <StyledPricing>
+      <Title text='Pricing' />
+      <div className='wrapper'>
+        <i className='top-right' />
+        <i className='top-left' />
+        <div className='pricing pl-4 pr-4'>
+          <Box icon='people'option='Basic' price='15' basic={true} />
+          <Box icon='people'option='Pro' price='30' />
+        </div>
+        <i className='bottom-right' />
+        <i className='bottom-left' />
+      </div>
+      <div className='buttons'>
+        <CustomButton text='Buy Basic' onClick={onClick} />
+        <CustomButton text='Buy Pro' onClick={onClick} />
+      </div>
+    </StyledPricing>
+  )
+}
 
 export default Pricing;
