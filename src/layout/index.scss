@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap');
 
-$primary: rgb(120, 204, 109);
-$secondary: rgb(114, 192, 105);
+$primary: rgb(120, 205, 110);
+$secondary: rgb(115, 195, 105);
 $lightWhite: rgb(225, 225, 225);
-$darkWhite: rgb(178, 178, 178);
-$black: rgb(38, 38, 45);
-$grey: rgb(49, 49, 58);
+$darkWhite: rgb(180, 180, 180);
+$black: rgb(40, 40, 45);
+$grey: rgb(50, 50, 60);
 $red: rgb(255, 0, 0);
 $transition: all 0.3s linear;
 $spacing: 2px;
 $border: 4px;
 $bgToRight: radial-gradient(ellipse at right, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
 $bgToLeft: radial-gradient(ellipse at left, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
-$bgFromTop: radial-gradient(ellipse at top, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
+$bgFromTop: radial-gradient(ellipse at top, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%);
+$bgColor: linear-gradient(135deg, rgba(120, 205, 110, .5) 0%, rgba(120, 205, 110, 0) 100%);
 
 :export {
   Primary: $primary;
@@ -28,6 +29,7 @@ $bgFromTop: radial-gradient(ellipse at top, rgba(255, 255, 255, .2) 0%, rgba(255
   ToLeft: $bgToLeft;
   ToRight: $bgToRight;
   FromTop: $bgFromTop;
+  BgColor: $bgColor;
 }
 
 * {

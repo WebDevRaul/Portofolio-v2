@@ -8,6 +8,7 @@ const StyledAbout = styled.section`
     padding: 30px 0;
     background-color: ${Grey};
     border-radius: ${Border};
+    width: 100%;
   }
 `
 
