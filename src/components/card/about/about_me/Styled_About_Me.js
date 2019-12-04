@@ -1,14 +1,46 @@
 import styled from 'styled-components';
-import { DarkWhite, Spacing, ToLeft, ToRight } from '../../../../layout/index.scss';
+import { DarkWhite, Spacing, ToLeft, ToRight, FromTop } from '../../../../layout/index.scss';
 
 const StyledAboutMe = styled.div`
   .about-me {
+    .row {
+      .col-6 {
+        :nth-child(1) {
+          ::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: ${ToRight};
+          }
+          .helper {
+            ::before {
+              content: '';
+              display: block;
+              position: absolute;
+              left: 99.9%;
+              width: 1px;
+              height: 100%;
+              background: ${FromTop};
+            }
+          }
+        }
+        :nth-last-child(1) {
+          ::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: ${ToLeft};
+          }
+        }
+      }
+    }
     .list {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 0;
-      margin: 10px 0;
+      margin: 20px 0 20px 10px;
       position: relative;
       ::after {
         content: '';
@@ -36,6 +68,8 @@ const StyledAboutMe = styled.div`
       }
     }
     p {
+      padding: 10px;
+      margin-bottom: 0px;
       color: ${DarkWhite};
       letter-spacing: ${Spacing}
     }
