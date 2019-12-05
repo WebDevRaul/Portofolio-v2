@@ -69,11 +69,9 @@ const StyledPricing = styled.div`
       content: '';
       display: block;
       position: absolute;
-      z-index: 20;
     }
     ::before {
       width: 1px;
-      z-index: 20;
     }
   }
   .top-right, .bottom-right {

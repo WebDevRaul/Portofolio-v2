@@ -1,23 +1,54 @@
 import styled from 'styled-components';
-import { Primary, Border } from '../../../../layout/index.scss';
+import { Primary, ToLeft, ToRight, FromTop } from '../../../../layout/index.scss';
 
 const StyledFunFact = styled.div`
+  margin-bottom: 30px;
   .fun {
+    position: relative;
     display: flex;
-    border-top: 1px solid rgba(255, 255, 255, .2);
+    justify-content: space-between;
     .box{
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      width: 100%;
       padding: 20px 10px;
-      :nth-child(1), :nth-child(2), :nth-child(3) {
-        border-right: 1px solid rgba(255, 255, 255, .2);
-      }
+      margin: 2px;
       span {
         margin-bottom: 10px;
         color: ${Primary};
+      }
+    }
+    .top-left, .top-right, .first, .second, .third {
+      ::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+    }
+    .top-left, .top-right {
+      ::after {
+        width: 50%;
+        height: 1px;
+      } 
+    }
+    .top-left {
+      ::after {
+        background: ${ToRight};
+      }
+    }
+    .top-right {
+      ::after {
+        background: ${ToLeft};
+        right: 0;
+      }
+    }
+    .first, .second, .third {
+      ::after {
+        width: 1px;
+        height: 100%;
+        background: ${FromTop};
       }
     }
   }
