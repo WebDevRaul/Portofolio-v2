@@ -8,6 +8,7 @@ const StyledAbout = styled.section`
     border-radius: ${Border};
     width: 100%;
     height: 82vh;
+    backface-visibility: hidden;
     overflow: hidden;
     overflow-y: scroll;
     overflow: auto;
