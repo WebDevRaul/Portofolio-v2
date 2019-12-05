@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import { bootstrap } from '../../utils/responsive';
-import { Secondary, Grey, DarkWhite, Border, ToRight, Transition } from '../index.scss';
 
 const StyledNavbar = styled.nav`
   ul {
     max-width: 70px;
-    background-color: ${Grey};
-    border-radius: ${Border};
+    background-color: var(--grey);
+    border-radius: var(--border);
     margin: 15px 10px 0 auto;
     li {
       display: flex;
@@ -17,7 +16,7 @@ const StyledNavbar = styled.nav`
         content: '';
         width: 100%;
         height: 1px;
-        background: ${ToRight};
+        background: var(--bgToRight);
         z-index: 20;
       }
       &:nth-last-child(1) {
@@ -31,11 +30,11 @@ const StyledNavbar = styled.nav`
         align-items: center;
         width: 100%;
         padding: 14px 0px;
-        transition: ${Transition};
+        transition: var(--transition);
         text-transform: capitalize;
         :hover {
           cursor: pointer;
-          color: ${Secondary};
+          color: var(--secondary);
         }
         span {
           font-size: .8em;
@@ -43,7 +42,7 @@ const StyledNavbar = styled.nav`
         }
       }
       .active {
-        color: ${Secondary};
+        color: var(--secondary);
       }
     }
   }
@@ -56,12 +55,12 @@ const StyledNavbar = styled.nav`
       li {
         width: 100%;
         border-top: none !important;
-        border-bottom: 1px solid ${DarkWhite};
+        border-bottom: 1px solid var(--darkWhite);
         :nth-child(2) {
-          border: 1px solid ${DarkWhite};
+          border: 1px solid var(--darkWhite);
         }
         :nth-child(3) {
-          border-right: 1px solid ${DarkWhite};
+          border-right: 1px solid var(--darkWhite);
         }
         ::after {
           display: none;

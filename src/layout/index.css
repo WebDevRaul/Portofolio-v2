@@ -1,0 +1,65 @@
+:root {
+  --primary: rgb(120, 205, 110);
+  --secondary: rgb(115, 195, 105);
+  --lightWhite: rgb(225, 225, 225);
+  --darkWhite: rgb(180, 180, 180);
+  --black: rgb(40, 40, 45);
+  --grey: rgb(50, 50, 60);
+  --red: rgb(255, 0, 0);
+  --transition: all 0.3s linear;
+  --spacing: 2px;
+  --border: 4px;
+  --bgToRight: radial-gradient(ellipse at right, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
+  --bgToLeft: radial-gradient(ellipse at left, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
+  --bgFromTop: radial-gradient(ellipse at top, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%);
+  --bgFromBottom: radial-gradient(ellipse at bottom, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%);
+  --bgColor: linear-gradient(135deg, rgba(120, 205, 110, .5) 0%, rgba(120, 205, 110, 0) 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 16px;
+  letter-spacing: var(--spacing);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+a:hover {
+  transition: var(--transition);
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+button, input :focus{
+  outline: none;
+  box-shadow: none;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+li{
+  list-style: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--black);
+  box-shadow: 0 0 0px 1000px var(--lightWhite) inset;
+  -webkit-box-shadow: 0 0 0px 1000px var(--lightWhite) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

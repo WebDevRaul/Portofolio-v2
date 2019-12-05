@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { Grey, Border } from '../../../layout/index.scss';
 
 const StyledBckground = styled.div`
   width: 100%;
   height: 50%;
   position: absolute;
   top: 0;
-  border-radius: ${Border};
+  border-radius: var(--border);
   overflow: hidden;
   z-index: -10;
   .wrapper {
@@ -27,7 +26,7 @@ const StyledBckground = styled.div`
         bottom: -80px;
         left: -40px;
         transform: rotate(10deg);
-        background: ${Grey};
+        background: var(--grey);
       }
       ::before {
         content: '';
@@ -38,7 +37,7 @@ const StyledBckground = styled.div`
         bottom: -80px;
         right: -40px;
         transform: rotate(-10deg);
-        background: ${Grey};
+        background: var(--grey);
       }
     }
   }

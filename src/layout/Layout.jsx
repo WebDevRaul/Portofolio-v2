@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.scss';
-import './animation.scss';
+import './animation.css';
+import './index.css';
 import StyledLayout from './Styled_Layout';
 
 const Layout = ({ children }) => {

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { ToRight, ToLeft, FromTop } from '../../../layout/index.scss';
 
 const StyledFooter = styled.div`
   display: flex;
@@ -38,19 +37,19 @@ const StyledFooter = styled.div`
   }
   .right {
     ::after {
-      background: ${ToRight};
+      background: var(--bgToRight);
     }
   }
   .left {
     ::after {
-      background: ${ToLeft};
+      background: var(--bgToLeft);
     }
   }
   .middle {
     ::after {
       width: 1px;
       height: 68px;
-      background: ${FromTop};
+      background: var(--bgFromTop);
     }
   }
 `
