@@ -52,15 +52,16 @@ const StyledNavbar = styled.nav`
       justify-content: space-around;
       max-width: 100%;
       margin: 0 0 25px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
       li {
         width: 100%;
         border-top: none !important;
-        border-bottom: 1px solid var(--darkWhite);
+        border-bottom: none !important;
         :nth-child(2) {
-          border: 1px solid var(--darkWhite);
+          border: 1px solid rgba(255, 255, 255, .2);
         }
         :nth-child(3) {
-          border-right: 1px solid var(--darkWhite);
+          border-right: 1px solid rgba(255, 255, 255, .2);
         }
         ::after {
           display: none;

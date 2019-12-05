@@ -14,11 +14,13 @@ const About = ({ about }) => {
   return (
     <StyledAbout>
       <div className={classnames('about', {'slideInRight': about, 'slideOutRight': !about})}>
+        <i className='top' />
         <AboutMe />
         <Services />
         <Pricing />
         <FunFact />
         <Review />
+        <i className='bottom' />
       </div>
     </StyledAbout>
   )

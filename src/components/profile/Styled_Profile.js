@@ -11,7 +11,8 @@ const StyledProfile = styled.section`
     background: var(--grey);
     border-radius: var(--border);
     z-index: 10;
-    max-width: 500px;
+    /* max-width: 500px; */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
     ::before {
       content: '';
       position: absolute;
