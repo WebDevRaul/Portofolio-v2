@@ -1,16 +1,15 @@
 import styled from 'styled-components';
-import { Secondary, Spacing, LightWhite, Transition } from '../../../layout/index.scss';
 
 const StyledCustomButton = styled.div`
   display: flex;
   justify-content: center;
   button {
-    color: ${LightWhite};
+    color: var(--lightWhite);
     text-transform: uppercase;
-    letter-spacing: ${Spacing};
+    letter-spacing: var(--spacing);
     :hover {
-      transition: ${Transition};
-      color: ${Secondary};
+      transition: var(--transition);
+      color: var(--secondary);
     }
   }
 `

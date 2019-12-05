@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { Primary, Border, Spacing } from '../../../layout/index.scss';
 
 const StyledSpan = styled.span`
   padding: 5px 10px;
-  background-color: ${Primary};
-  border-radius: ${Border};
-  letter-spacing: ${Spacing}
+  background-color: var(--primary);
+  border-radius: var(--border);
+  letter-spacing: var(--spacing);
 `
 
 export default StyledSpan;

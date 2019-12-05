@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Primary, DarkWhite, ToRight, ToLeft, FromTop, FromBottom } from '../../../../layout/index.scss';
 
 const StyledPricing = styled.div`
   margin-bottom: 30px;
@@ -23,7 +22,7 @@ const StyledPricing = styled.div`
           margin-bottom: 25px;
         }
         .logo {
-          color: ${Primary};
+          color: var(--primary);
         }
         h5 {
           :nth-last-child(1) {
@@ -45,7 +44,7 @@ const StyledPricing = styled.div`
             font-size: 1.2em;
           }
           p {
-            color: ${DarkWhite};
+            color: var(--darkWhite);
           }
         }
         h5 {
@@ -86,20 +85,20 @@ const StyledPricing = styled.div`
   .top-right {
     ::after {
       left: 1px;
-      background: ${ToLeft};
+      background: var(--bgToLeft);
     }
     ::before {
-      background: ${FromTop};
+      background: var(--bgFromTop);
     }
   }
   .bottom-right {
     ::after {
       left: 1px;
-      background: ${ToLeft};
+      background: var(--bgToLeft);
     }
     ::before {
       bottom: -1px;
-      background: ${FromBottom};
+      background: var(--bgFromBottom);
     }
   }
 
@@ -116,20 +115,20 @@ const StyledPricing = styled.div`
   .top-left {
     ::after {
       right: 1px;
-      background: ${ToRight};
+      background: var(--bgToRight);
     }
     ::before {
-      background: ${FromTop};
+      background: var(--bgFromTop);
     }
   }
   .bottom-left {
     ::after {
       right: 1px;
-      background: ${ToRight};
+      background: var(--bgToRight);
     }
     ::before {
       bottom: -1px;
-      background: ${FromBottom};
+      background: var(--bgFromBottom);
     }
   }
 `

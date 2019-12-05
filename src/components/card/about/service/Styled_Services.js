@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Primary, LightWhite, DarkWhite, Border, ToLeft, ToRight, FromTop, FromBottom } from '../../../../layout/index.scss';
 
 const StyledServices = styled.div`
   margin-bottom: 30px;
@@ -18,18 +17,18 @@ const StyledServices = styled.div`
       height: 50px;
       margin: 15px;
       transform: rotate(45deg);
-      border-radius: ${Border};
-      color: ${LightWhite};
-      background-color: ${Primary};
+      border-radius: var(--border);
+      color: var(--lightWhite);
+      background-color: var(--primary);
       span {
         transform: rotate(-45deg);
       }
     }
     h5 {
-      color: ${LightWhite};
+      color: var(--lightWhite);
     }
     p {
-      color: ${DarkWhite};
+      color: var(--darkWhite);
     }
   }
   .first {
@@ -43,7 +42,7 @@ const StyledServices = styled.div`
           bottom: 0;
           width: 100%;
           height: 1px;
-          background: ${ToRight};
+          background: var(--bgToRight);
         }
         ::before {
           content: '';
@@ -53,7 +52,7 @@ const StyledServices = styled.div`
           height: 100%;
           left: 100%;
           top: 0;
-          background: ${FromBottom};
+          background: var(--bgFromBottom);
         }
       }
       :nth-child(2) {
@@ -72,7 +71,7 @@ const StyledServices = styled.div`
           top: -1px;
           width: 100%;
           height: 1px;
-          background: ${ToLeft};
+          background: var(--bgToLeft);
         }
         ::before {
           content: '';
@@ -82,7 +81,7 @@ const StyledServices = styled.div`
           height: 100%;
           right: 100%;
           top: 0;
-          background: ${FromTop};
+          background: var(--bgFromTop);
         }
       }
     }

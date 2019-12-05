@@ -1,16 +1,15 @@
 import styled from 'styled-components';
-import { BgColor, LightWhite, Border } from '../../../layout/index.scss';
 
 const StyledTitle = styled.div`
   h5 {
     display: flex;
     padding-left: 10px;
-    color: ${LightWhite};
+    color: var(--lightWhite);
     font-weight: 600;
     span {
       padding: 5px 10px;
-      background: ${BgColor};
-      border-radius: ${Border};
+      background: var(--bgColor);
+      border-radius: var(--border);
     }
   }
 `

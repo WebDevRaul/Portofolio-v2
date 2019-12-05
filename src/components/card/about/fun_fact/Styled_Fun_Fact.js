@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Primary, ToLeft, ToRight, FromTop } from '../../../../layout/index.scss';
 
 const StyledFunFact = styled.div`
   margin-bottom: 30px;
@@ -16,7 +15,7 @@ const StyledFunFact = styled.div`
       margin: 2px;
       span {
         margin-bottom: 10px;
-        color: ${Primary};
+        color: var(--primary);
       }
     }
     .top-left, .top-right, .first, .second, .third {
@@ -35,12 +34,12 @@ const StyledFunFact = styled.div`
     }
     .top-left {
       ::after {
-        background: ${ToRight};
+        background: var(--bgToRight);
       }
     }
     .top-right {
       ::after {
-        background: ${ToLeft};
+        background: var(--bgToLeft);
         right: 0;
       }
     }
@@ -48,7 +47,7 @@ const StyledFunFact = styled.div`
       ::after {
         width: 1px;
         height: 100%;
-        background: ${FromTop};
+        background: var(--bgFromTop);
       }
     }
   }

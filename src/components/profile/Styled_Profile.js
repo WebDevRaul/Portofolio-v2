@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Primary, DarkWhite, Grey, Border } from '../../layout/index.scss';
 
 const StyledProfile = styled.section`
   .profile {
@@ -9,8 +8,8 @@ const StyledProfile = styled.section`
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background: ${Grey};
-    border-radius: ${Border};
+    background: var(--grey);
+    border-radius: var(--border);
     z-index: 10;
     max-width: 500px;
     ::before {
@@ -20,8 +19,8 @@ const StyledProfile = styled.section`
       top: -15px;
       width: 100%;
       height: 100%;
-      border-radius: ${Border};
-      background: ${Grey};
+      border-radius: var(--border);
+      background: var(--grey);
       opacity: .5;
       z-index: -10;
     }
@@ -45,7 +44,7 @@ const StyledProfile = styled.section`
       }
     }
     h5 {
-      color: ${Primary};
+      color: var(--primary);
       font-size: 1.1em;
     }
     ul {
@@ -54,7 +53,7 @@ const StyledProfile = styled.section`
       margin-bottom: 45px;
       li {
         margin: 0 5px;
-        color: ${DarkWhite}
+        color: var(--darkWhite);
       }
     }
   }

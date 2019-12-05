@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { DarkWhite, Spacing, ToLeft, ToRight, FromTop } from '../../../../layout/index.scss';
 
 const StyledAboutMe = styled.div`
   .about-me {
@@ -12,7 +11,7 @@ const StyledAboutMe = styled.div`
             display: block;
             width: 100%;
             height: 1px;
-            background: ${ToRight};
+            background: var(--bgToRight);
           }
           .helper {
             ::before {
@@ -22,7 +21,7 @@ const StyledAboutMe = styled.div`
               left: 99.9%;
               width: 1px;
               height: 100%;
-              background: ${FromTop};
+              background: var(--bgFromTop);
             }
           }
         }
@@ -32,7 +31,7 @@ const StyledAboutMe = styled.div`
             display: block;
             width: 100%;
             height: 1px;
-            background: ${ToLeft};
+            background: var(--bgToLeft);
           }
         }
       }
@@ -50,7 +49,7 @@ const StyledAboutMe = styled.div`
         bottom: -5px;
         width: 50%;
         height: 1px;
-        background: ${ToRight};
+        background: var(--bgToRight);
       }
       ::before {
         content: '';
@@ -60,7 +59,7 @@ const StyledAboutMe = styled.div`
         left: 50%;
         width: 50%;
         height: 1px;
-        background: ${ToLeft};
+        background: var(--bgToLeft);
       }
       :nth-last-child(1) {
         ::after, ::before {
@@ -71,8 +70,8 @@ const StyledAboutMe = styled.div`
     p {
       padding: 10px;
       margin-bottom: 0px;
-      color: ${DarkWhite};
-      letter-spacing: ${Spacing}
+      color: var(--darkWhite);
+      letter-spacing: var(--spacing);
     }
   }
 `
