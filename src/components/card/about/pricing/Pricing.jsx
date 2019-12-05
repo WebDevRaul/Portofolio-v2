@@ -3,6 +3,7 @@ import React from 'react';
 import Title from '../../../common/title/Title';
 import Box from './Box';
 import CustomButton from '../../../common/button/Custom_Button';
+import SpeedIcon from '@material-ui/icons/Speed';
 
 import StyledPricing from './Styled_Pricing';
 
@@ -17,8 +18,8 @@ const Pricing = () => {
         <i className='top-right' />
         <i className='top-left' />
         <div className='pricing pl-4 pr-4'>
-          <Box icon='people'option='Basic' price='15' basic={true} />
-          <Box icon='people'option='Pro' price='30' />
+          <Box icon={<SpeedIcon />} option='Basic' price='15' basic={true} />
+          <Box icon={<SpeedIcon />} option='Pro' price='30' />
         </div>
         <i className='bottom-right' />
         <i className='bottom-left' />

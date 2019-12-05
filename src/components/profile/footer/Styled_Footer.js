@@ -1,9 +1,17 @@
 import styled from 'styled-components';
-import { Secondary, Spacing, ToRight, ToLeft, FromTop } from '../../../layout/index.scss';
+import { ToRight, ToLeft, FromTop } from '../../../layout/index.scss';
 
 const StyledFooter = styled.div`
   display: flex;
   width: 100%;
+  padding: 1px;
+  .left {
+    .btn {
+      span {
+        transform: rotate(90deg);
+      }
+    }
+  }
   .right, .left {
     position: relative;
     display: flex;

@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StyledNavbar from './Styled_Navbar';
 import Li from './Li';
+import PersonOutline from '@material-ui/icons/PersonOutline';
+import ListAlt from '@material-ui/icons/ListAlt';
+import Build from '@material-ui/icons/Build';
+import RecentActors from '@material-ui/icons/RecentActors';
 
 const Navbar = ({ state, setState }) => {
   const onClick = name => {
@@ -20,10 +24,10 @@ const Navbar = ({ state, setState }) => {
   return (
     <StyledNavbar>
       <ul>
-        <Li text='about' icon='person' onClick={onClick} active={about} />
-        <Li text='resume' icon='list_alt' onClick={onClick} active={resume} />
-        <Li text='projects' icon='build' onClick={onClick} active={projects} />
-        <Li text='contact' icon='recent_actors' onClick={onClick} active={contact} />
+        <Li text='about' icon={<PersonOutline />} onClick={onClick} active={about} />
+        <Li text='resume' icon={<ListAlt />} onClick={onClick} active={resume} />
+        <Li text='projects' icon={<Build />} onClick={onClick} active={projects} />
+        <Li text='contact' icon={<RecentActors />} onClick={onClick} active={contact} />
       </ul>
     </StyledNavbar>
   )

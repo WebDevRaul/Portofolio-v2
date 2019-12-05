@@ -12,6 +12,7 @@ const StyledNavbar = styled.nav`
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 1px;
       &::after {
         content: '';
         width: 100%;
@@ -39,9 +40,6 @@ const StyledNavbar = styled.nav`
         span {
           font-size: .8em;
           padding-top: 2px;
-        }
-        .material-icons {
-          font-size: 1.7em;
         }
       }
       .active {

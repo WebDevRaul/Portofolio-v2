@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Box = ({ logo, title, text }) => (
   <div className='box'>
     <div className='logo'>
-      <span className='material-icons'>{logo}</span>
+      <span>{logo}</span>
     </div>
     <h5>{title}</h5>
     <p>{text}</p>
@@ -12,7 +12,7 @@ const Box = ({ logo, title, text }) => (
 )
 
 Box.propTypes = {
-  logo: PropTypes.string.isRequired,
+  logo: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired
 }

@@ -5,7 +5,7 @@ import classnames from 'classnames';
 const Li = ({ text, icon, onClick, active }) => (
   <li>
     <div className={classnames('', {'active': active})} onClick={() => onClick(text)}>
-      <span className="material-icons">{icon}</span>
+      {icon}
       <span>{text}</span>   
     </div> 
   </li>
@@ -13,7 +13,7 @@ const Li = ({ text, icon, onClick, active }) => (
 
 Li.propTypes = {
   text: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
   onClick: PropTypes.func.isRequired,
   active: PropTypes.bool.isRequired
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { BgColor, ToLeft, LightWhite, Border } from '../../../layout/index.scss';
+import { BgColor, LightWhite, Border } from '../../../layout/index.scss';
 
-const StyledTitle = styled.h5`
+const StyledTitle = styled.div`
   h5 {
     display: flex;
     padding-left: 30px;

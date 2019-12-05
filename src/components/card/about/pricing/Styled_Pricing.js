@@ -14,6 +14,11 @@ const StyledPricing = styled.div`
         flex-direction: column;
         align-items: center;
         padding: 20px 10px;
+        :nth-child(1) {
+          .logo {
+            transform: rotateY(180deg);
+          }
+        }
         .logo, .hour, h5 {
           margin-bottom: 25px;
         }
@@ -64,9 +69,11 @@ const StyledPricing = styled.div`
       content: '';
       display: block;
       position: absolute;
+      z-index: 20;
     }
     ::before {
       width: 1px;
+      z-index: 20;
     }
   }
   .top-right, .bottom-right {

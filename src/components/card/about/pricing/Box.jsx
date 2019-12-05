@@ -22,7 +22,7 @@ const Box = ({ icon, option, price, basic }) => (
 )
 
 Box.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
   option: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   basic: PropTypes.bool

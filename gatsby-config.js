@@ -34,14 +34,6 @@ module.exports = {
         // Add any options here
       },
     },
-    {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        fonts: [
-          'material icons',
-          'roboto:300,400,500,700',
-        ],
-      },
-    },
+    `gatsby-plugin-material-ui`,
   ],
 }

@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Li = ({ text, path }) => (
-  <li>
+  <li className='ml-2 mr-2'>
     <a href={path} target='_blank' rel="noopener noreferrer" >
-      <span className='material-icons'>{text}</span>
+    {text}
     </a>
   </li>
 )
 
 Li.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired
 }
 

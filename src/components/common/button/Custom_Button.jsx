@@ -27,7 +27,7 @@ CustomButton.defaultProps = {
 CustomButton.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  isLogo: PropTypes.string,
+  isLogo: PropTypes.object,
   isLoading: PropTypes.bool,
   type: PropTypes.string
 };
