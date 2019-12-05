@@ -4,7 +4,7 @@ import { BgColor, LightWhite, Border } from '../../../layout/index.scss';
 const StyledTitle = styled.div`
   h5 {
     display: flex;
-    padding-left: 30px;
+    padding-left: 10px;
     color: ${LightWhite};
     font-weight: 600;
     span {

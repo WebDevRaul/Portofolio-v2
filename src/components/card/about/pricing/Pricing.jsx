@@ -17,7 +17,7 @@ const Pricing = () => {
       <div className='wrapper'>
         <i className='top-right' />
         <i className='top-left' />
-        <div className='pricing pl-4 pr-4'>
+        <div className='pricing'>
           <Box icon={<SpeedIcon />} option='Basic' price='15' basic={true} />
           <Box icon={<SpeedIcon />} option='Pro' price='30' />
         </div>

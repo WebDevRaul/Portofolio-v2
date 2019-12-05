@@ -83,12 +83,11 @@ const StyledPricing = styled.div`
     }
     ::before {
       height: 25%;
-      left: 20px;
     }
   }
   .top-right {
     ::after {
-      left: 21px;
+      left: 1px;
       background: ${ToLeft};
     }
     ::before {
@@ -97,7 +96,7 @@ const StyledPricing = styled.div`
   }
   .bottom-right {
     ::after {
-      left: 21px;
+      left: 1px;
       background: ${ToLeft};
     }
     ::before {
@@ -113,12 +112,12 @@ const StyledPricing = styled.div`
     }
     ::before {
       height: 25%;
-      right: 20px;
+      right: 0;
     }
   }
   .top-left {
     ::after {
-      right: 21px;
+      right: 1px;
       background: ${ToRight};
     }
     ::before {
@@ -127,7 +126,7 @@ const StyledPricing = styled.div`
   }
   .bottom-left {
     ::after {
-      right: 21px;
+      right: 1px;
       background: ${ToRight};
     }
     ::before {

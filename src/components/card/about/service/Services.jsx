@@ -10,11 +10,11 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 const Services = () => (
   <StyledServices>
     <Title text='My Services' />
-    <div className='d-flex pl-4 first'>
+    <div className='d-flex first'>
       <Box logo={<DevicesOtherIcon />} title='Web Development' text='Modern and mobile-ready website that will help you reach all of your marketing.' />
       <Box logo={<ImportantDevicesIcon />} title='Web Design' text='Lorem ipsum dolor sit amet.' />
     </div>
-    <div className='d-flex pl-4 second'>
+    <div className='d-flex second'>
       <Box logo={<HeadsetMicIcon />} title='Support' text='Lorem ipsum dolor sit amet.' />
       <Box logo={<SupervisorAccountIcon />} title='Review' text='Lorem ipsum dolor sit amet.' />
     </div>

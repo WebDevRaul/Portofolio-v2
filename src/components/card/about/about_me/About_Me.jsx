@@ -9,7 +9,7 @@ const AboutMe = () => (
   <StyledAboutMe>
     <div className='about-me'>
       <Title text='About Me' />
-      <div className='row no-gutters pl-4'>
+      <div className='row no-gutters'>
         <div className='col-6'>
           <Text />
         </div>

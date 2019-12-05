@@ -3,9 +3,7 @@ import { DarkWhite, Grey, Border } from '../../../layout/index.scss';
 
 const StyledAbout = styled.section`
   .about {
-    position: absolute;
-    top: 0;
-    padding: 30px 0;
+    padding: 30px 10px 30px 18px;
     background-color: ${Grey};
     border-radius: ${Border};
     width: 100%;
@@ -14,7 +12,7 @@ const StyledAbout = styled.section`
     overflow-y: scroll;
     overflow: auto;
     ::-webkit-scrollbar {
-      width: 15px;
+      width: 10px;
     }
     ::-webkit-scrollbar-thumb {
       background-color: ${DarkWhite};
