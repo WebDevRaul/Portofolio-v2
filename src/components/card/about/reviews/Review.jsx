@@ -5,32 +5,39 @@ import Title from '../../../common/title/Title';
 import Box from './Box';
 
 import StyledReview from './Styled_Review';
+import Buttons from './Buttons';
 
 const Review = () => {
-  const [index, setIndex] = useState(0)
+  const [state, setState] = useState(0);
+  const [animate, setAnimate] = useState(true);
   const { allImageSharp } = useStaticQuery(photo);
   
-  const node = allImageSharp.nodes[index].fluid;
+  const node = allImageSharp.nodes[state].fluid;
   const length = allImageSharp.nodes.length - 1
-
-  const next = () => index === length ? setIndex(0) : setIndex(index + 1);
-  const prev = () => index === 0 ? setIndex(length) : setIndex(index - 1);
+  
+  const onNext = () => {
+    setTimeout(() => state === length ? setState(0) : setState(state + 1), 1000);
+    setAnimate(!animate);
+  };
+  const onPrev = () => {
+    setTimeout(() => state === 0 ? setState(length) : setState(state - 1), 1000);
+    setAnimate(!animate);
+  }
 
   return(
     <StyledReview>
       <div className='review'>
         <Title text='Review' />
+        <i className='review-top' />
           {
+            // eslint-disable-next-line
             Users.map((el, index) => {
               const { src } = node;
-              if(el.photo === src.slice(src.lastIndexOf('/'))) return <Box key={index} image={node} {...el} />
-              return
+              if(el.photo === src.slice(src.lastIndexOf('/'))) return <Box key={index} animate={animate} image={node} {...el} />
             })
           }
-        <div>
-          <button onClick={() => prev()}>Previous</button>
-          <button onClick={() => next()}>Next</button>
-        </div>
+        <i className='review-bottom' />
+        <Buttons onNext={onNext} onPrev={onPrev} />
       </div>
     </StyledReview>
   )
