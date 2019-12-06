@@ -20,7 +20,6 @@ const Review = () => {
     <StyledReview>
       <div className='review'>
         <Title text='Review' />
-        <div>
           {
             Users.map((el, index) => {
               const { src } = node;
@@ -28,7 +27,6 @@ const Review = () => {
               return
             })
           }
-        </div>
         <div>
           <button onClick={() => prev()}>Previous</button>
           <button onClick={() => next()}>Next</button>
@@ -42,7 +40,7 @@ const photo = graphql`
   query {
     allImageSharp {
       nodes {
-        fluid(maxHeight: 50, maxWidth: 50) {
+        fluid(maxHeight: 75, maxWidth: 75) {
           ...GatsbyImageSharpFluid
         }
       }

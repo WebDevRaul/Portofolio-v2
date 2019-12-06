@@ -26,13 +26,6 @@ const StyledAbout = styled.section`
     overflow: hidden;
     overflow-y: scroll;
     overflow: auto;
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background-color: var(--darkWhite);
-      border-radius: 50px;
-    }
   }
 `
 
