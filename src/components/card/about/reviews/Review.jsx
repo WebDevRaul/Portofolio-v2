@@ -10,32 +10,40 @@ import Buttons from './Buttons';
 const Review = () => {
   const [photo, setPhoto] = useState(0);
   const [state, setState] = useState({ animate: false, left: false, right: false });
+  const [active, setActive] = useState(false);
   const { allImageSharp } = useStaticQuery(image);
   
   const node = allImageSharp.nodes[photo].fluid;
   const length = allImageSharp.nodes.length - 1
   
   const onNext = () => {
-    setTimeout(() => photo === length ? setPhoto(0) : setPhoto(photo + 1), 1000);
+    if(active) return;
+    setTimeout(() => {
+      photo === length ? setPhoto(0) : setPhoto(photo + 1);
+      setActive(false);
+    }, 1000);
     setState({ animate: !state.animate, left: true, right: false });
+    setActive(true);
   };
+
   const onPrev = () => {
-    setTimeout(() => photo === 0 ? setPhoto(length) : setPhoto(photo - 1), 1000);
+    if(active) return;
+    setTimeout(() => {
+      photo === 0 ? setPhoto(length) : setPhoto(photo - 1);
+      setActive(false);
+    }, 1000);
     setState({ animate: !state.animate, left: false, right: true});
+    setActive(true);
   }
+
+  const user = Users.filter(el => el.photo === node.src.slice(node.src.lastIndexOf('/')))[0];
 
   return(
     <StyledReview>
       <div className='review'>
         <Title text='Review' />
         <i className='review-top' />
-          {
-            // eslint-disable-next-line
-            Users.map((el, index) => {
-              const { src } = node;
-              if(el.photo === src.slice(src.lastIndexOf('/'))) return <Box key={index} {...state} image={node} {...el} />
-            })
-          }
+          <Box {...state} image={node} {...user} />
         <i className='review-bottom' />
         <Buttons onNext={onNext} onPrev={onPrev} />
       </div>

@@ -10,7 +10,7 @@ const Box = ({ text, image, name, animate, left, right }) => {
   useEffect(() => {
     setState(!state);
     // eslint-disable-next-line
-  },[animate]);
+  },[animate, image]);
 
   const lenght = text.length  > 99 ? true : false;
 
