@@ -50,11 +50,11 @@
 
 .slideInLeftShort {
   animation: slideInLeftShort 2s forwards;
-  transform: translateX(25%);
-  -webkit-transform: translateX(25%);
-  -moz-transform: translateX(25%);
-  -ms-transform: translateX(25%);
-  -o-transform: translateX(25%);
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
 }
 
 .slideOutRightShort {
@@ -87,14 +87,64 @@
   100% { 
     display: none;
     opacity: 0;
-    transform: translateX(-25%);
-    -webkit-transform: translateX(-25%);
-    -moz-transform: translateX(-25%);
-    -ms-transform: translateX(-25%);
-    -o-transform: translateX(-25%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
   }
 }
+
 /* 3 */
+
+.slideInRightShort {
+  animation: slideInRightShort 2s forwards;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.slideOutLefttShort {
+  animation: slideOutLeftShort 2s forwards;
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
+
+@keyframes slideInRightShort {
+  0% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+  }
+}
+
+@keyframes slideOutLeftShort {
+  0% {
+    opacity: 1;
+  }
+  100% { 
+    display: none;
+    opacity: 0;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+  }
+}
+
+/* 4 */
 
 .fadeIn {
   animation: fadeIn 3s;

@@ -8,20 +8,20 @@ import StyledReview from './Styled_Review';
 import Buttons from './Buttons';
 
 const Review = () => {
-  const [state, setState] = useState(0);
-  const [animate, setAnimate] = useState(true);
-  const { allImageSharp } = useStaticQuery(photo);
+  const [photo, setPhoto] = useState(0);
+  const [state, setState] = useState({ animate: false, left: false, right: false });
+  const { allImageSharp } = useStaticQuery(image);
   
-  const node = allImageSharp.nodes[state].fluid;
+  const node = allImageSharp.nodes[photo].fluid;
   const length = allImageSharp.nodes.length - 1
   
   const onNext = () => {
-    setTimeout(() => state === length ? setState(0) : setState(state + 1), 1000);
-    setAnimate(!animate);
+    setTimeout(() => photo === length ? setPhoto(0) : setPhoto(photo + 1), 1000);
+    setState({ animate: !state.animate, left: true, right: false });
   };
   const onPrev = () => {
-    setTimeout(() => state === 0 ? setState(length) : setState(state - 1), 1000);
-    setAnimate(!animate);
+    setTimeout(() => photo === 0 ? setPhoto(length) : setPhoto(photo - 1), 1000);
+    setState({ animate: !state.animate, left: false, right: true});
   }
 
   return(
@@ -33,7 +33,7 @@ const Review = () => {
             // eslint-disable-next-line
             Users.map((el, index) => {
               const { src } = node;
-              if(el.photo === src.slice(src.lastIndexOf('/'))) return <Box key={index} animate={animate} image={node} {...el} />
+              if(el.photo === src.slice(src.lastIndexOf('/'))) return <Box key={index} {...state} image={node} {...el} />
             })
           }
         <i className='review-bottom' />
@@ -43,7 +43,7 @@ const Review = () => {
   )
 }
 
-const photo = graphql`
+const image = graphql`
   query {
     allImageSharp {
       nodes {
