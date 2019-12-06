@@ -19,10 +19,12 @@ const Box = ({ text, image, name, animate }) => {
       <div className={classnames({'slideInLeftShort': state, 'slideOutRightShort': !state})}>
         <h5 className={classnames('d-flex', {'align-items-center': !lenght, 'padding-top': lenght})}>{text}</h5>
       </div>
-      <div className='photo'>
-        <Img fluid={image} />
+      <div className={classnames('text-center', {'fadeIn': state, 'fadeOut': !state })}>
+        <div className='photo'>
+          <Img fluid={image} />
+        </div>
+        <p>{name}</p>
       </div>
-      <p>{name}</p>
     </div>
   )
 }

@@ -20,7 +20,6 @@
 @keyframes slideInRight {
   0% {
     opacity: 0;
-    display: block;
   }
   100% { 
     opacity: 1;
@@ -70,7 +69,6 @@
 @keyframes slideInLeftShort {
   0% {
     opacity: 0;
-    display: block;
   }
   100% { 
     opacity: 1;
@@ -94,5 +92,32 @@
     -moz-transform: translateX(-25%);
     -ms-transform: translateX(-25%);
     -o-transform: translateX(-25%);
+  }
+}
+/* 3 */
+
+.fadeIn {
+  animation: fadeIn 3s;
+}
+
+.fadeOut {
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% { 
+    opacity: 0;
   }
 }
