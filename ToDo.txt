@@ -1,3 +1,5 @@
 link for navbar insted of div (clear css div:hover)
 fix animation
 margini top/bottom on card scroll
+const { src } = el.fluid;
+const user = users.filter(i => i.image === src.slice(src.lastIndexOf('/')));
