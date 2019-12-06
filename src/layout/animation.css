@@ -19,6 +19,7 @@
 @keyframes slideInRight {
   0% {
     opacity: 0;
+    display: block;
   }
   100% { 
     opacity: 1;
@@ -35,6 +36,7 @@
     opacity: 1;
   }
   100% { 
+    display: none;
     opacity: 0;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);

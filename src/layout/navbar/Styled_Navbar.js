@@ -3,7 +3,7 @@ import { bootstrap } from '../../utils/responsive';
 
 const StyledNavbar = styled.nav`
   ul {
-    max-width: 70px;
+    width: 70px;
     background-color: var(--grey);
     border-radius: var(--border);
     margin: 15px 10px 0 auto;
@@ -50,7 +50,7 @@ const StyledNavbar = styled.nav`
     ul {
       display: flex;
       justify-content: space-around;
-      max-width: 100%;
+      width: 100%;
       margin: 0 0 25px 0;
       border-bottom: 1px solid rgba(255, 255, 255, .2);
       li {

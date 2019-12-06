@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const StyledProfile = styled.section`
+  width: 100%;
   .profile {
     height: calc(100vh - 100px);
     position: relative;

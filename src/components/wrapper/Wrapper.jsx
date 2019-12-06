@@ -9,17 +9,15 @@ const Wrapper = () => {
 
   return (
     <div className='row no-gutters'>
-      <div className='col-12 col-lg-6 m-auto'>
+      <div className='col-12 col-lg-5'>
         <div className='row no-gutters'>
-          <div className='col-12 col-sm-2 ml-auto'>
-            <Navbar state={state} setState={setState} />
-          </div>
-          <div className='col-11 col-sm-10 m-auto ml-sm-0'>
-            <Profile />
+          <div className='col-11 col-sm-11 col-md-8 col-lg-12 d-sm-flex m-auto'>
+              <Navbar state={state} setState={setState} />
+              <Profile />
           </div>
         </div>
       </div>
-      <div className='col-12 col-lg-6'>
+      <div className='col-12 col-lg-7'>
         <Card {...state} />
       </div>
     </div>

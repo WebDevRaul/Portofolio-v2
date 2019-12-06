@@ -21,7 +21,7 @@ const StyledAbout = styled.section`
     background-color: var(--grey);
     border-radius: var(--border);
     width: 100%;
-    height: 82vh;
+    height: 80vh;
     backface-visibility: hidden;
     overflow: hidden;
     overflow-y: scroll;
