@@ -1,22 +1,22 @@
 const Users = [
   {
     name: 'Gatsby',
-    image: '/gatsby-icon.png',
+    photo: '/gatsby-icon.png',
     text: 'lorem lorem'
   },
   {
     name: 'Background',
-    image: '/background.jpg',
+    photo: '/background.jpg',
     text: 'lorem lorem'
   },
   {
     name: 'Trandafir',
-    image: '/placeholder.jpg',
+    photo: '/placeholder.jpg',
     text: 'lorem lorem'
   },
   {
     name: 'Joe',
-    image: '/images2.jpg',
+    photo: '/images2.jpg',
     text: 'lorem lorem'
   },
 ];
