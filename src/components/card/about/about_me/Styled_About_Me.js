@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { portrait } from '../../../../utils/responsive';
 
 const StyledAboutMe = styled.div`
   .about-me {
@@ -41,7 +42,9 @@ const StyledAboutMe = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 20px 0 20px 10px;
+      height: 50px;
+      margin: 10px;
+      padding: 3px 0;
       position: relative;
       ::after {
         content: '';
@@ -67,13 +70,34 @@ const StyledAboutMe = styled.div`
           display: none;
         }
       }
+      p {
+        width: 50%;
+        text-align: end;
+      }
     }
     p {
-      padding: 10px;
+      text-align: justify;
+      padding: 5px;
       margin-bottom: 0px;
       color: var(--darkWhite);
       letter-spacing: var(--spacing);
     }
+  }
+
+  @media ${portrait.laptopL} {
+
+  }
+  @media ${portrait.laptop} {
+
+  }
+  @media ${portrait.tablet} {
+
+  }
+  @media ${portrait.mobileL} {
+
+  }
+  @media ${portrait.mobileM} {
+
   }
 `
 

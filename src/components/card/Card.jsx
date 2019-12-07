@@ -8,7 +8,7 @@ import Contact from './contact/Contact';
 
 const Card = ({ about, resume, projects, contact }) => {
   return (
-    <div style={{ position: 'relative', margin: '15px 0' }}>
+    <div style={{ position: 'relative', margin: '15px 10px' }}>
       <About about={about} />
       <Resume resume={resume} />
       <Projects projects={projects} />

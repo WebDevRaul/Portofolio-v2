@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bootstrap, portrait } from '../../../utils/responsive';
 
 const StyledAbout = styled.section`
   position: relative;
@@ -7,6 +8,7 @@ const StyledAbout = styled.section`
     height: 20px;
     display: block;
     background: var(--grey);
+    border-radius: var(--border);
     position: sticky;
     z-index: 20;
   }
@@ -26,6 +28,40 @@ const StyledAbout = styled.section`
     overflow: hidden;
     overflow-y: scroll;
     overflow: auto;
+  }
+
+  @media ${bootstrap.lg} {
+    .about {
+      height: 100%;
+      overflow: unset;
+      overflow-y: unset;
+      padding: 0 50px;
+    }
+    .slideInRight, .slideOutRight {
+      animation: unset;
+      transform: translateX(0);
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+    }
+  }
+  @media ${portrait.laptopL} {
+
+  }
+  @media ${portrait.laptop} {
+
+  }
+  @media ${portrait.tablet} {
+    .about {
+      padding: 0px;
+    }
+  }
+  @media ${portrait.mobileL} {
+
+  }
+  @media ${portrait.mobileM} {
+    
   }
 `
 
