@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { bootstrap } from '../../utils/responsive';
+import { bootstrap, portrait } from '../../utils/responsive';
 
 const StyledNavbar = styled.nav`
   ul {
@@ -46,6 +46,11 @@ const StyledNavbar = styled.nav`
       }
     }
   }
+  @media ${portrait.tablet} {
+    ul {
+      margin: 15px 10px 0 10px;
+    }
+  }
   @media ${bootstrap.sm} {
     ul {
       display: flex;
@@ -65,6 +70,12 @@ const StyledNavbar = styled.nav`
         }
         ::after {
           display: none;
+        }
+        div {
+          padding: 8px 0;
+          span {
+            font-size: 1.1em;
+          }
         }
       }
     }

@@ -11,9 +11,11 @@ const Wrapper = () => {
     <div className='row no-gutters'>
       <div className='col-12 col-lg-5'>
         <div className='row no-gutters'>
-          <div className='col-11 col-sm-11 col-md-8 col-lg-12 d-sm-flex m-auto'>
-              <Navbar state={state} setState={setState} />
-              <Profile />
+          <div className='col-12 col-sm-12 col-md-8 col-lg-12 m-auto'>
+              <div className='d-sm-flex m-auto' style={{ maxWidth: '480px' }}>
+                <Navbar state={state} setState={setState} />
+                <Profile />
+              </div>
           </div>
         </div>
       </div>

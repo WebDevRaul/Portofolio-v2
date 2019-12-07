@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { portrait, bootstrap } from '../../utils/responsive';
 
 const StyledProfile = styled.section`
   width: 100%;
@@ -12,7 +13,7 @@ const StyledProfile = styled.section`
     background: var(--grey);
     border-radius: var(--border);
     z-index: 10;
-    /* max-width: 500px; */
+    max-width: 400px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
     ::before {
       content: '';
@@ -56,6 +57,79 @@ const StyledProfile = styled.section`
       li {
         margin: 0 5px;
         color: var(--darkWhite);
+      }
+    }
+  }
+  @media ${portrait.laptop} {
+    .profile {
+      .photo {
+        margin-bottom: 20px;
+        width: 140px;
+        height: 140px;
+        ::before {
+          width: 140px;
+          height: 140px;
+          top: 10px;
+          left: -10px;
+        }
+      }
+      h3 {
+        font-size: 2.2em;
+      }
+      ul {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @media ${portrait.tablet} {
+    margin-right: 10px;
+    .photo {
+      margin-bottom: 20px;
+      width: 110px;
+      height: 110px;
+      ::before {
+        width: 110px;
+        height: 110px;
+        top: 8px;
+        left: -8px;
+      }
+    }
+  }
+  @media ${bootstrap.sm} {
+    .profile {
+      margin: 0 auto;
+      .photo {
+        margin-bottom: 20px;
+        width: 118px;
+        height: 118px;
+        ::before {
+          width: 118px;
+          height: 118px;
+          top: 9px;
+          left: -9px;
+        }
+      }
+      ul {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media ${portrait.mobileL} {
+    .profile {
+      margin: 0 15px;
+      .photo {
+        margin-bottom: 30px;
+        width: 100px;
+        height: 100px;
+        ::before {
+          width: 100px;
+          height: 100px;
+          top: 7px;
+          left: -7px;
+        }
+      }
+      ul {
+        margin-bottom: 30px;
       }
     }
   }

@@ -34,11 +34,17 @@ const StyledLayout = styled.main`
     h1 {
       font-size: 3.4em
     }
+    h3 {
+      font-size: 2.4em;
+    }
   }
   @media ${portrait.mobileL} {
     font-size: .7em;
     h5 {
       font-size: 1.4em;
+    }
+    h3 {
+      font-size: 2.2em;
     }
     h1 {
       font-size: 3.2em

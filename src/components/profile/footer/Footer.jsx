@@ -9,12 +9,14 @@ const Footer = () => {
   const onDownload = () => {};
   return (
     <StyledFooter>
-      <div className='right'>
-        <CustomButton text='download cv' onClick={onDownload} isLogo={<GetApp />} />
-      </div>
-      <div className='middle' />
-      <div className='left'>
-        <CustomButton text='contact me' onClick={onDownload} isLogo={<KeyboardCapslockIcon />} />
+      <div className='footer'>
+        <div className='right'>
+          <CustomButton text='download cv' onClick={onDownload} isLogo={<GetApp />} />
+        </div>
+        <div className='middle' />
+        <div className='left'>
+          <CustomButton text='contact me' onClick={onDownload} isLogo={<KeyboardCapslockIcon />} />
+        </div>
       </div>
     </StyledFooter>
   )

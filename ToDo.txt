@@ -1,4 +1,6 @@
-link for navbar insted of div (clear css div:hover)
+fix review
+
+
 // eslint-disable-next-line
 
 @media ${portrait.laptopL} {

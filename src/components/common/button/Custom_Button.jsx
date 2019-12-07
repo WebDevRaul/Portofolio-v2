@@ -13,7 +13,7 @@ const CustomButton = ({ text, onClick, isLogo, isLoading, type }) => (
       <>
         { isLoading 
           ? <>spinner</> 
-          : <>{text} { isLogo && <span className='material-icons'>{isLogo}</span> }</>
+          : <><p className='mb-0'>{text}</p> { isLogo && <span>{isLogo}</span> }</>
         }
       </>
     </button>

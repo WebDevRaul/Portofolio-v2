@@ -21,7 +21,7 @@ const background = graphql`
   query {
     desktop: file(relativePath: { eq: "background.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
+        fluid(maxWidth: 800, fit: CONTAIN) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
