@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { portrait } from '../../../../utils/responsive';
 
 const StyledPricing = styled.div`
   margin-bottom: 30px;
@@ -129,6 +130,36 @@ const StyledPricing = styled.div`
     ::before {
       bottom: -1px;
       background: var(--bgFromBottom);
+    }
+  }
+  @media ${portrait.laptopL} {
+
+  }
+  @media ${portrait.laptop} {
+
+  }
+  @media ${portrait.tablet} {
+
+  }
+  @media ${portrait.mobileL} {
+
+  }
+  @media ${portrait.mobileM} {
+    .wrapper {
+      margin: 0 5px;
+      .pricing {
+        .box {
+          padding: 10px !important;
+          h5 {
+            margin-bottom: 10px !important;
+          }
+        }
+        .logo {
+          svg {
+            font-size: 2.5em;
+          }
+        }
+      }
     }
   }
 `

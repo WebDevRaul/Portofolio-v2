@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { portrait } from '../../../../utils/responsive';
 
 const StyledReview = styled.div`
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   .review {
     position: relative;
     overflow: hidden;
@@ -75,6 +76,44 @@ const StyledReview = styled.div`
     .review-bottom {
       ::before, ::after {
         top: 142px
+      }
+    }
+  }
+  @media ${portrait.laptopL} {
+
+  }
+  @media ${portrait.laptop} {
+
+  }
+  @media ${portrait.tablet} {
+
+  }
+  @media ${portrait.mobileL} {
+    .review {
+      .box {
+        padding: 0px;
+        .photo {
+          width: 50px;
+          height: 50px;
+        }
+        h5 {
+          margin-bottom: 20px;
+          padding: 0 10px 0px 21px;
+          height: 50px;
+        }
+      }
+    }
+    .review-bottom {
+      ::before, ::after {
+        top: 107px !important;
+      }
+    }
+    .review-top, .review-bottom {
+      ::before {
+        left: 10px !important;
+      }
+      ::after {
+        right: 10px !important;
       }
     }
   }

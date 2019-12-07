@@ -17,7 +17,7 @@ const Users = [
   {
     name: 'Joe',
     photo: '/images2.jpg',
-    text: 'Joe Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas ea temporibus iste commodi ipsam.'
+    text: 'Joe Lorem ipsum dolor sit amet Joe Lorem ipsum dolor sit amet rehrherr consectetur adipisicing elit. Sed quas ea temporibus iste commodi ipsam.'
   },
 ];
 

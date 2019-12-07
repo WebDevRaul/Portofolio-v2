@@ -25,6 +25,12 @@ const StyledLayout = styled.main`
     h5 {
       font-size: 1.5em;
     }
+    svg {
+      font-size: 2.4em;
+    }
+    .btn {
+      font-size: unset;
+    }
   }
   @media ${portrait.mobileL} {
     font-size: .7em;
@@ -32,11 +38,20 @@ const StyledLayout = styled.main`
     h5 {
       font-size: 1.4em;
     }
+    svg {
+      font-size: 2.2em;
+    }
   }
   @media ${portrait.mobileM} {
     font-size: .6em;
     h5 {
       font-size: 1.2em;
+    }
+    h1 {
+      font-size: 3em
+    }
+    svg {
+      font-size: 2em;
     }
     color: yellow !important;
   }

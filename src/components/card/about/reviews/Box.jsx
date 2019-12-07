@@ -12,7 +12,7 @@ const Box = ({ text, image, name, animate, left, right }) => {
     // eslint-disable-next-line
   },[animate, image]);
 
-  const lenght = text.length  > 99 ? true : false;
+  const length = (window.innerWidth > 425 || text.length > 155) ? true : false;
 
   return(
     <div className='box'>
@@ -20,13 +20,13 @@ const Box = ({ text, image, name, animate, left, right }) => {
         'slideInLeftShort': (state && left), 'slideOutRightShort': (!state && left),
         'slideInRightShort': (state && right), 'slideOutLefttShort': (!state && right)
         })}>
-        <h5 className={classnames('d-flex', {'align-items-center': !lenght, 'padding-top': lenght})}>{text}</h5>
+        <h5 className={classnames('d-flex', {'align-items-center': !length, 'padding-top': length})}>{text}</h5>
       </div>
-      <div className={classnames('text-center', {'fadeIn': state, 'fadeOut': !state })}>
+      <div className={classnames({'fadeIn': state, 'fadeOut': !state })}>
         <div className='photo'>
           <Img fluid={image} />
         </div>
-        <p>{name}</p>
+        <p className='text-center'>{name}</p>
       </div>
     </div>
   )

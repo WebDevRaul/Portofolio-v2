@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { portrait } from '../../../../utils/responsive';
 
 const StyledServices = styled.div`
   margin-bottom: 30px;
@@ -7,14 +8,14 @@ const StyledServices = styled.div`
     flex-direction: column;
     align-items: center;
     width: 50%;
-    min-height: 200px;
+    min-height: 150px;
+    height: 100%;
     padding: 10px;
     .logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 50px;
-      height: 50px;
+      padding: 16px;
       margin: 15px;
       transform: rotate(45deg);
       border-radius: var(--border);
@@ -55,14 +56,14 @@ const StyledServices = styled.div`
           background: var(--bgFromBottom);
         }
       }
-      :nth-child(2) {
-        margin: 1px;
-      }
     }
   }
   .second {
     .box {
       position: relative;
+      :nth-child(1) {
+        margin-right: 2px;
+      }
       :nth-last-child(1) {
         ::after {
           content: '';
@@ -72,6 +73,7 @@ const StyledServices = styled.div`
           width: 100%;
           height: 1px;
           background: var(--bgToLeft);
+          margin-right: 1px;
         }
         ::before {
           content: '';
@@ -82,6 +84,28 @@ const StyledServices = styled.div`
           right: 100%;
           top: 0;
           background: var(--bgFromTop);
+        }
+      }
+    }
+  }
+  @media ${portrait.laptopL} {
+
+  }
+  @media ${portrait.laptop} {
+
+  }
+  @media ${portrait.tablet} {
+
+  }
+  @media ${portrait.mobileL} {
+
+  }
+  @media ${portrait.mobileM} {
+    .first, .second {
+      .box {
+        height: 100%;
+        .logo {
+          padding: 7.5px;
         }
       }
     }

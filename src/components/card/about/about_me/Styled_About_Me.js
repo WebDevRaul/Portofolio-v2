@@ -43,8 +43,7 @@ const StyledAboutMe = styled.div`
       justify-content: space-between;
       align-items: center;
       height: 50px;
-      margin: 10px;
-      padding: 3px 0;
+      margin: 5px 10px;
       position: relative;
       ::after {
         content: '';
@@ -76,14 +75,12 @@ const StyledAboutMe = styled.div`
       }
     }
     p {
-      text-align: justify;
       padding: 5px;
       margin-bottom: 0px;
       color: var(--darkWhite);
       letter-spacing: var(--spacing);
     }
   }
-
   @media ${portrait.laptopL} {
 
   }
@@ -97,7 +94,7 @@ const StyledAboutMe = styled.div`
 
   }
   @media ${portrait.mobileM} {
-
+    
   }
 `
 
