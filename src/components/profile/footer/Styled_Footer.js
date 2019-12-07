@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { portrait, bootstrap } from '../../../utils/responsive';
+import { bootstrap } from '../../../utils/responsive';
 
 const StyledFooter = styled.div`
   width: 100%;
@@ -20,9 +20,12 @@ const StyledFooter = styled.div`
       justify-content: center;
       width: 100%;
       .btn {
-        margin: 15px 0;
+        margin: 8px 0;
         display: flex;
         align-items: center;
+        p {
+          font-size: .6em;
+        }
       }
     }
     .right, .left, .middle {
@@ -51,7 +54,7 @@ const StyledFooter = styled.div`
     .middle {
       ::after {
         width: 1px;
-        height: 68px;
+        height: 54px;
         background: var(--bgFromTop);
       }
     }
@@ -60,8 +63,6 @@ const StyledFooter = styled.div`
     .footer {
       .left, .right {
         .btn {
-          margin: 8px 0;
-          display: flex;
           p {
             font-size: .9em;
           }

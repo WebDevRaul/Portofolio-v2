@@ -48,7 +48,7 @@ const StyledNavbar = styled.nav`
   }
   @media ${portrait.tablet} {
     ul {
-      margin: 15px 10px 0 10px;
+      margin: 15px 10px 0 0;
     }
   }
   @media ${bootstrap.sm} {

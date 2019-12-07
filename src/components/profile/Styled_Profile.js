@@ -29,14 +29,14 @@ const StyledProfile = styled.section`
     }
     .photo {
       position: relative;
-      width: 150px;
-      height: 150px;
-      margin-bottom: 24px;
+      width: 135px;
+      height: 135px;
+      margin-bottom: 20px;
       ::before {
         content: '';
         position: absolute;
-        width: 150px;
-        height: 150px;
+        width: 135px;
+        height: 135px;
         border-radius: 75px;
         top: 10px;
         left: -10px;
@@ -53,17 +53,16 @@ const StyledProfile = styled.section`
     ul {
       display: flex;
       justify-content: center;
-      margin-bottom: 45px;
+      margin-bottom: 20px;
       li {
         margin: 0 5px;
         color: var(--darkWhite);
       }
     }
   }
-  @media ${portrait.laptop} {
+  @media ${bootstrap.lg} {
     .profile {
       .photo {
-        margin-bottom: 20px;
         width: 140px;
         height: 140px;
         ::before {
@@ -82,9 +81,7 @@ const StyledProfile = styled.section`
     }
   }
   @media ${portrait.tablet} {
-    margin-right: 10px;
     .photo {
-      margin-bottom: 20px;
       width: 110px;
       height: 110px;
       ::before {
@@ -99,7 +96,6 @@ const StyledProfile = styled.section`
     .profile {
       margin: 0 auto;
       .photo {
-        margin-bottom: 20px;
         width: 118px;
         height: 118px;
         ::before {
@@ -116,7 +112,7 @@ const StyledProfile = styled.section`
   }
   @media ${portrait.mobileL} {
     .profile {
-      margin: 0 15px;
+      margin: 0 16px;
       .photo {
         margin-bottom: 30px;
         width: 100px;

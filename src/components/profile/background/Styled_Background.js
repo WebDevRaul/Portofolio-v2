@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { portrait, bootstrap } from '../../../utils/responsive';
 
 const StyledBckground = styled.div`
   width: 100%;
@@ -24,7 +23,7 @@ const StyledBckground = styled.div`
         position: absolute;
         width: 100%;
         height: 100px;
-        bottom: -80px;
+        bottom: -20px;
         left: -40px;
         transform: rotate(10deg);
         background: var(--grey);
@@ -35,37 +34,10 @@ const StyledBckground = styled.div`
         position: absolute;
         width: 100%;
         height: 100px;
-        bottom: -80px;
+        bottom: -20px;
         right: -40px;
         transform: rotate(-10deg);
         background: var(--grey);
-      }
-    }
-  }
-  @media ${bootstrap.lg} {
-    .wrapper {
-      .background {
-        ::before, ::after {
-          bottom: -20px !important;
-        }
-      }
-    }
-  }
-  @media ${bootstrap.sm} {
-    .wrapper {
-      .background {
-        ::before, ::after {
-          bottom: -20px !important;
-        }
-      }
-    }
-  }
-  @media ${portrait.mobileL} {
-    .wrapper {
-      .background {
-        ::before, ::after {
-          bottom: -30px !important;
-        }
       }
     }
   }
