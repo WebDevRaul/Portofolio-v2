@@ -46,22 +46,15 @@ const StyledAbout = styled.section`
       -o-transform: translateX(0%);
     }
   }
-  @media ${portrait.laptopL} {
-
-  }
-  @media ${portrait.laptop} {
-
-  }
   @media ${portrait.tablet} {
+    .about {
+      padding: 0 25px;
+    }
+  }
+  @media ${bootstrap.sm} {
     .about {
       padding: 0px;
     }
-  }
-  @media ${portrait.mobileL} {
-
-  }
-  @media ${portrait.mobileM} {
-    
   }
 `
 

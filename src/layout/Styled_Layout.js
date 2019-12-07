@@ -17,13 +17,11 @@ const StyledLayout = styled.main`
   }
   @media ${portrait.laptop} {
     font-size: .9em;
-    color: red !important;
   }
   @media ${portrait.tablet} {
     font-size: .8em;
-    color: blue !important;
     h5 {
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
     svg {
       font-size: 2.4em;
@@ -32,11 +30,18 @@ const StyledLayout = styled.main`
       font-size: unset;
     }
   }
+  @media ${bootstrap.sm} {
+    h1 {
+      font-size: 3.4em
+    }
+  }
   @media ${portrait.mobileL} {
     font-size: .7em;
-    color: green !important;
     h5 {
       font-size: 1.4em;
+    }
+    h1 {
+      font-size: 3.2em
     }
     svg {
       font-size: 2.2em;
@@ -53,7 +58,6 @@ const StyledLayout = styled.main`
     svg {
       font-size: 2em;
     }
-    color: yellow !important;
   }
 `
 

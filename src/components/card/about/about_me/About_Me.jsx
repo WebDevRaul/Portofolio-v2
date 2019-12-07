@@ -14,10 +14,10 @@ const AboutMe = () => (
           <Text />
         </div>
         <div className='col-6'>
-          <Li span='Age . . . . .' p='36' />
-          <Li span='Country . . .' p='Moldova' />
-          <Li span='Address . . .' p='Chisinau, MDA' />
-          <Li span='Freelance' p='Available' />
+          <Li span='Age . . . . . . . .' p='36' />
+          <Li span='Country . . . . . .' p='Moldova' />
+          <Li span='Address . . . . . .' p='Chisinau, MDA' />
+          <Li span='Freelance . . . .' p='Available' />
         </div>
       </div>
     </div>

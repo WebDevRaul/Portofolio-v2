@@ -1,8 +1,8 @@
 const Users = [
   {
-    name: 'Gatsby',
+    name: 'Gatsby 112',
     photo: '/gatsby-icon.png',
-    text: 'Gatsby Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas ea temporibus iste commodi ipsam tempore enim modi ducimus veniam.sit amet consectetur adipisicing elit. Sed quas ea temporibus iste commodi ipsam tempore enim modi ducimus veniam.'
+    text: 'Gatsby da Lorem ipsum dolor sit amet sd sd dsdad sda daf fasf wfrawfsfsf consectda adad adada dsa dasdajk dasdasda'
   },
   {
     name: 'Background',
@@ -15,9 +15,9 @@ const Users = [
     text: 'Trandafir Lorem ipsum dolor sit amet consectetur adipisicing elit.'
   },
   {
-    name: 'Joe',
+    name: 'Joe 154',
     photo: '/images2.jpg',
-    text: 'Joe Lorem ipsum dolor sit amet Joe Lorem ipsum dolor sit amet rehrherr consectetur adipisicing elit. Sed quas ea temporibus iste commodi ipsam.'
+    text: 'Trandafir Lorem ipsum dolor sit amet sd sd dsdad sda daf fasf wfrawfsfsf consectda adad adada dadaetur adipisic dsa dasda dasdasda asdasdsd dsds ddsing el'
   },
 ];
 

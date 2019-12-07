@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { portrait } from '../../../../utils/responsive';
 
 const StyledAboutMe = styled.div`
   .about-me {
@@ -72,29 +71,15 @@ const StyledAboutMe = styled.div`
       p {
         width: 50%;
         text-align: end;
+        padding-right: 0px;
       }
     }
     p {
-      padding: 5px;
+      padding: 10px;
       margin-bottom: 0px;
       color: var(--darkWhite);
       letter-spacing: var(--spacing);
     }
-  }
-  @media ${portrait.laptopL} {
-
-  }
-  @media ${portrait.laptop} {
-
-  }
-  @media ${portrait.tablet} {
-
-  }
-  @media ${portrait.mobileL} {
-
-  }
-  @media ${portrait.mobileM} {
-    
   }
 `
 

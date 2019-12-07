@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { portrait } from '../../../../utils/responsive';
+import { bootstrap } from '../../../../utils/responsive';
 
 const StyledPricing = styled.div`
   margin-bottom: 30px;
@@ -24,6 +24,9 @@ const StyledPricing = styled.div`
         }
         .logo {
           color: var(--primary);
+          svg {
+            font-size: 2.7em;
+          }
         }
         h5 {
           :nth-last-child(1) {
@@ -132,19 +135,8 @@ const StyledPricing = styled.div`
       background: var(--bgFromBottom);
     }
   }
-  @media ${portrait.laptopL} {
 
-  }
-  @media ${portrait.laptop} {
-
-  }
-  @media ${portrait.tablet} {
-
-  }
-  @media ${portrait.mobileL} {
-
-  }
-  @media ${portrait.mobileM} {
+  @media ${bootstrap.sm} {
     .wrapper {
       margin: 0 5px;
       .pricing {

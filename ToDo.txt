@@ -1,2 +1,18 @@
 link for navbar insted of div (clear css div:hover)
 // eslint-disable-next-line
+
+@media ${portrait.laptopL} {
+
+}
+@media ${portrait.laptop} {
+
+}
+@media ${portrait.tablet} {
+
+}
+@media ${portrait.mobileL} {
+
+}
+@media ${portrait.mobileM} {
+  
+}
