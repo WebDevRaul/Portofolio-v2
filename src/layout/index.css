@@ -46,11 +46,13 @@ a:hover {
   cursor: pointer;
 }
 
-button, input :focus{
+button, input, .form-input :focus{
   outline: none !important;
   box-shadow: none !important;
 }
-
+input :hover {
+  cursor: unset;
+}
 ul {
   margin-bottom: 0px;
 }
@@ -62,8 +64,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--black);
-  box-shadow: 0 0 0px 1000px var(--lightWhite) inset;
-  -webkit-box-shadow: 0 0 0px 1000px var(--lightWhite) inset;
+  box-shadow: 0 0 0px 1000px var(--grey) inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--grey) inset !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 
