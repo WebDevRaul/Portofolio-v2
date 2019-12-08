@@ -62,6 +62,7 @@ const StyledProfile = styled.section`
   }
   @media ${bootstrap.lg} {
     .profile {
+      height: 468px;
       .photo {
         width: 140px;
         height: 140px;
