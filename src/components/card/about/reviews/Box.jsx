@@ -12,7 +12,7 @@ const Box = ({ text, image, name, animate, left, right }) => {
     // eslint-disable-next-line
   },[animate, image]);
 
-  const length = (window.innerWidth > 425 || text.length > 155) ? true : false;
+  const length = text.length > 155 ? true : false;
 
   return(
     <div className='box'>
