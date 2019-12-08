@@ -5,11 +5,11 @@ import isEmpty from '../../utils/is_Empty';
 
 import StyledInput from './Styled_Input';
 
-const Input = ({ name, label, value, focus, onChange, onFocus, type, error }) => {  
+const Input = ({ name, label, value, onChange, onFocus, type, error }) => {  
   const err = isEmpty(error) ? 0 : 1;
-  
+  const val = isEmpty(value) ? 0 : 1;
   return (
-    <StyledInput err={err}>
+    <StyledInput err={err} val={val}>
       <input 
         className='form-input'
         name={name}
@@ -20,7 +20,7 @@ const Input = ({ name, label, value, focus, onChange, onFocus, type, error }) =>
         autoComplete='off'
         required
       />
-      <label className={classnames('label', { 'shrink': !isEmpty(value) || !isEmpty(error) || focus })} >
+      <label className={classnames('label', { 'shrink': !isEmpty(value) || !isEmpty(error) })} >
         {error ? error : label}
       </label>
     </StyledInput>
@@ -37,7 +37,6 @@ Input.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onFocus: PropTypes.func.isRequired,
-  focus: PropTypes.bool.isRequired,
   type: PropTypes.string,
   error: PropTypes.string
 }

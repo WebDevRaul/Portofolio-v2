@@ -9,10 +9,17 @@ const Form = () => {
   const { name, email, text } = state;
 
   const onChange = e => setState({ ...state, [e.target.name]: e.target.value });
-  const onFocus = e => {}; 
+  const onFocus = e => {
+    if(name || email || text !== undefined) {
+      const field = Object.keys(error).filter(i => i === e.target.name )[0];
+      setError({ ...error, [field]: '' });
+    }
+  }; 
 
   const onSubmit = e => {
     e.preventDefault();
+    // Validation here
+    setError({ name: 'test', email: 'test', text: 'test' });
   }
 
   return (
@@ -49,6 +56,7 @@ const Form = () => {
           onFocus={onFocus}
           error={error.text}
         />
+        <button type='submit'>Send Message</button>
       </form>
     </StyledForm>
   )

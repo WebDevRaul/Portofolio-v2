@@ -6,17 +6,17 @@ const StyledTextarea = styled.div`
   .area {
     width: 100%;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, .4);
+    border: 1px solid;
+    border-color: ${({ val, err }) => err ? 'var(--red)' : val ? 'var(--primary)' : 'rgba(255, 255, 255, .4)'};
     border-radius: var(--border);
     overflow-y: hidden;
     resize: none;
     transition: var(--transition);
     background-color: transparent;
     color: var(--lightDark);
-    /* :focus {
-      outline: none !important;
-      box-shadow: none !important;
-    } */
+    :focus {
+      border-color: var(--primary);
+    }
     :focus ~ .label {
       top: -9px;
       left: 10px;
@@ -64,9 +64,10 @@ const StyledTextarea = styled.div`
     padding: 5px 8px 4px 8px;
     margin: 5px;
     background: var(--grey);
-    border: 1px solid rgba(255, 255, 255, .2);
+    border: 1px solid;
+    border-color: ${({ err }) => err ? 'var(--red)' : 'rgba(255, 255, 255, .2)'};
     border-radius: var(--border);
-    color: var(--primary);
+    color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'};
   }
   .over {
     color: var(--red);

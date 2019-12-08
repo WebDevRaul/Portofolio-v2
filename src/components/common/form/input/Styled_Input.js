@@ -10,7 +10,11 @@ const StyledInput = styled.div`
     background-color: transparent;
     border: none;
     color: var(--darkWhite);
-    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    border-bottom: 1px solid;
+    border-color: ${({ val, err }) => err ? 'var(--red)' : val ? 'var(--primary)' : 'rgba(255, 255, 255, .4)'};
+    :focus {
+      border-color: var(--primary);
+    }
     :focus ~ label {
       top: -7px;
       left: 10px;
@@ -32,15 +36,15 @@ const StyledInput = styled.div`
     font-size: .9em;
     transition: var(--transition);
     z-index: -10;
-    .shrink {
-      top: -7px;
-      left: 10px;
-      font-weight: 600;
-      letter-spacing: var(--spacing);
-      font-size: .6em;
-      transition: var(--transition);
-      color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'}
-    }
+  }
+  .shrink {
+    top: -7px;
+    left: 10px;
+    font-weight: 600;
+    letter-spacing: var(--spacing);
+    font-size: .6em;
+    transition: var(--transition);
+    color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'}
   }
 
 `
