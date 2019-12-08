@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Input from '../../../common/form/input/Input';
-import StyledForm from './Styled_Form';
 import TextArea from '../../../common/form/textarea/Textarea';
+import KeyboardCapslockIcon from '@material-ui/icons/KeyboardCapslock';
+import validateForm from './utils/validate';
+
+import StyledForm from './Styled_Form';
 
 const Form = () => {
   const [state, setState] = useState({ name: '', email: '', text: '' });
@@ -18,8 +21,9 @@ const Form = () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    // Validation here
-    setError({ name: 'test', email: 'test', text: 'test' });
+    const { errors, isValid } = validateForm(state);
+    if(!isValid) return setError({ ...error, ...errors });
+    console.log('proceed')
   }
 
   return (
@@ -56,7 +60,7 @@ const Form = () => {
           onFocus={onFocus}
           error={error.text}
         />
-        <button type='submit'>Send Message</button>
+        <button className='btn' type='submit'>Send Message <KeyboardCapslockIcon /></button>
       </form>
     </StyledForm>
   )
