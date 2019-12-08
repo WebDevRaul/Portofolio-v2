@@ -46,11 +46,11 @@ a:hover {
   cursor: pointer;
 }
 
-button, input, .form-input :focus{
+button, input, .form-input, textarea, .area :focus{
   outline: none !important;
   box-shadow: none !important;
 }
-input :hover {
+input, textarea :hover {
   cursor: unset;
 }
 ul {

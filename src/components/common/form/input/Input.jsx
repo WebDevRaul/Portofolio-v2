@@ -37,6 +37,7 @@ Input.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onFocus: PropTypes.func.isRequired,
+  focus: PropTypes.bool.isRequired,
   type: PropTypes.string,
   error: PropTypes.string
 }

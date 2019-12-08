@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Input from '../../../common/form/input/Input';
 import StyledForm from './Styled_Form';
+import TextArea from '../../../common/form/textarea/Textarea';
 
 const Form = () => {
   const [state, setState] = useState({ name: '', email: '', text: '' });
@@ -39,6 +40,15 @@ const Form = () => {
             type='email'
           />
         </div>
+        <TextArea 
+          name='text'
+          label='Your message here'
+          value={text}
+          focus={false}
+          onChange={onChange}
+          onFocus={onFocus}
+          error={error.text}
+        />
       </form>
     </StyledForm>
   )
