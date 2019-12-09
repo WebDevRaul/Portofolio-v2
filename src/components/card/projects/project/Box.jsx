@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from "gatsby-image";
+import Photo from './Photo';
 
 const Box = ({ image, title }) => {
   return (
-    <div className='col-6'>
+    <div className='col-5 m-auto'>
       <div className='project-box'>
-        <Img fixed={image} />
+        <Photo image={image} />
         <h5>{title}</h5>
       </div>
     </div>

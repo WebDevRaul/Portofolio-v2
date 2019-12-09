@@ -18,6 +18,9 @@ const StyledContact = styled.section`
   .bottom {
     bottom: 0;
   }
+  .zIndex {
+    z-index: 10
+  }
   .contact {
     position: absolute;
     bottom: 0;

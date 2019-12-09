@@ -18,6 +18,9 @@ const StyledProjects = styled.section`
   .bottom {
     bottom: 0;
   }
+  .zIndex {
+    z-index: 10
+  }
   .projects {
     position: absolute;
     bottom: 0;

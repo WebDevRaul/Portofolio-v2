@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { portrait, bootstrap } from '../../../utils/responsive';
 
 const StyledResume = styled.section`
-    position: relative;
+  position: relative;
   .top, .bottom {
     width: 100%;
     height: 20px;
@@ -17,6 +17,9 @@ const StyledResume = styled.section`
   }
   .bottom {
     bottom: 0;
+  }
+  .zIndex {
+    z-index: 10
   }
   .resume {
     position: absolute;

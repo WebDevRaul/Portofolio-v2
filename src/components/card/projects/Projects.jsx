@@ -9,7 +9,7 @@ import Project from './project/Project';
 const Projects = ({ projects }) => {
   return (
     <StyledProjects>
-       <div className={classnames('projects', {'slideInRight': projects, 'slideOutRight': !projects})}>
+       <div className={classnames('projects', {'slideInRight zIndex': projects, 'slideOutRight': !projects,})}>
         <i className='top' />
         <Title text='Recent Projects' />
         <Project />

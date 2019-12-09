@@ -18,6 +18,9 @@ const StyledAbout = styled.section`
   .bottom {
     bottom: 0;
   }
+  .zIndex {
+    z-index: 10
+  }
   .about {
     bottom: -12px;
     height: 82vh;

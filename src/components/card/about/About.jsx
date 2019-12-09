@@ -13,7 +13,7 @@ import StyledAbout from './Styled_About';
 const About = ({ about }) => {
   return (
     <StyledAbout>
-      <div className={classnames('about', {'slideInRight': about, 'slideOutRight': !about})}>
+      <div className={classnames('about', {'slideInRight zIndex': about, 'slideOutRight': !about})}>
         <i className='top' />
         <AboutMe />
         <Services />

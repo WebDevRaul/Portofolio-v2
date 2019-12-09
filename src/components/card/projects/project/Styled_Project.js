@@ -4,11 +4,12 @@ const StyledProject = styled.div`
   .project {
     padding: 10px;
     .project-box {
+      position: relative;
       width: 100%;
       margin: 10px auto;
       padding: 10px;
       text-align: center;
-      div {
+      .gatsby-image-wrapper {
         :hover {
           img {
             transition: var(--transition)!important;
@@ -18,10 +19,10 @@ const StyledProject = styled.div`
             cursor: pointer;
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0px;
+            left: 0px;
+            width: 200px;
+            height: 200px;
             background: linear-gradient(135deg, rgba(120, 205, 110, 0.2) 0%, rgba(120, 205, 110, 0.01) 100%);
             z-index: 10;
           }

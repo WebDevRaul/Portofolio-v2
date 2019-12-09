@@ -11,7 +11,7 @@ import StyledContact from './Styled_Contact';
 const Contact = ({ contact }) => {
   return (
     <StyledContact>
-      <div className={classnames('contact', {'slideInRight': contact, 'slideOutRight': !contact})}>
+      <div className={classnames('contact', {'slideInRight zIndex': contact, 'slideOutRight': !contact})}>
         <i className='top' />
         <Map />
         <Info />

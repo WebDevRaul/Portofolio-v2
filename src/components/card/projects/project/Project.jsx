@@ -25,7 +25,7 @@ const image = graphql`
   query {
     allImageSharp {
       nodes {
-        fixed(height: 250, width: 250) {
+        fixed(height: 170, width: 170) {
           ...GatsbyImageSharpFixed
         }
       }
