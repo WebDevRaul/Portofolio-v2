@@ -5,7 +5,7 @@ import Card from '../card/Card';
 import Profile from '../profile/Profile';
 
 const Wrapper = () => {
-  const [state, setState] = useState({ about: true, resume: false, projects: false, contact: false });
+  const [state, setState] = useState({ about: false, resume: false, projects: true, contact: false });
 
   return (
     <div className='row no-gutters'>

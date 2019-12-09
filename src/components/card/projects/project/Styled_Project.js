@@ -2,12 +2,10 @@ import styled from 'styled-components';
 
 const StyledProject = styled.div`
   .project {
-    padding: 10px;
     .project-box {
       position: relative;
       width: 100%;
       margin: 10px auto;
-      padding: 10px;
       text-align: center;
       .gatsby-image-wrapper {
         :hover {

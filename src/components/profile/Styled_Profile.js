@@ -3,6 +3,7 @@ import { portrait, bootstrap } from '../../utils/responsive';
 
 const StyledProfile = styled.section`
   width: 100%;
+  z-index: 20;
   .profile {
     height: calc(100vh - 100px);
     position: relative;

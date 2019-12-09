@@ -34,6 +34,9 @@ const StyledProjects = styled.section`
     overflow-y: scroll;
     overflow: auto;
   }
+  .scroll {
+    overflow: hidden;
+  }
 
   @media ${bootstrap.lg} {
     .projects {
