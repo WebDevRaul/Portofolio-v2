@@ -20,7 +20,7 @@ const StyledInput = styled.div`
       left: 10px;
       font-weight: 600;
       letter-spacing: var(--spacing);
-      font-size: .5em;
+      font-size: .6em;
       transition: var(--transition);
       color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'};
     }
@@ -42,7 +42,7 @@ const StyledInput = styled.div`
     left: 10px;
     font-weight: 600;
     letter-spacing: var(--spacing);
-    font-size: .5em;
+    font-size: .6em;
     transition: var(--transition);
     color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'}
   }

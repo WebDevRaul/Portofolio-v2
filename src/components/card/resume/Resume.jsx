@@ -8,7 +8,9 @@ const Resume = ({ resume }) => {
   return (
     <StyledResume>
        <div className={classnames('resume', {'slideInRight': resume, 'slideOutRight': !resume})}>
+         <i className='top' />
          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequuntur officiis adipisci iure aperiam quibusdam omnis ipsum maiores magni incidunt.
+         <i className='bottom' />
        </div>
     </StyledResume>
   )

@@ -21,7 +21,8 @@ const StyledContact = styled.section`
   .contact {
     position: absolute;
     bottom: 0;
-    height: 80vh;
+    height: 82vh;
+    width: 100%;
     padding: 0 10px 0 18px;
     background-color: var(--grey);
     border-radius: var(--border);

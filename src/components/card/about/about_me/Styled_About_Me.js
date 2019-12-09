@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const StyledAboutMe = styled.div`
   .about-me {
     margin-bottom: 30px;
-    padding-top: 10px;
     .row {
       .col-6 {
         :nth-child(1) {
