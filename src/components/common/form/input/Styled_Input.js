@@ -20,7 +20,7 @@ const StyledInput = styled.div`
       left: 10px;
       font-weight: 600;
       letter-spacing: var(--spacing);
-      font-size: .6em;
+      font-size: .5em;
       transition: var(--transition);
       color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'};
     }
@@ -33,7 +33,7 @@ const StyledInput = styled.div`
     letter-spacing: var(--spacing);
     text-transform: uppercase;
     font-weight: 500;
-    font-size: .9em;
+    font-size: .8em;
     transition: var(--transition);
     z-index: -10;
   }
@@ -42,7 +42,7 @@ const StyledInput = styled.div`
     left: 10px;
     font-weight: 600;
     letter-spacing: var(--spacing);
-    font-size: .6em;
+    font-size: .5em;
     transition: var(--transition);
     color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'}
   }

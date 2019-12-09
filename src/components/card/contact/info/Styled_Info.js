@@ -12,14 +12,8 @@ const StyledInfo = styled.div`
         justify-content: space-between;
         align-items: center;
         width: 50%;
-        padding: 15px 0;
+        padding: 10px;
         margin: 5px 0;
-        :nth-child(1) {
-          padding: 0 10px;
-        }
-        :nth-last-child(1) {
-          padding: 0 10px;
-        }
         p {
           text-align: end;
         }

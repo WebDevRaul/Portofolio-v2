@@ -1,11 +1,9 @@
 import React from 'react';
 import Li from './Li';
 import StyledInfo from './Styled_Info';
-import Title from '../../../common/title/Title';
 
 const Info = () => (
   <StyledInfo>
-    <Title text='Get in Touch' />
     <div className='info'>
       <div className='first'>
         <Li span='Address . . . . . .' p='Chisinau, MDA' />

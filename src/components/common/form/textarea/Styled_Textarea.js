@@ -26,7 +26,7 @@ const StyledTextarea = styled.div`
       padding: 5px 10px;
       font-weight: 600;
       letter-spacing: var(--spacing);
-      font-size: .6em;
+      font-size: .5em;
       transition: var(--transition);
       color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'};
       z-index: 10;
@@ -34,13 +34,13 @@ const StyledTextarea = styled.div`
   }
   .label {
     position: absolute;
-    top: 13px;
+    top: 14px;
     left: 20px;
     color: var(--darkWhite);
     letter-spacing: var(--spacing);
     text-transform: uppercase;
     font-weight: 500;
-    font-size: .9em;
+    font-size: .8em;
     transition: var(--transition);
     z-index: -10;
   }
@@ -53,14 +53,14 @@ const StyledTextarea = styled.div`
     padding: 5px 10px;
     font-weight: 600;
     letter-spacing: var(--spacing);
-    font-size: .6em;
+    font-size: .5em;
     transition: var(--transition);
     color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'};
     z-index: 10;
   }
   .badge {
     position: absolute;
-    right: 5px;
+    right: 15px;
     top: -13px;
     padding: 5px 8px 4px 8px;
     margin: 5px;
