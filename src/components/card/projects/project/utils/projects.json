@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "background",
+    "description": "background",
+    "website": "www.google.com",
+    "photo": "/background.jpg"
+  },
+  {
+    "id": 2,
+    "title": "gatsby",
+    "description": "gatsby",
+    "website": "www.google.com",
+    "photo": "/gatsby-icon.png"
+  },
+  {
+    "id": 3,
+    "title": "image",
+    "description": "image",
+    "website": "www.google.com",
+    "photo": "/images2.jpg"
+  },
+  {
+    "id": 4,
+    "title": "placeholder",
+    "description": "placeholder",
+    "website": "www.google.com",
+    "photo": "/placeholder.jpg"
+  }
+]

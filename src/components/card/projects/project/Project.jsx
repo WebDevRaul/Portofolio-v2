@@ -1,16 +1,36 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from "gatsby";
+import Box from './Box.jsx';
+import StyledProject from './Styled_Project.js';
 
-const Project = props => {
+const projects = require('./utils/projects.json');
+
+const Project = () => {
+  const { nodes } = useStaticQuery(image).allImageSharp;
   return (
-    <div>
-      
-    </div>
+    <StyledProject>
+      <div className='project row no-gutters'>
+        {
+          nodes.map((node, index) => {
+            const project = projects.filter(el => el.photo === node.fixed.src.slice(node.fixed.src.lastIndexOf('/')))[0];
+            return <Box key={index} image={node.fixed} {...project} />
+          })
+        }
+      </div>
+    </StyledProject>
   )
 }
 
-Project.propTypes = {
-
-}
+const image = graphql`
+  query {
+    allImageSharp {
+      nodes {
+        fixed(height: 250, width: 250) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default Project;
