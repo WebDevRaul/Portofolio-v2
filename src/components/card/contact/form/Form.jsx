@@ -5,6 +5,7 @@ import KeyboardCapslockIcon from '@material-ui/icons/KeyboardCapslock';
 import validateForm from './utils/validate';
 
 import StyledForm from './Styled_Form';
+import Title from '../../../common/title/Title';
 
 const Form = () => {
   const [state, setState] = useState({ name: '', email: '', text: '' });
@@ -28,6 +29,7 @@ const Form = () => {
 
   return (
     <StyledForm>
+      <Title text='Contact Form' />
       <form noValidate onSubmit={onSubmit}>
         <div className='data'>
           <Input

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const StyledTextarea = styled.div`
   position: relative;
   margin: 25px 0;
+  padding: 0 10px;
   .area {
     width: 100%;
     padding: 10px;
@@ -19,7 +20,7 @@ const StyledTextarea = styled.div`
     }
     :focus ~ .label {
       top: -9px;
-      left: 10px;
+      left: 20px;
       background-color: var(--grey);
       border-radius: var(--border);
       padding: 5px 10px;
@@ -33,8 +34,8 @@ const StyledTextarea = styled.div`
   }
   .label {
     position: absolute;
-    top: 11px;
-    left: 10px;
+    top: 13px;
+    left: 20px;
     color: var(--darkWhite);
     letter-spacing: var(--spacing);
     text-transform: uppercase;
@@ -46,7 +47,7 @@ const StyledTextarea = styled.div`
   .shrink {
     position: absolute;
     top: -9px;
-    left: 10px;
+    left: 20px;
     background-color: var(--grey);
     border-radius: var(--border);
     padding: 5px 10px;

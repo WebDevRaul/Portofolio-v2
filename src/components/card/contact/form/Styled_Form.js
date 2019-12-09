@@ -18,7 +18,6 @@ const StyledForm = styled.div`
       }
     }
     button {
-      padding-left: 0;
       display: flex;
       align-items: center;
       font-size: .9em;

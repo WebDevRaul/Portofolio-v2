@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const StyledInfo = styled.div`
   .info {
+    margin-bottom: 30px;
     .first, .second {
       display: flex;
       justify-content: space-between;
@@ -14,10 +15,10 @@ const StyledInfo = styled.div`
         padding: 15px 0;
         margin: 5px 0;
         :nth-child(1) {
-          padding-right: 10px;
+          padding: 0 10px;
         }
         :nth-last-child(1) {
-          padding-left: 10px;
+          padding: 0 10px;
         }
         p {
           text-align: end;
