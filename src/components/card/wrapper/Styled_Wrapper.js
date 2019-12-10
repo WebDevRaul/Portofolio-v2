@@ -1,29 +1,12 @@
 import styled from 'styled-components';
-import { portrait, bootstrap } from '../../../utils/responsive';
+import { bootstrap, portrait } from '../../../utils/responsive';
 
-const StyledProjects = styled.section`
+const StyledWrapper = styled.section`
   position: relative;
-  .top, .bottom {
-    width: 100%;
-    height: 20px;
-    display: block;
-    background: var(--grey);
-    border-radius: var(--border);
-    position: sticky;
-    z-index: 20;
-  }
-  .top {
-    top: 0;
-  }
-  .bottom {
-    bottom: 0;
-  }
-  .zIndex {
-    z-index: 10
-  }
-  .projects {
+  .wrapper {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    bottom: -12px;
     height: 82vh;
     width: 100%;
     padding: 0 10px 0 18px;
@@ -33,13 +16,27 @@ const StyledProjects = styled.section`
     overflow: hidden;
     overflow-y: scroll;
     overflow: auto;
+    .top, .bottom {
+      width: 100%;
+      height: 20px;
+      display: block;
+      background: var(--grey);
+      border-radius: var(--border);
+      position: sticky;
+      z-index: 20;
+    }
+    .top {
+      top: 0;
+    }
+    .bottom {
+      bottom: 0;
+    }
   }
-  .scroll {
-    overflow: hidden;
+  .zIndex {
+    z-index: 10
   }
-
   @media ${bootstrap.lg} {
-    .projects {
+    .wrapper {
       height: 100%;
       overflow: unset;
       overflow-y: unset;
@@ -55,15 +52,15 @@ const StyledProjects = styled.section`
     }
   }
   @media ${portrait.tablet} {
-    .projects {
+    .wrapper {
       padding: 0 25px;
     }
   }
   @media ${bootstrap.sm} {
-    .projects {
+    .wrapper {
       padding: 0px;
     }
   }
 `
 
-export default StyledProjects;
+export default StyledWrapper;

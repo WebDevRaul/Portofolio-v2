@@ -3,6 +3,7 @@ import React from 'react';
 import Title from '../../../common/title/Title';
 import Li from './Li';
 import Text from './Text';
+
 import StyledAboutMe from './Styled_About_Me';
 
 const AboutMe = () => (
