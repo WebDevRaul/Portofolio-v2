@@ -1,17 +1,22 @@
-.top {
+.top, .n-top, .bottom, .left, .n-left, .right {
   position: absolute;
+}
+.top {
   top: 0
 }
+.n-top {
+  top: -1px;
+}
 .bottom {
-  position: absolute;
   bottom: 0
 }
 .left {
-  position: absolute;
   left: 0
 }
+.n-left {
+  left: -1px;
+}
 .right {
-  position: absolute;
   right: 0
 }
 .to-left, .to-right, .from-top, .from-bottom{
@@ -31,8 +36,8 @@
   background: var(--bgToLeft)
 }
 .from-top{
-  background: var(--bgFromBottom)
+  background: var(--bgFromTop)
 }
 .from-bottom{
-  background: var(--bgFromTop)
+  background: var(--bgFromBottom)
 }

@@ -15,12 +15,12 @@ const AboutMe = () => (
       <Title text='About Me' />
       <div className='row no-gutters'>
         <div className='col-6'>
-          <ToLeft width={100} />
+          <ToLeft isClass='' width={100} />
           <Text />
           <FromTop isClass='top right' height={100} />
         </div>
         <div className='col-6'>
-          <ToRight width={100} />
+          <ToRight isClass='' width={100} />
           <Li span='Age . . . . . . . .' p='36' />
           <Li span='Country . . . . . .' p='Moldova' />
           <Li span='Address . . . . . .' p='Chisinau, MDA' />

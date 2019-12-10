@@ -5,11 +5,12 @@ const StyledServices = styled.div`
   margin-bottom: 30px;
   .services {
     .box {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 50%;
-      min-height: 210px;
+      min-height: 230px;
       height: 100%;
       padding: 10px;
       .logo {
@@ -32,62 +33,6 @@ const StyledServices = styled.div`
       p {
         color: var(--darkWhite);
         margin-bottom: 0px;
-      }
-    }
-    .first {
-      .box {
-        position: relative;
-        :nth-child(1) {
-          ::after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 1px;
-            background: var(--bgToRight);
-          }
-          ::before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 1px;
-            height: 100%;
-            left: 100%;
-            top: 0;
-            background: var(--bgFromBottom);
-          }
-        }
-      }
-    }
-    .second {
-      .box {
-        position: relative;
-        :nth-child(1) {
-          margin-right: 2px;
-        }
-        :nth-last-child(1) {
-          ::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: -1px;
-            width: 100%;
-            height: 1px;
-            background: var(--bgToLeft);
-            margin-right: 1px;
-          }
-          ::before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 1px;
-            height: 100%;
-            right: 100%;
-            top: 0;
-            background: var(--bgFromTop);
-          }
-        }
       }
     }
   }
