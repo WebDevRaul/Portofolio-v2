@@ -9,15 +9,16 @@ const Box = ({ image, title, show, setShow }) => {
   const rest = { image, title };
 
   const onOpen = () => {
+    if(modal) return;
     setClose(false);
     setTimeout(() => setShow(!show), 1900);
-    setModal(rest)
+    setModal()
   };
 
   const onClose = () => {
     setShow(!show);
     setClose(true);
-    setTimeout(() => setModal(!modal), 1900);
+    setTimeout(() => setModal(), 1900);
   }
 
   return (
