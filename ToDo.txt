@@ -1,4 +1,5 @@
 fix review
+onFocus Message set scroll to bottom
 
 
 // eslint-disable-next-line

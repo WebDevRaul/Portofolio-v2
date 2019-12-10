@@ -20,7 +20,7 @@ const Box = ({ text, image, name, animate, left, right }) => {
     <div className='box'>
       <div className='position-relative w-100'>
         <ToRight width={25} isClass='' />
-        <ToLeft width={25} isClass='right' />
+        <ToLeft width={25} isClass='right top' />
         <div className={classnames({
           'slideInLeftShort': (state && left), 'slideOutRightShort': (!state && left),
           'slideInRightShort': (state && right), 'slideOutLefttShort': (!state && right)

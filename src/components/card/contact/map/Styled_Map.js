@@ -2,22 +2,14 @@ import styled from 'styled-components';
 
 const StyledMap = styled.div`
   margin-bottom: 30px;
+  padding: 10px;
   h5 {
-    position: relative;
-    ::after {
-      position: absolute;
-      content: '';
-      bottom: -12.5px;
-      left: 10px;
-      width: 100%;
-      height: 1px;
-      background: var(--bgToLeft);
-    } 
+    padding: 0px;
   }
   .map {
-    padding: 10px;
+    padding: 15px 0;
     width: 100%;
-    height: 250px;
+    height: 260px;
     div > div {
       border-radius: var(--border);
     }

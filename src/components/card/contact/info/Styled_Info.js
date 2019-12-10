@@ -12,25 +12,10 @@ const StyledInfo = styled.div`
         justify-content: space-between;
         align-items: center;
         width: 50%;
-        padding: 10px;
+        padding: 10px 10px 15px 10px;
         margin: 5px 0;
         p {
           text-align: end;
-        }
-        .left, .right {
-          content: '';
-          position: absolute;
-          height: 1px;
-          width: 50%;
-          bottom: 0;
-        }
-        .left {
-          background: var(--bgToRight);
-          left: 0;
-        }
-        .right {
-          background: var(--bgToLeft);
-          right: 0;
         }
       }
     }
