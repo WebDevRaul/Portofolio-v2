@@ -1,24 +1,19 @@
-.top, .n-top, .bottom, .left, .n-left, .right {
+.top, .n-top, .p-top, .bottom, .n-bottom, .p-bottom, .left, .n-left, .p-left, .right, .n-right, .p-right {
   position: absolute;
 }
-.top {
-  top: 0
-}
-.n-top {
-  top: -1px;
-}
-.bottom {
-  bottom: 0
-}
-.left {
-  left: 0
-}
-.n-left {
-  left: -1px;
-}
-.right {
-  right: 0
-}
+.top { top: 0 }
+.n-top { top: -1px }
+.p-top { top: 1px }
+.bottom { bottom: 0 }
+.n-bottom { bottom: -1px }
+.p-bottom { bottom: 1px }
+.left { left: 0 }
+.n-left { left: -1px }
+.p-left { left: 1px }
+.right { right: 0 }
+.n-right { right: -1px }
+.p-right { right: 1px }
+
 .to-left, .to-right, .from-top, .from-bottom{
   content: '';
   display: block;

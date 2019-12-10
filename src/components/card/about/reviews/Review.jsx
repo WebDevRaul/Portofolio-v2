@@ -42,9 +42,7 @@ const Review = () => {
     <StyledReview>
       <div className='review'>
         <Title text='Review' />
-        <i className='review-top' />
-          <Box {...state} image={node} {...user} />
-        <i className='review-bottom' />
+        <Box {...state} image={node} {...user} />
         <Buttons onNext={onNext} onPrev={onPrev} />
       </div>
     </StyledReview>

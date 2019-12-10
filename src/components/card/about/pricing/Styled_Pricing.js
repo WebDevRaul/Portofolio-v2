@@ -4,8 +4,10 @@ import { bootstrap } from '../../../../utils/responsive';
 const StyledPricing = styled.div`
   margin-bottom: 30px;
   position: relative;
-  .wrapper {
+  .pricing-wrapper {
     position: relative;
+    width: 100%;
+    height: 100%;
     .pricing {
       display: flex;
       justify-content: space-around;
@@ -65,75 +67,6 @@ const StyledPricing = styled.div`
     display: flex;
     justify-content: space-around;
     margin: 16px 0;
-  }
-
-  .top-right, .top-left, .bottom-right, .bottom-left {
-    ::after, ::before {
-      content: '';
-      display: block;
-      position: absolute;
-    }
-    ::before {
-      width: 1px;
-    }
-  }
-  .top-right, .bottom-right {
-    ::after {
-      width: 25%;
-      height: 1px;
-    }
-    ::before {
-      height: 25%;
-    }
-  }
-  .top-right {
-    ::after {
-      left: 1px;
-      background: var(--bgToLeft);
-    }
-    ::before {
-      background: var(--bgFromTop);
-    }
-  }
-  .bottom-right {
-    ::after {
-      left: 1px;
-      background: var(--bgToLeft);
-    }
-    ::before {
-      bottom: -1px;
-      background: var(--bgFromBottom);
-    }
-  }
-
-  .top-left, .bottom-left {
-    ::after {
-      width: 25%;
-      height: 1px;
-    }
-    ::before {
-      height: 25%;
-      right: 0;
-    }
-  }
-  .top-left {
-    ::after {
-      right: 1px;
-      background: var(--bgToRight);
-    }
-    ::before {
-      background: var(--bgFromTop);
-    }
-  }
-  .bottom-left {
-    ::after {
-      right: 1px;
-      background: var(--bgToRight);
-    }
-    ::before {
-      bottom: -1px;
-      background: var(--bgFromBottom);
-    }
   }
 
   @media ${bootstrap.sm} {

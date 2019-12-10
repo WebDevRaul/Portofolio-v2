@@ -1,5 +1,4 @@
 import React from 'react';
-import StyledServices from './Styled_Services';
 import Title from '../../../common/title/Title';
 import Box from './Box';
 import DevicesOtherIcon from '@material-ui/icons/DevicesOther';
@@ -10,6 +9,8 @@ import FromTop from '../../../common/content/From_Top';
 import FromBottom from '../../../common/content/From_Bottom';
 import ToRight from '../../../common/content/To_Right';
 import ToLeft from '../../../common/content/To_Left';
+
+import StyledServices from './Styled_Services';
 
 const Services = () => (
   <StyledServices>

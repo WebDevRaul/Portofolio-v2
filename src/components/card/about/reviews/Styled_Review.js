@@ -4,9 +4,9 @@ import { portrait } from '../../../../utils/responsive';
 const StyledReview = styled.div`
   margin-bottom: 10px;
   .review {
-    position: relative;
     overflow: hidden;
     .box {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -14,7 +14,7 @@ const StyledReview = styled.div`
       margin-top: 25px;
       h5 {
         color: var(--darkWhite);
-        margin-bottom: 30px;
+        margin: 15px 10px;
         padding: 0 30px 0px 41px;
         opacity: 0.5;
         height: 75px;
@@ -54,39 +54,6 @@ const StyledReview = styled.div`
         }
       }
     }
-    .review-top, .review-bottom {
-      ::before, ::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 33%;
-        height: 1px;
-      }
-    }
-    .review-top, .review-bottom {
-      ::before {
-        left: 50px;
-        background: var(--bgToLeft);
-      }
-      ::after {
-        right: 50px;
-        background: var(--bgToRight);
-      }
-    }
-    .review-bottom {
-      ::before, ::after {
-        top: 142px
-      }
-    }
-  }
-  @media ${portrait.laptopL} {
-
-  }
-  @media ${portrait.laptop} {
-
-  }
-  @media ${portrait.tablet} {
-
   }
   @media ${portrait.mobileL} {
     .review {

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Img from "gatsby-image";
+import ToRight from '../../../common/content/To_Right';
+import ToLeft from '../../../common/content/To_Left';
 
 const Box = ({ text, image, name, animate, left, right }) => {
   const [state, setState] = useState(false);
@@ -16,13 +18,19 @@ const Box = ({ text, image, name, animate, left, right }) => {
 
   return(
     <div className='box'>
-      <div className={classnames({
-        'slideInLeftShort': (state && left), 'slideOutRightShort': (!state && left),
-        'slideInRightShort': (state && right), 'slideOutLefttShort': (!state && right)
+      <div className='position-relative w-100'>
+        <ToRight width={25} isClass='' />
+        <ToLeft width={25} isClass='right' />
+        <div className={classnames({
+          'slideInLeftShort': (state && left), 'slideOutRightShort': (!state && left),
+          'slideInRightShort': (state && right), 'slideOutLefttShort': (!state && right)
         })}>
-        <h5 className={classnames('d-flex', {'align-items-center': !length, 'padding-top': length})}>{text}</h5>
+          <h5 className={classnames('d-flex', {'align-items-center': !length, 'padding-top': length})}>{text}</h5>
+        </div>
+        <ToRight width={25} isClass='bottom' />
+        <ToLeft width={25} isClass='bottom right' />
       </div>
-      <div className={classnames({'fadeIn': state, 'fadeOut': !state })}>
+      <div className={classnames('mt-4',{'fadeIn': state, 'fadeOut': !state })}>
         <div className='photo'>
           <Img fluid={image} />
         </div>
