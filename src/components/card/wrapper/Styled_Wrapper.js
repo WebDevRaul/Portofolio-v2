@@ -32,6 +32,9 @@ const StyledWrapper = styled.section`
       bottom: 0;
     }
   }
+  .scroll {
+    overflow: hidden;
+  }
   .zIndex {
     z-index: 10
   }

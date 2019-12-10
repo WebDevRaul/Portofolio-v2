@@ -3,40 +3,37 @@ import PropTypes from 'prop-types';
 import Photo from './photo/Photo';
 import Modal from '../modal/Modal';
 
-const Box = ({ image, title, show, setShow }) => {
+const Box = ({ image, title }) => {
   const [modal, setModal] = useState(false);
-  const [close, setClose] = useState(false);
-  const rest = { image, title };
+  const [slide, setSlide] = useState(true);
+  const rest = { image, title }
 
   const onOpen = () => {
-    if(modal) return;
-    setClose(false);
-    setTimeout(() => setShow(!show), 1900);
-    setModal()
-  };
+    setSlide(true);
+    setModal(true);
+  }
 
   const onClose = () => {
-    setShow(!show);
-    setClose(true);
-    setTimeout(() => setModal(), 1900);
+    setSlide(false);
+    setTimeout(() => setModal(true))
   }
 
   return (
-    <div className='col-5 m-auto'>
-      <div className='project-box'>
-        <Photo image={image} onClick={onOpen} />
-        <h5>{title}</h5>
+    <>
+      <div className='col-5 m-auto'>
+        <div className='project-box'>
+          <Photo image={image} onClick={onOpen} />
+          <h5>{title}</h5>
+        </div>
       </div>
-      { modal && <Modal {...rest} onClose={onClose} close={close} /> }
-    </div>
+      { modal && <Modal {...rest} onClose={onClose} slide={slide} /> }
+    </>
   )
 }
 
 Box.propTypes = {
   image: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired,
-  show: PropTypes.bool.isRequired,
-  setShow: PropTypes.func.isRequired
+  title: PropTypes.string.isRequired
 }
 
 export default Box

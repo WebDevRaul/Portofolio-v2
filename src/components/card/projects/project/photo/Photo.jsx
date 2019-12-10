@@ -1,22 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Img from "gatsby-image";
-
-import StyledPhoto from './Styled_Photo';
+import ToRight from '../../../../common/content/To_Right';
+import FromTop from '../../../../common/content/From_Top';
+import ToLeft from '../../../../common/content/To_Left';
+import FromBottom from '../../../../common/content/From_Bottom';
 
 const Photo = ({ image, onClick }) => {
   return (
-    <StyledPhoto>
+    <div className='position-relative w-100'>
+      <ToRight width={25} isClass='' />
+      <ToLeft width={25} isClass='right top' />
+      <FromTop height={25} isClass='left' />
+      <FromTop height={25} isClass='right p-top' />
       <div className='photo'>
-        <i className='top-left' />
-        <i className='top-right' />
         <div onClick={onClick}>
           <Img fixed={image} />
         </div>
-        <i className='bottom-left' />
-        <i className='bottom-right' />
       </div>
-    </StyledPhoto>
+      <ToRight width={25} isClass='bottom' />
+      <ToLeft width={25} isClass='right bottom' />
+      <FromBottom height={25} isClass='left p-bottom' />
+      <FromBottom height={25} isClass='n-right bottom' />
+    </div>
   )
 }
 

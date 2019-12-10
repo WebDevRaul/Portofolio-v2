@@ -5,26 +5,24 @@ import Img from "gatsby-image";
 import CloseIcon from '@material-ui/icons/Close';
 
 import StyledModal from './Styled_Modal';
+import Wrapper from '../../wrapper/Wrapper';
 
-const Modal = ({ image, title, close, onClose }) => {
-  const onClick = () => {}
+const Modal = ({ image, title, slide, onClose }) => {
   return (
     <StyledModal>
-      <div className={classnames('modal', {'slideInRight': !close, 'slideOutRight': close})}>
-        <div onClick={onClose}><CloseIcon /></div>
-        <div className='photo' onClick={onClick}>
+      <Wrapper slide={slide}>
+        <div className='modal'>
+          <div onClick={onClose}><CloseIcon /></div>
           <Img fixed={image} />
         </div>
-      </div>
+      </Wrapper>
     </StyledModal>
   )
 }
 
 Modal.propTypes = {
   image: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired,
-  close: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired
+  title: PropTypes.string.isRequired
 }
 
 export default Modal;

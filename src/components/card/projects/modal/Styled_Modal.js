@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 const StyledModal = styled.div`
+  position: absolute;
+  background: black;
+  width: 100%;
+  left: 0px;
+  top: 0;
+  z-index: 50;
   .modal {
     display: flex;
-    width: 100%;
-    height: 100%;
-    background: var(--grey);
-    z-index: 50;
+    background-color: red;
   }
 `
 
