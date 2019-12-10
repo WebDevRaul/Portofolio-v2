@@ -7,9 +7,9 @@ import StyledWrapper from './Styled_Wrapper';
 const Wrapper = ({ children, slide }) => (
   <StyledWrapper>
     <div className={classnames('wrapper', {'slideInRight zIndex': slide, 'slideOutRight': !slide})}>
-      <i className='top' />
+      <i className='content-top' />
       {children}
-      <i className='bottom' />
+      <i className='content-bottom' />
     </div>
   </StyledWrapper>
 )

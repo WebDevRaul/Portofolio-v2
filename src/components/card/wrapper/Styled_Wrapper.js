@@ -16,7 +16,7 @@ const StyledWrapper = styled.section`
     overflow: hidden;
     overflow-y: scroll;
     overflow: auto;
-    .top, .bottom {
+    .content-top, .content-bottom {
       width: 100%;
       height: 20px;
       display: block;
@@ -25,10 +25,10 @@ const StyledWrapper = styled.section`
       position: sticky;
       z-index: 20;
     }
-    .top {
+    .content-top {
       top: 0;
     }
-    .bottom {
+    .content-bottom {
       bottom: 0;
     }
   }

@@ -1,0 +1,38 @@
+.top {
+  position: absolute;
+  top: 0
+}
+.bottom {
+  position: absolute;
+  bottom: 0
+}
+.left {
+  position: absolute;
+  left: 0
+}
+.right {
+  position: absolute;
+  right: 0
+}
+.to-left, .to-right, .from-top, .from-bottom{
+  content: '';
+  display: block;
+}
+.to-left, .to-right{
+  height: 1px;
+}
+.from-top, .from-bottom{
+  width: 1px;
+}
+.to-left{
+  background: var(--bgToRight)
+}
+.to-right{
+  background: var(--bgToLeft)
+}
+.from-top{
+  background: var(--bgFromBottom)
+}
+.from-bottom{
+  background: var(--bgFromTop)
+}
