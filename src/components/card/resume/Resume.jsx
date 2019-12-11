@@ -1,8 +1,9 @@
 import React from 'react';
+import CardOne from './card_one/Card_One';
 
 const Resume = () => (
   <>
-    resume
+    <CardOne />
   </>
 )
 
