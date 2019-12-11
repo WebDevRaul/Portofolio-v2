@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Wrapper from '../../wrapper/Wrapper';
 import CloseIcon from '@material-ui/icons/Close';
@@ -10,25 +10,38 @@ import CustomButton from '../../../common/button/Custom_Button';
 import StyledModal from './Styled_Modal';
 
 const Modal = ({ slide, onClose, image, title, description, p1, p2, p3, address }) => {
+  // Scroll to Top CDU
+  useEffect(() => {
+    const modal = document.querySelector('.wrapper-modal');
+    const scroll = document.querySelector('.cover-scroll');
+    if(slide) {
+      setTimeout(() => scroll.classList.add('d-block'), 1800);
+    } else {
+      scroll.classList.remove('d-block')
+    }
+    if(!slide) setTimeout(() => modal.scrollTo({top: 0, behavior: 'smooth'}),1600);
+  },[slide])
   return (
     <StyledModal>
-      <Wrapper slide={slide}>
-        <div className='close-modal'>
-          <span onClick={onClose}><CloseIcon /></span>
-        </div>
-        <div className='project-modal'>
-          <BackgroundImage fluid={image}>
-            <div className='background-container' style={{ height: '300px' }} />
-          </BackgroundImage>
-          <Title text={title} />
-          <p className='description'>{description}</p>
-          <p>{p1}</p>
-          <p>{p2}</p>
-          <p>{p3}</p>
-          <div className='address'>
-            <a href={address} target='_blank' rel="noopener noreferrer">
-              <CustomButton text='View Project' isLogo={<KeyboardCapslockIcon />} />
-            </a>
+      <Wrapper slide={slide} isClass='wrapper-modal'>
+        <div className='test'>
+          <div className='close-modal'>
+            <span onClick={onClose}><CloseIcon /></span>
+          </div>
+          <div className='project-modal'>
+            <BackgroundImage fluid={image}>
+              <div className='background-container' style={{ height: '300px' }} />
+            </BackgroundImage>
+            <Title text={title} />
+            <p className='description'>{description}</p>
+            <p>{p1}</p>
+            <p>{p2}</p>
+            <p>{p3}</p>
+            <div className='address'>
+              <a href={address} target='_blank' rel="noopener noreferrer">
+                <CustomButton text='View Project' isLogo={<KeyboardCapslockIcon />} />
+              </a>
+            </div>
           </div>
         </div>
       </Wrapper>
@@ -38,7 +51,12 @@ const Modal = ({ slide, onClose, image, title, description, p1, p2, p3, address 
 
 Modal.propTypes = {
   image: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  p1: PropTypes.string.isRequired,
+  p2: PropTypes.string.isRequired,
+  p3: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired
 }
 
 export default Modal;

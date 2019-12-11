@@ -16,7 +16,7 @@ const Card = ({ about, resume, projects, contact }) => {
       <Wrapper slide={resume}>
         <Resume />
       </Wrapper>
-      <Wrapper slide={projects}>
+      <Wrapper slide={projects} isClass='wrapper-projects'>
         <Projects />
       </Wrapper>
       <Wrapper slide={contact}>

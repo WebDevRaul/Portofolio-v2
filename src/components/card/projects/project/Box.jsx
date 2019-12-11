@@ -33,7 +33,12 @@ const Box = ({ image, title, description, p1, p2, p3, address }) => {
 
 Box.propTypes = {
   image: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  p1: PropTypes.string.isRequired,
+  p2: PropTypes.string.isRequired,
+  p3: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired
 }
 
 export default Box
