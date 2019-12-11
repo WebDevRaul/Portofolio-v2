@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import Photo from './photo/Photo';
 import Modal from '../modal/Modal';
 
-const Box = ({ image, title }) => {
+const Box = ({ image, title, description, p1, p2, p3, address }) => {
   const [modal, setModal] = useState(false);
   const [slide, setSlide] = useState(true);
-  const rest = { image, title }
+  const rest = { image, title, description, p1, p2, p3, address }
 
   const onOpen = () => {
     setSlide(true);

@@ -18,7 +18,7 @@ const StyledWrapper = styled.section`
     overflow: auto;
     .content-top, .content-bottom {
       width: 100%;
-      height: 20px;
+      height: 25px;
       display: block;
       background: var(--grey);
       border-radius: var(--border);

@@ -7,33 +7,50 @@ const StyledModal = styled.div`
   left: 0px;
   top: 0;
   z-index: 50;
-  .modal {
-    position: absolute;
+  .wrapper {
+    .content-top, .content-bottom {
+      border-radius: 0;
+    }
+  }
+  .project-modal {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 2px);
-    padding: 20px 10px 20px 18px;
-    overflow-y: scroll;
-    z-index: 100;
-    .modal-top, .modal-bottom {
-      position: fixed;
-      width: 100%;
-      height: 20px;
-      display: block;
-      background: var(--grey);
-      z-index: 110;
+    padding: 3px;
+    h5 {
+      padding: 15px 0;
     }
-    .modal-top {
-      top: 0;
-      left: 0;
-    }
-    .modal-bottom {
-      bottom: 0;
-      left: 0;
-    }
-    .close-modal {
+    .address {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      align-items: center;
+      margin: 8px 0;
+      .btn {
+        align-items: center;
+        min-height: 50px;
+        p {
+          font-size: .7em;
+        }
+        span {
+          transform: rotate(90deg);
+          padding-right: 1px;
+        }
+      }
+    }
+  }
+  .close-modal {
+    position: sticky;
+    top: 0;
+    height: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 50;
+    span {
+      height: 25px;
+      background: var(--grey);
+      svg {
+      cursor: pointer;
+      color: var(--primary);
+    }
     }
   }
 `

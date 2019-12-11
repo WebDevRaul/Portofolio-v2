@@ -6,7 +6,7 @@
     "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates ipsa minima maxime pariatur ipsum repudiandae earum labore aperiam mollitia.",
     "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur tenetur ipsa commodi, hic quae dignissimos nulla minima dolores deserunt saepe nemo incidunt dolore culpa, mollitia consequatur magni sunt? Cumque mollitia est ea modi fuga ex incidunt corrupti culpa magni.",
     "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit, ratione sint quia illum est quae maxime, blanditiis, laudantium officia accusamus reiciendis enim harum explicabo autem voluptatum itaque natus nam nemo vitae quis aspernatur! Tempora veritatis aperiam quo reprehenderit ratione aut est totam. A similique cumque numquam iure! Repudiandae eaque omnis quos quis facere iusto esse veritatis, consequatur tempora nostrum",
-    "website": "www.google.com",
+    "address": "https://www.google.com",
     "photo": "/background.jpg"
   },
   {
@@ -16,7 +16,7 @@
     "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates ipsa minima maxime pariatur ipsum repudiandae earum labore aperiam mollitia.",
     "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur tenetur ipsa commodi, hic quae dignissimos nulla minima dolores deserunt saepe nemo incidunt dolore culpa, mollitia consequatur magni sunt? Cumque mollitia est ea modi fuga ex incidunt corrupti culpa magni.",
     "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit, ratione sint quia illum est quae maxime, blanditiis, laudantium officia accusamus reiciendis enim harum explicabo autem voluptatum itaque natus nam nemo vitae quis aspernatur! Tempora veritatis aperiam quo reprehenderit ratione aut est totam. A similique cumque numquam iure! Repudiandae eaque omnis quos quis facere iusto esse veritatis, consequatur tempora nostrum",
-    "website": "www.google.com",
+    "address": "https://www.google.com",
     "photo": "/gatsby-icon.png"
   },
   {
@@ -26,7 +26,7 @@
     "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates ipsa minima maxime pariatur ipsum repudiandae earum labore aperiam mollitia.",
     "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur tenetur ipsa commodi, hic quae dignissimos nulla minima dolores deserunt saepe nemo incidunt dolore culpa, mollitia consequatur magni sunt? Cumque mollitia est ea modi fuga ex incidunt corrupti culpa magni.",
     "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit, ratione sint quia illum est quae maxime, blanditiis, laudantium officia accusamus reiciendis enim harum explicabo autem voluptatum itaque natus nam nemo vitae quis aspernatur! Tempora veritatis aperiam quo reprehenderit ratione aut est totam. A similique cumque numquam iure! Repudiandae eaque omnis quos quis facere iusto esse veritatis, consequatur tempora nostrum",
-    "website": "www.google.com",
+    "address": "https://www.google.com",
     "photo": "/images2.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates ipsa minima maxime pariatur ipsum repudiandae earum labore aperiam mollitia.",
     "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur tenetur ipsa commodi, hic quae dignissimos nulla minima dolores deserunt saepe nemo incidunt dolore culpa, mollitia consequatur magni sunt? Cumque mollitia est ea modi fuga ex incidunt corrupti culpa magni.",
     "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit, ratione sint quia illum est quae maxime, blanditiis, laudantium officia accusamus reiciendis enim harum explicabo autem voluptatum itaque natus nam nemo vitae quis aspernatur! Tempora veritatis aperiam quo reprehenderit ratione aut est totam. A similique cumque numquam iure! Repudiandae eaque omnis quos quis facere iusto esse veritatis, consequatur tempora nostrum",
-    "website": "www.google.com",
+    "address": "https://www.google.com",
     "photo": "/placeholder.jpg"
   }
 ]

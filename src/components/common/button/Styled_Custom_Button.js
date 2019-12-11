@@ -7,6 +7,7 @@ const StyledCustomButton = styled.div`
     color: var(--lightWhite);
     text-transform: uppercase;
     letter-spacing: var(--spacing);
+    display: flex;
     :hover {
       transition: var(--transition);
       color: var(--secondary);

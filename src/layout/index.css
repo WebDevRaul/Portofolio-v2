@@ -37,8 +37,8 @@ p {
 }
 
 a {
-  text-decoration: none;
-  color: unset;
+  text-decoration: none !important;
+  color: unset !important;
 }
 a:hover {
   transition: var(--transition);
