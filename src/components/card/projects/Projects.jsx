@@ -2,11 +2,11 @@ import React from 'react';
 import Title from '../../common/title/Title';
 import Project from './project/Project';
 
-const Projects = () => {
+const Projects = ({ close }) => {
   return (
     <>
       <Title text='Recent Projects' />
-      <Project />
+      <Project close={close} />
     </>
   )
 }

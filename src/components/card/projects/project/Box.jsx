@@ -1,21 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Photo from './photo/Photo';
 import Modal from '../modal/Modal';
 
-const Box = ({ image, title, description, p1, p2, p3, address }) => {
+
+const Box = ({ close, image, title, description, p1, p2, p3, address }) => {
   const [modal, setModal] = useState(false);
   const [slide, setSlide] = useState(true);
   const rest = { image, title, description, p1, p2, p3, address }
 
+  // Update Modal CDU
+  useEffect(() => {
+    if(!close) setTimeout(() => setModal(false),1000);
+    if(!close) document.querySelector('.cover-scroll').classList.remove('d-block');
+  },[close])
+
   const onOpen = () => {
     setSlide(true);
     setModal(true);
+    setTimeout(() => document.querySelector('.cover-scroll').classList.add('d-block'), 1800);
   }
-
+  
   const onClose = () => {
+    setTimeout(() => document.querySelector('.wrapper-modal').scrollTo({top: 0, behavior: 'smooth'}),1600);
     setSlide(false);
-    setTimeout(() => setModal(true))
+    document.querySelector('.cover-scroll').classList.remove('d-block');
+    setModal(true);
   }
 
   return (

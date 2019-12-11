@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Wrapper from '../../wrapper/Wrapper';
 import CloseIcon from '@material-ui/icons/Close';
@@ -10,17 +10,6 @@ import CustomButton from '../../../common/button/Custom_Button';
 import StyledModal from './Styled_Modal';
 
 const Modal = ({ slide, onClose, image, title, description, p1, p2, p3, address }) => {
-  // Scroll to Top CDU
-  useEffect(() => {
-    const modal = document.querySelector('.wrapper-modal');
-    const scroll = document.querySelector('.cover-scroll');
-    if(slide) {
-      setTimeout(() => scroll.classList.add('d-block'), 1800);
-    } else {
-      scroll.classList.remove('d-block')
-    }
-    if(!slide) setTimeout(() => modal.scrollTo({top: 0, behavior: 'smooth'}),1600);
-  },[slide])
   return (
     <StyledModal>
       <Wrapper slide={slide} isClass='wrapper-modal'>
