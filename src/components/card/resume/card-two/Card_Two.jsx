@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../../../common/title/Title';
 import ToRight from '../../../common/content/To_Right';
 import ToLeft from '../../../common/content/To_Left';
-import FromBottom from '../../../common/content/From_Bottom';
+import FromTop from '../../../common/content/From_Top';
 import Languages from './Languages';
 import Design from './Design';
 
@@ -15,7 +15,7 @@ const CardTwo = () => (
       <div className='row no-gutters'>
         <div className='col-6'>
           <ToRight width={100} isClass='' />
-          <FromBottom height={100} isClass='right' />
+          <FromTop height={100} isClass='right' />
           <Design />
         </div>
         <div className='col-6'>

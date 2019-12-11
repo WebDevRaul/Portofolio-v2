@@ -18,6 +18,19 @@ const StyledCardTwo = styled.div`
           color: var(--primary);
         }
       }
+      .box {
+        padding: 18px 0 0 0;
+      }
+    }
+    .design {
+      .box {
+        padding-right: 18px;
+      }
+    }
+    .languages {
+      .box {
+        padding-left: 18px;
+      }
     }
   }
 `
