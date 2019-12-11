@@ -5,6 +5,7 @@ const StyledCardOne = styled.div`
     padding-left: 0px;
   }
   .card-one {
+    margin-bottom: 30px;
     .experience, .education {
       padding: 10px 0;
       h5 {

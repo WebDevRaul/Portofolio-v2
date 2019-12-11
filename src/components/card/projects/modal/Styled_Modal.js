@@ -15,7 +15,6 @@ const StyledModal = styled.div`
   .project-modal {
     display: flex;
     flex-direction: column;
-    padding: 3px;
     h5 {
       padding: 15px 0;
     }

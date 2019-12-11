@@ -31,7 +31,6 @@ const StyledWrapper = styled.section`
       height: 25px;
       display: block;
       background: var(--grey);
-      border-radius: var(--border);
       position: sticky;
       z-index: 20;
     }
