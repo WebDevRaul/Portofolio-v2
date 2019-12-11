@@ -36,7 +36,7 @@
     opacity: 1;
   }
   100% { 
-    display: none;
+    visibility: hidden;
     opacity: 0;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -85,7 +85,7 @@
     opacity: 1;
   }
   100% { 
-    display: none;
+    visibility: hidden;
     opacity: 0;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -134,7 +134,7 @@
     opacity: 1;
   }
   100% { 
-    display: none;
+    visibility: hidden;
     opacity: 0;
     transform: translateX(50%);
     -webkit-transform: translateX(50%);

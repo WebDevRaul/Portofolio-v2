@@ -24,8 +24,8 @@ const StyledProject = styled.div`
               position: absolute;
               top: 0px;
               left: 0px;
-              width: 200px;
-              height: 200px;
+              width: 100%;
+              height: 100%;
               background: linear-gradient(135deg, rgba(120, 205, 110, 0.2) 0%, rgba(120, 205, 110, 0.01) 100%);
               z-index: 10;
             }

@@ -12,8 +12,8 @@ const Project = () => {
       <div className='project row no-gutters'>
         {
           nodes.map((node, index) => {
-            const project = projects.filter(el => el.photo === node.fixed.src.slice(node.fixed.src.lastIndexOf('/')))[0];
-            return <Box key={index} image={node.fixed} {...project} />
+            const project = projects.filter(el => el.photo === node.fluid.src.slice(node.fluid.src.lastIndexOf('/')))[0];
+            return <Box key={index} image={node.fluid} {...project} />
           })
         }
       </div>
@@ -25,8 +25,8 @@ const image = graphql`
   query {
     allImageSharp {
       nodes {
-        fixed(height: 170, width: 170) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 600, maxHeight: 400) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

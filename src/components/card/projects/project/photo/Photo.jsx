@@ -15,7 +15,7 @@ const Photo = ({ image, onClick }) => {
       <FromTop height={25} isClass='right p-top' />
       <div className='photo'>
         <div onClick={onClick}>
-          <Img fixed={image} />
+          <Img fluid={image} />
         </div>
       </div>
       <ToRight width={25} isClass='bottom' />
