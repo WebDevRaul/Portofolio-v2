@@ -5,7 +5,7 @@ import './progres.css';
 
 const Linear = ({ width }) => (
   <div className='progres-linear'>
-    <i className='linear-inner' style={{ width: `${width}%` }} />
+    <i className='inner-linear' style={{ width: `${width}%` }} />
   </div>
 )
 

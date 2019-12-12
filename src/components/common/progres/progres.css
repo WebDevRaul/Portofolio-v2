@@ -3,8 +3,34 @@
   height: 3px;
   background: rgb(70, 70, 70);
 }
-.linear-inner {
+.inner-linear {
   height: 3px;
   display: block;
   background: var(--primary);
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  z-index: 100;
+}
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgb(70, 70, 70);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+svg circle:nth-child(2) {
+  stroke-dasharray: 215;
+}
+.circle svg circle:nth-child(2) {
+  stroke: var(--primary);
 }

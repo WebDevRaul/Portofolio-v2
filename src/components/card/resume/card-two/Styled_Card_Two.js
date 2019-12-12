@@ -18,18 +18,35 @@ const StyledCardTwo = styled.div`
           color: var(--primary);
         }
       }
+    }
+    .languages {
+      p {
+        margin-bottom: 0px;
+      }
+      .progres-linear {
+        margin-bottom: 18px;
+      }
       .box {
-        padding: 18px 0 0 0;
+        padding: 18px 0 0 18px;
       }
     }
     .design {
-      .box {
-        padding-right: 18px;
-      }
-    }
-    .languages {
-      .box {
-        padding-left: 18px;
+      .box-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 18px;
+        .text {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          p {
+            margin-bottom: 0px;
+            font-size: .9em;
+          }
+        }
       }
     }
   }
