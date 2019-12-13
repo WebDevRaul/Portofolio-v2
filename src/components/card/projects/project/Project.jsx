@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from "gatsby";
 import Box from './Box.jsx';
 
 import StyledProject from './Styled_Project.js';
 const projects = require('./utils/projects.json');
 
-const Project = () => {
+const Project = ({ onOpen }) => {
   const { nodes } = useStaticQuery(image).allImageSharp;
   return (
     <StyledProject>
@@ -13,9 +14,9 @@ const Project = () => {
         {
           nodes.map((node, index) => {
             const project = projects.filter(el => el.photo === node.fluid.src.slice(node.fluid.src.lastIndexOf('/')))[0];
-            return <Box key={index} image={node.fluid} {...project} />
+            return <Box onOpen={onOpen} key={index} image={node.fluid} {...project} />
           })
-        }z
+        }
       </div>
     </StyledProject>
   )
@@ -32,5 +33,9 @@ const image = graphql`
     }
   }
 `
+
+Project.propTypes = {
+  onOpen: PropTypes.func.isRequired
+}
 
 export default Project;

@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Title from '../../common/title/Title';
 import Project from './project/Project';
 import Wrapper from '../wrapper/Wrapper';
+import Modal from './modal/Modal';
 
 const Projects = ({ slide }) => {
+  const [state, setState] = useState({ modal: false, slideModal: false, data: {} });
+  const { modal, slideModal, data } = state;
+
+  // Update SlideModal CDU
+  useEffect(() => {
+    if(!slide && slideModal) setState({ ...state, slideModal: false }) 
+  },[slide])
+
+  const onOpen = data => setState({ slideModal: true, modal: true, data });
+  const onClose = () => setState({ ...state, slideModal: false });
+
   return (
-    <Wrapper slide={slide} isClass=''>
-      <Title text='Recent Projects' />
-      <Project />
-    </Wrapper>
+    <>
+      <Wrapper slide={slide} isClass='tree'>
+        <Title text='Recent Projects' />
+        <Project onOpen={onOpen} />
+      </Wrapper>
+      { modal && <Modal { ...data } onClose={onClose} slide={slideModal} /> }
+    </>
   )
 }
 
