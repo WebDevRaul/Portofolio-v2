@@ -62,8 +62,11 @@ const StyledWrapper = styled.section`
   @media ${bootstrap.sm} {
     .wrapper {
       padding: 0px;
-      .content-top, .content-bottom {
-        border-radius: var(--border);
+      .content-top {
+        border-radius: var(--broder);
+      }
+      .content-bottom {
+        display: none;
       }
     }
   }

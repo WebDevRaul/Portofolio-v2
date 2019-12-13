@@ -9,7 +9,8 @@ import Wrapper from '../wrapper/Wrapper';
 
 
 const About = ({ slide }) => (
-  <Wrapper slide={slide} isClass='one'>
+  <Wrapper slide={slide} >
+    <i className='about' style={{ position: 'absolute', top: '-70px' }} />
     <AboutMe />
     <Services />
     <Pricing />

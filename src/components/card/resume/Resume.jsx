@@ -7,7 +7,8 @@ import Wrapper from '../wrapper/Wrapper';
 
 const Resume = ({ slide }) => {
   return(
-    <Wrapper slide={slide}>
+    <Wrapper slide={slide} >
+      <i className='resume' style={{ position: 'absolute', top: '-70px' }} />
       <CardOne />
       <CardTwo />
       <CardTree />

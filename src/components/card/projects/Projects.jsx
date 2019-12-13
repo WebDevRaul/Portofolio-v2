@@ -26,7 +26,8 @@ const Projects = ({ slide }) => {
 
   return (
     <>
-      <Wrapper slide={slide} isClass='tree'>
+      <Wrapper slide={slide} isClass='projects'>
+      <i className='projects' style={{ position: 'absolute', top: '-70px' }} />
         <Title text='Recent Projects' />
         <Project onOpen={onOpen} />
       </Wrapper>

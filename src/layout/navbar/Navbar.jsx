@@ -8,7 +8,10 @@ import Build from '@material-ui/icons/Build';
 import RecentActors from '@material-ui/icons/RecentActors';
 
 const Navbar = ({ state, setState }) => {
+
   const onClick = name => {
+    document.querySelector(`.${name}`).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    
     // Find the active state
     const active = Object.entries(state).filter(([key, val]) => val !== false);
     // Flat array
@@ -30,7 +33,6 @@ const Navbar = ({ state, setState }) => {
           <Li text='projects' icon={<Build />} onClick={onClick} active={projects} />
           <Li text='contact' icon={<RecentActors />} onClick={onClick} active={contact} />
         </ul>
-        <i className='content-top' />
       </div>
     </StyledNavbar>
   )

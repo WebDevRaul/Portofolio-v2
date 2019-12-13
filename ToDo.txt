@@ -2,6 +2,7 @@ fix review
 onFocus Message set scroll to bottom
 gatsby svg
 
+linear-gradient(var(--black) 70%, transparent 100%);
 
 // eslint-disable-next-line
 

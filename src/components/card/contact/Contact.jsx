@@ -7,7 +7,8 @@ import Wrapper from '../wrapper/Wrapper';
 
 const Contact = ({ slide }) => {
   return(
-    <Wrapper slide={slide}>
+    <Wrapper slide={slide} isClass='contact'>
+      <i className='contact' style={{ position: 'absolute', top: '-70px' }} />
       <Map />
       <Info />
       <Form />

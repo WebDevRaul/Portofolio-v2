@@ -4,9 +4,9 @@ import classnames from 'classnames';
 
 import StyledWrapper from './Styled_Wrapper';
 
-const Wrapper = ({ children, slide, isClass }) => (
+const Wrapper = ({ children, slide }) => (
   <StyledWrapper>
-    <div className={classnames(`wrapper ${isClass}`, {'slideInRight zIndex': slide, 'slideOutRight': !slide})}>
+    <div className={classnames('wrapper', {'slideInRight zIndex': slide, 'slideOutRight': !slide})}>
       <i className='content-top' />
       {children}
       <i className='content-bottom' />
@@ -16,8 +16,7 @@ const Wrapper = ({ children, slide, isClass }) => (
 
 Wrapper.propTypes = {
   children: PropTypes.array.isRequired,
-  slide: PropTypes.bool.isRequired,
-  isClass: PropTypes.string
+  slide: PropTypes.bool.isRequired
 }
 
 export default Wrapper;

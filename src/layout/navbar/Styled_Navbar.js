@@ -13,15 +13,15 @@ const StyledNavbar = styled.nav`
       flex-direction: column;
       align-items: center;
       margin: 1px;
-      &::after {
+      ::after {
         content: '';
         width: 100%;
         height: 1px;
         background: var(--bgToRight);
         z-index: 20;
       }
-      &:nth-last-child(1) {
-        &::after {
+      :nth-last-child(1) {
+        ::after {
           background: none;
         }
       }
@@ -48,13 +48,13 @@ const StyledNavbar = styled.nav`
     }
     ::after {
       content: '';
-      display: block;
+      display: none;
       width: 100%;
       height: 20px;
       position: absolute;
       bottom: -20px;
-      background-color: var(--black);
-      border-top: 1px solid rgba(255, 255, 255, .2)
+      background: var(--black);
+      border-top: 1px solid rgba(255, 255, 255, .2);
     }
   }
   @media ${portrait.tablet} {
@@ -73,6 +73,9 @@ const StyledNavbar = styled.nav`
       margin: 0 0 25px 0;
       border-bottom: 1px solid rgba(255, 255, 255, .2);
       z-index: 20;
+      ::after {
+        display: block;
+      }
       li {
         width: 100%;
         border-top: none !important;
