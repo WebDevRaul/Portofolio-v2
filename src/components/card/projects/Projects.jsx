@@ -11,8 +11,15 @@ const Projects = ({ slide }) => {
 
   // Update SlideModal CDU
   useEffect(() => {
-    if(!slide && slideModal) setState({ ...state, slideModal: false }) 
-  },[slide])
+    if(!slide && slideModal) setState({ ...state, slideModal: false });
+    // eslint-disable-next-line
+  },[slide]);
+
+  // Clear Modal data CDU
+  useEffect(() => {
+    if(!slideModal && modal) setTimeout(() => setState({ ...state, modal: false, data: {} }),1000);
+    // eslint-disable-next-line
+  },[slideModal])
 
   const onOpen = data => setState({ slideModal: true, modal: true, data });
   const onClose = () => setState({ ...state, slideModal: false });
