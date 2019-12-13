@@ -33,12 +33,16 @@ const Modal = ({ slide, onClose, image, title, description, p1, p2, p3, address 
             </div>
           </div>
         </div>
+        <>
+        </>
       </Wrapper>
     </StyledModal>
   )
 }
 
 Modal.propTypes = {
+  slide: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
   image: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

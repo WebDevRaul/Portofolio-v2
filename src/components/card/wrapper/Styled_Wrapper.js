@@ -3,16 +3,6 @@ import { bootstrap, portrait } from '../../../utils/responsive';
 
 const StyledWrapper = styled.section`
   position: relative;
-  .cover-scroll {
-    width: 10px;
-    height: 82vh;
-    background: var(--black);
-    z-index: 20;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-  }
   .wrapper {
     position: absolute;
     top: 0;

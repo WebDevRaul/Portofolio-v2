@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const StyledModal = styled.div`
   position: absolute;
-  background: black;
   width: 100%;
   left: 0px;
   top: 0;

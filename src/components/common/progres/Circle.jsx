@@ -13,7 +13,7 @@ const Circle = ({ width }) => (
 )
 
 Circle.propTypes = {
-  text: PropTypes.string.isRequired
+  width: PropTypes.number.isRequired
 }
 
 export default Circle;

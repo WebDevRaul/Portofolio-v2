@@ -18,15 +18,15 @@ const Coding = () => (
           <Logo logo={<ReactJs width='25px' height='25px' />} text='React Js' />
           <Logo logo={<JQuery width='25px' height='25px' />} text='JQuery' />
           <Logo logo={<NodeJs width='40px' height='40px' />} text='Node Js' />
-          <Logo logo={<MongoDB width='60px' height='60px' />} text='MongoDB' />
-          <Logo logo={<PostgreSQL width='25px' height='25px' />} text='PostgreSQL' />
+          <Logo logo={<MongoDB width='60px' height='60px' />} text='Mongo DB' />
+          <Logo logo={<PostgreSQL width='25px' height='25px' />} text='Postgre SQL' />
         </div>
         <div className='col-6'>
           <Logo logo={<Redux width='25px' height='25px' />} text='Redux' />
+          <Logo logo={<GraphQl width='25px' height='25px' />} text='Graph Ql' />
           <Logo logo={<Css width='25px' height='25px' />} text='Css' />
           <Logo logo={<Sass width='25px' height='25px' />} text='Sass' />
           <Logo logo={<Bootstrap width='25px' height='25px' />} text='Bootstrap' />
-          <Logo logo={<GraphQl width='25px' height='25px' />} text='GraphQl' />
           <Logo logo={<Github width='25px' height='25px' />} text='GitHub' />
         </div>
       </div>

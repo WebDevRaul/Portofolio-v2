@@ -13,7 +13,7 @@ const Experience = () => (
       title='Lorem ipsum'
       description='Lorem ipsum dolor sit amet, consectetur adipisicing elit?'
     />
-    <ToLeft width={100} isClass />
+    <ToLeft width={100} isClass='' />
     <Box
       from='2017'
       to='2018'

@@ -6,7 +6,6 @@ import StyledWrapper from './Styled_Wrapper';
 
 const Wrapper = ({ children, slide, isClass }) => (
   <StyledWrapper>
-    <i className='cover-scroll' />
     <div className={classnames(`wrapper ${isClass}`, {'slideInRight zIndex': slide, 'slideOutRight': !slide})}>
       <i className='content-top' />
       {children}
@@ -16,7 +15,7 @@ const Wrapper = ({ children, slide, isClass }) => (
 )
 
 Wrapper.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.array.isRequired,
   slide: PropTypes.bool.isRequired,
   isClass: PropTypes.string
 }
