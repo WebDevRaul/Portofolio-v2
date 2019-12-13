@@ -17,7 +17,7 @@ const Projects = ({ slide }) => {
 
   // Clear Modal data CDU
   useEffect(() => {
-    if(!slideModal && modal) setTimeout(() => setState({ ...state, modal: false, data: {} }),1000);
+    if(!slideModal && modal) setTimeout(() => setState({ ...state, modal: false, data: {} }),1800);
     // eslint-disable-next-line
   },[slideModal])
 

@@ -3,6 +3,7 @@ import { bootstrap, portrait } from '../../utils/responsive';
 
 const StyledNavbar = styled.nav`
   ul {
+    position: relative;
     width: 70px;
     background-color: var(--grey);
     border-radius: var(--border);
@@ -45,6 +46,16 @@ const StyledNavbar = styled.nav`
         color: var(--secondary);
       }
     }
+    ::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      bottom: -20px;
+      background-color: var(--black);
+      border-top: 1px solid rgba(255, 255, 255, .2)
+    }
   }
   @media ${portrait.tablet} {
     ul {
@@ -53,11 +64,15 @@ const StyledNavbar = styled.nav`
   }
   @media ${bootstrap.sm} {
     ul {
+      position: fixed;
+      top: 0;
+      left: 0;
       display: flex;
       justify-content: space-around;
       width: 100%;
       margin: 0 0 25px 0;
       border-bottom: 1px solid rgba(255, 255, 255, .2);
+      z-index: 20;
       li {
         width: 100%;
         border-top: none !important;

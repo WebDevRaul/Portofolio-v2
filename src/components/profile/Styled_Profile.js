@@ -96,7 +96,7 @@ const StyledProfile = styled.section`
   }
   @media ${bootstrap.sm} {
     .profile {
-      margin: 0 auto;
+      margin: 95px auto 0 auto;
       .photo {
         width: 118px;
         height: 118px;
@@ -114,7 +114,8 @@ const StyledProfile = styled.section`
   }
   @media ${portrait.mobileL} {
     .profile {
-      margin: 0 16px;
+      margin-left: 16px;
+      margin-right: 16px;
       .photo {
         margin-bottom: 30px;
         width: 100px;
@@ -129,6 +130,11 @@ const StyledProfile = styled.section`
       ul {
         margin-bottom: 30px;
       }
+    }
+  }
+  @media ${portrait.mobileM} {
+    .profile {
+      margin-top: 85px !important;
     }
   }
 `

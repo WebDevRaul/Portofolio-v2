@@ -23,12 +23,15 @@ const Navbar = ({ state, setState }) => {
   
   return (
     <StyledNavbar>
-      <ul>
-        <Li text='about' icon={<PersonOutline />} onClick={onClick} active={about} />
-        <Li text='resume' icon={<ListAlt />} onClick={onClick} active={resume} />
-        <Li text='projects' icon={<Build />} onClick={onClick} active={projects} />
-        <Li text='contact' icon={<RecentActors />} onClick={onClick} active={contact} />
-      </ul>
+      <div style={{ position: 'relative' }}>
+        <ul>
+          <Li text='about' icon={<PersonOutline />} onClick={onClick} active={about} />
+          <Li text='resume' icon={<ListAlt />} onClick={onClick} active={resume} />
+          <Li text='projects' icon={<Build />} onClick={onClick} active={projects} />
+          <Li text='contact' icon={<RecentActors />} onClick={onClick} active={contact} />
+        </ul>
+        <i className='content-top' />
+      </div>
     </StyledNavbar>
   )
 }

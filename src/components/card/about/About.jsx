@@ -9,7 +9,7 @@ import Wrapper from '../wrapper/Wrapper';
 
 
 const About = ({ slide }) => (
-  <Wrapper slide={slide}>
+  <Wrapper slide={slide} isClass='one'>
     <AboutMe />
     <Services />
     <Pricing />

@@ -39,6 +39,7 @@ const StyledWrapper = styled.section`
   }
   @media ${bootstrap.lg} {
     .wrapper {
+      position: relative;
       height: 100%;
       overflow: unset;
       overflow-y: unset;
@@ -61,6 +62,9 @@ const StyledWrapper = styled.section`
   @media ${bootstrap.sm} {
     .wrapper {
       padding: 0px;
+      .content-top, .content-bottom {
+        border-radius: var(--border);
+      }
     }
   }
 `
