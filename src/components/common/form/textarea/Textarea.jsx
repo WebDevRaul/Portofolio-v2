@@ -14,6 +14,7 @@ const TextArea = ({ name, label, value, onChange, onFocus, error }) => {
   const onFocusTextarea = e => {
     if(row === 1) setRow(3);
     onFocus(e);
+    setTimeout(() => document.querySelector('.contact-wrapper').scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }),300);
   }
 
   const onFocusOut = () => isEmpty(value) ? setRow(1) : null;

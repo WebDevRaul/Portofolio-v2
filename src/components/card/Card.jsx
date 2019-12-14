@@ -36,10 +36,10 @@ const Card = ({ about, resume, projects, contact }) => {
 
   const onOpen = data => {
     setState({ slideModal: true, modal: true, data });
-    document.querySelector('.modal-scrollIntoView-hook').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if(mobile) document.querySelector('.modal-scrollIntoView-hook').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   const onClose = () => {
-    document.querySelector('.projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if(mobile) document.querySelector('.projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
     if(mobile) return setState({ ...state, slideModal: false, modal: false });
     setState({ ...state, slideModal: false });
   }

@@ -1,8 +1,8 @@
 fix review
-onFocus Message set scroll to bottom
 gatsby svg
 
 linear-gradient(var(--black) 70%, transparent 100%);
+typeof window !== 'undefined' && window
 
 // eslint-disable-next-line
 
@@ -21,18 +21,3 @@ linear-gradient(var(--black) 70%, transparent 100%);
 @media ${portrait.mobileM} {
   
 }
-
-  // Update SlideModal CDU
-  useEffect(() => {
-    if(!slide && slideModal) setState({ ...state, slideModal: false });
-    // eslint-disable-next-line
-  },[slide]);
-
-  // Clear Modal data CDU
-  useEffect(() => {
-    if(!slideModal && modal) setTimeout(() => setState({ ...state, modal: false, data: {} }),1800);
-    // eslint-disable-next-line
-  },[slideModal])
-
-  const onOpen = data => setState({ slideModal: true, modal: true, data });
-  const onClose = () => setState({ ...state, slideModal: false });

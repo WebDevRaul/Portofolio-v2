@@ -14,6 +14,8 @@ const Box = ({ text, image, name, animate, left, right }) => {
     // eslint-disable-next-line
   },[animate, image]);
 
+  const mobileS = typeof window !== 'undefined' && window.innerWidth > 375 ? true : false;
+  console.log(mobileS)
   const length = text.length > 155 ? true : false;
 
   return(
