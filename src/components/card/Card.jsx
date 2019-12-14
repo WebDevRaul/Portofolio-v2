@@ -10,18 +10,27 @@ import Modal from './projects/modal/Modal';
 
 const Card = ({ about, resume, projects, contact }) => {
   const [state, setState] = useState({ modal: false, slideModal: false, data: {} });
+  const [mobile, setMobile] = useState(false);
   const { modal, slideModal, data } = state;
+
+  // Check window CDM
+  useEffect(() => {
+    if(window.innerWidth < 992) setMobile(true);
+    // eslint-disable-next-line
+  },[])
 
   // Update SlideModal CDU
   useEffect(() => {
-    // if(!projects && slideModal) setState({ ...state, slideModal: false });
+    if(!projects && slideModal && !mobile ) {
+      setState({ ...state, slideModal: false });
+      setTimeout(() => setState({ ...state, modal: false, data: {} }), 800);
+    }
     // eslint-disable-next-line
   },[projects]);
 
   // Clear Modal data CDU
   useEffect(() => {
-    // if(!slideModal && modal) setTimeout(() => setState({ ...state, modal: false, data: {} }),1800);
-    // setState({ ...state, modal: false, data: {} })
+    if(!slideModal && modal && !mobile) setTimeout(() => setState({ modal: false, slideModal: false, data: {} }),800);
     // eslint-disable-next-line
   },[slideModal])
 
@@ -30,8 +39,9 @@ const Card = ({ about, resume, projects, contact }) => {
     document.querySelector('.modal-scrollIntoView-hook').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   const onClose = () => {
-    setState({ ...state, slideModal: false, modal: false });
     document.querySelector('.projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if(mobile) return setState({ ...state, slideModal: false, modal: false });
+    setState({ ...state, slideModal: false });
   }
 
   return (
