@@ -2,7 +2,7 @@ const Users = [
   {
     name: 'Gatsby 112',
     photo: '/gatsby-icon.png',
-    text: 'Gatsby da Lorem ipsum dolor sit amet sd sd dsdad sda daf fasf wfrawfsfsf consectda adad adada dsa dasdajk dasdasda'
+    text: 'Gatsby da Lorem ipsum dolor sit amet sd sd dsdad sda daf fasf'
   },
   {
     name: 'Background',

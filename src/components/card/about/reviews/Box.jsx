@@ -6,17 +6,17 @@ import ToRight from '../../../common/content/To_Right';
 import ToLeft from '../../../common/content/To_Left';
 
 const Box = ({ text, image, name, animate, left, right }) => {
-  const [state, setState] = useState(false);
+  const [state, setState] = useState({ slide: false, scroll: false });
+  const { slide, scroll } = state;
 
   // Update state CDU
   useEffect(() => {
-    setState(!state);
+    const el = document.querySelector('.check-scroll');
+    const length = el.scrollHeight > el.clientHeight ? true : false;
+    setState({ ...state, slide: !slide, scroll: length });
     // eslint-disable-next-line
   },[animate, image]);
 
-  const mobileS = typeof window !== 'undefined' && window.innerWidth > 375 ? true : false;
-  console.log(mobileS)
-  const length = text.length > 155 ? true : false;
 
   return(
     <div className='box'>
@@ -24,15 +24,15 @@ const Box = ({ text, image, name, animate, left, right }) => {
         <ToRight width={25} isClass='' />
         <ToLeft width={25} isClass='right top' />
         <div className={classnames({
-          'slideInLeftShort': (state && left), 'slideOutRightShort': (!state && left),
-          'slideInRightShort': (state && right), 'slideOutLefttShort': (!state && right)
+          'slideInLeftShort': (slide && left), 'slideOutRightShort': (!slide && left),
+          'slideInRightShort': (slide && right), 'slideOutLefttShort': (!slide && right)
         })}>
-          <h5 className={classnames('d-flex', {'align-items-center': !length, 'padding-top': length})}>{text}</h5>
+          <h5 className={classnames('check-scroll d-flex', {'align-items-center': !scroll, 'padding-top': scroll})}>{text}</h5>
         </div>
         <ToRight width={25} isClass='bottom' />
         <ToLeft width={25} isClass='bottom right' />
       </div>
-      <div className={classnames('mt-4',{'fadeIn': state, 'fadeOut': !state })}>
+      <div className={classnames('mt-4',{'fadeIn': slide, 'fadeOut': !slide })}>
         <div className='photo'>
           <Img fluid={image} />
         </div>

@@ -1,4 +1,3 @@
-fix review
 gatsby svg
 
 linear-gradient(var(--black) 70%, transparent 100%);
