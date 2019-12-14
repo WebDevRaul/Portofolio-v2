@@ -85,3 +85,27 @@ input:-webkit-autofill:focus {
   height: 750px;
   transition: var(--transition);
 }
+.modal-scrollIntoView-hook {
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+  display: block;
+}
+
+@media (max-width: 575px) {
+  .modal-scrollIntoView-hook {
+    bottom: 58px;
+  }
+}
+@media (max-width: 425px) {
+  .modal-scrollIntoView-hook {
+    bottom: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .modal-scrollIntoView-hook {
+    bottom: 43px;
+  }
+}

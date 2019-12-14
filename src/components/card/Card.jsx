@@ -25,8 +25,14 @@ const Card = ({ about, resume, projects, contact }) => {
     // eslint-disable-next-line
   },[slideModal])
 
-  const onOpen = data => setState({ slideModal: true, modal: true, data });
-  const onClose = () => setState({ ...state, slideModal: false, modal: false });
+  const onOpen = data => {
+    setState({ slideModal: true, modal: true, data });
+    document.querySelector('.modal-scrollIntoView-hook').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  const onClose = () => {
+    setState({ ...state, slideModal: false, modal: false });
+    document.querySelector('.projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 
   return (
     <div className='ml-3 mr-3 ml-sm-0 mr-sm-0' style={{ position: 'relative', margin: '10px 0' }}>

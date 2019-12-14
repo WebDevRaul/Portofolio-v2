@@ -38,12 +38,21 @@ const StyledWrapper = styled.section`
     z-index: 10
   }
   @media ${bootstrap.lg} {
+    .about-wrapper {
+      border-top-left-radius: var(--border) !important;
+      border-top-right-radius: var(--border) !important;
+    }
+    .contact-wrapper {
+      border-bottom-left-radius: var(--border) !important;
+      border-bottom-right-radius: var(--border) !important;
+    }
     .wrapper {
       position: relative;
       height: 100%;
       overflow: unset;
       overflow-y: unset;
       padding: 0 50px;
+      border-radius: unset;
     }
     .slideInRight, .slideOutRight {
       animation: unset;
