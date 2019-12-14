@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { portrait, bootstrap } from '../../../../utils/responsive';
 
 const StyledModal = styled.div`
   position: absolute;
@@ -43,12 +44,34 @@ const StyledModal = styled.div`
     justify-content: flex-end;
     z-index: 50;
     span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 25px;
       background: var(--grey);
       svg {
-      cursor: pointer;
-      color: var(--primary);
+        cursor: pointer;
+        color: var(--primary);
+      }
     }
+  }
+
+  @media ${bootstrap.sm} {
+    position: relative;
+    .close-modal {
+      span {
+        height: 20px;
+      }
+    }
+  }
+  @media ${portrait.mobileL} {
+    .close-modal {
+      top: 77px;
+    }
+  }
+  @media ${portrait.mobileM} {
+    .close-modal {
+      top: 69px;
     }
   }
 `

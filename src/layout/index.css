@@ -6,7 +6,7 @@
   --black: rgb(40, 40, 45);
   --grey: rgb(50, 50, 60);
   --red: rgb(255, 70, 70);
-  --transition: all 0.3s linear;
+  --transition: all .3s linear;
   --spacing: 2px;
   --border: 4px;
   --bgToRight: radial-gradient(ellipse at right, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%); 
@@ -75,4 +75,13 @@ input:-webkit-autofill:focus {
 ::-webkit-scrollbar-thumb {
   background-color: var(--darkWhite);
   border-radius: 50px;
+}
+
+.no-height {
+  height: 0px;
+  transition: var(--transition);
+}
+.height {
+  height: 600px;
+  transition: var(--transition);
 }

@@ -72,7 +72,7 @@ const StyledNavbar = styled.nav`
       width: 100%;
       margin: 0 0 25px 0;
       border-bottom: 1px solid rgba(255, 255, 255, .2);
-      z-index: 20;
+      z-index: 100;
       ::after {
         display: block;
       }

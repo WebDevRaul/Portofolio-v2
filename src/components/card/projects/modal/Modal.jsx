@@ -13,24 +13,22 @@ const Modal = ({ slide, onClose, image, title, description, p1, p2, p3, address 
   return (
     <StyledModal>
       <Wrapper slide={slide} isClass='wrapper-modal'>
-        <div className='test'>
-          <div className='close-modal'>
-            <span onClick={onClose}><CloseIcon /></span>
-          </div>
-          <div className='project-modal'>
-            <BackgroundImage fluid={image}>
-              <div className='background-container' style={{ height: '300px' }} />
-            </BackgroundImage>
-            <Title text={title} />
-            <p className='description'>{description}</p>
-            <p>{p1}</p>
-            <p>{p2}</p>
-            <p>{p3}</p>
-            <div className='address'>
-              <a href={address} target='_blank' rel="noopener noreferrer">
-                <CustomButton text='View Project' isLogo={<KeyboardCapslockIcon />} />
-              </a>
-            </div>
+        <div className='close-modal'>
+          <span onClick={onClose}><CloseIcon /></span>
+        </div>
+        <div className='project-modal'>
+          <BackgroundImage fluid={image}>
+            <div className='background-container' style={{ height: '300px' }} />
+          </BackgroundImage>
+          <Title text={title} />
+          <p className='description'>{description}</p>
+          <p>{p1}</p>
+          <p>{p2}</p>
+          <p>{p3}</p>
+          <div className='address'>
+            <a href={address} target='_blank' rel="noopener noreferrer">
+              <CustomButton text='View Project' isLogo={<KeyboardCapslockIcon />} />
+            </a>
           </div>
         </div>
         <>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bootstrap } from '../../../../utils/responsive';
 
 const StyledForm = styled.div`
   form {
@@ -30,6 +31,15 @@ const StyledForm = styled.div`
       :hover {
         transition: var(--transition);
         color: var(--secondary);
+      }
+    }
+  }
+  @media ${bootstrap.sm} {
+    padding-bottom: 5px;
+    form {
+      button {
+        margin: auto;
+        margin-bottom: 5px;
       }
     }
   }
