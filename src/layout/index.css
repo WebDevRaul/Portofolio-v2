@@ -82,7 +82,7 @@ input:-webkit-autofill:focus {
   transition: var(--transition);
 }
 .height {
-  height: 750px;
+  height: 100%;
   transition: var(--transition);
 }
 .modal-scrollIntoView-hook {
@@ -94,6 +94,11 @@ input:-webkit-autofill:focus {
   display: block;
 }
 
+@media (max-width: 991px) {
+  .height {
+    height: 750px;
+  }
+}
 @media (max-width: 575px) {
   .modal-scrollIntoView-hook {
     bottom: 58px;

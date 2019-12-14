@@ -1,6 +1,6 @@
 /* 1 */
 .slideInRight {
-  animation: slideInRight 2s forwards;
+  animation: slideInRight 1s forwards;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -9,7 +9,7 @@
 }
 
 .slideOutRight {
-  animation: slideOutRight 2s forwards;
+  animation: slideOutRight 1s forwards;
   transform: translateX(0%);
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
@@ -52,7 +52,7 @@
 /* 2 */
 
 .slideInLeftShort {
-  animation: slideInLeftShort 2s forwards;
+  animation: slideInLeftShort 1s forwards;
   transform: translateX(50%);
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
@@ -61,7 +61,7 @@
 }
 
 .slideOutRightShort {
-  animation: slideOutRightShort 2s forwards;
+  animation: slideOutRightShort 1s forwards;
   transform: translateX(0%);
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
@@ -104,7 +104,7 @@
 /* 3 */
 
 .slideInRightShort {
-  animation: slideInRightShort 2s forwards;
+  animation: slideInRightShort 1s forwards;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -113,7 +113,7 @@
 }
 
 .slideOutLefttShort {
-  animation: slideOutLeftShort 2s forwards;
+  animation: slideOutLeftShort 1s forwards;
   transform: translateX(0%);
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
@@ -160,7 +160,7 @@
 }
 
 .fadeOut {
-  animation: fadeOut 2s;
+  animation: fadeOut 1s;
 }
 
 @keyframes fadeIn {

@@ -15,7 +15,6 @@ const StyledWrapper = styled.section`
     backface-visibility: hidden;
     overflow: hidden;
     overflow-y: scroll;
-    overflow: auto;
     .content-top, .content-bottom {
       width: 100%;
       height: 25px;
