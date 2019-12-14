@@ -56,9 +56,15 @@ const StyledModal = styled.div`
     }
   }
 
-  @media ${bootstrap.sm} {
+  @media ${bootstrap.lg} {
     position: relative;
+    .wrapper {
+      height: 750px;
+    }
+  }
+  @media ${bootstrap.sm} {
     .close-modal {
+      top: 84px;
       span {
         height: 20px;
       }

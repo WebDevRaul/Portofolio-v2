@@ -82,6 +82,6 @@ input:-webkit-autofill:focus {
   transition: var(--transition);
 }
 .height {
-  height: 600px;
+  height: 750px;
   transition: var(--transition);
 }
