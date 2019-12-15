@@ -4,6 +4,12 @@ import { bootstrap } from '../../../../utils/responsive';
 const StyledPricing = styled.div`
   margin-bottom: 30px;
   position: relative;
+  padding: 0px 10px;
+  h5 {
+    :nth-child(1) {
+      padding: 0px;
+    }
+  }
   .pricing-wrapper {
     position: relative;
     width: 100%;

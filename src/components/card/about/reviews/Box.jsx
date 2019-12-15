@@ -21,16 +21,16 @@ const Box = ({ text, image, name, animate, left, right }) => {
   return(
     <div className='box'>
       <div className='position-relative w-100'>
-        <ToRight width={25} isClass='' />
-        <ToLeft width={25} isClass='right top' />
+        <ToRight width={35} isClass='' />
+        <ToLeft width={35} isClass='right p-top' />
         <div className={classnames({
           'slideInLeftShort': (slide && left), 'slideOutRightShort': (!slide && left),
           'slideInRightShort': (slide && right), 'slideOutLefttShort': (!slide && right)
         })}>
-          <h5 className={classnames('check-scroll d-flex', {'align-items-center': !scroll, 'padding-top': scroll})}>{text}</h5>
+          <h5 className={classnames('check-scroll d-flex', {'align-items-center': !scroll, 'padding': scroll})}>{text}</h5>
         </div>
-        <ToRight width={25} isClass='bottom' />
-        <ToLeft width={25} isClass='bottom right' />
+        <ToRight width={35} isClass='bottom' />
+        <ToLeft width={35} isClass='bottom right' />
       </div>
       <div className={classnames('mt-4',{'fadeIn': slide, 'fadeOut': !slide })}>
         <div className='photo'>

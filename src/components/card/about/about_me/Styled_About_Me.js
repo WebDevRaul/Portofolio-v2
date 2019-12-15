@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bootstrap } from '../../../../utils/responsive';
 
 const StyledAboutMe = styled.div`
   .about-me {
@@ -21,6 +22,13 @@ const StyledAboutMe = styled.div`
       margin-bottom: 0px;
       color: var(--darkWhite);
       letter-spacing: var(--spacing);
+    }
+  }
+  @media ${bootstrap.sm} {
+    .about-me {
+      .list {
+        margin: 0 10px;
+      }
     }
   }
 `

@@ -1,18 +1,25 @@
 import styled from 'styled-components';
-import { portrait } from '../../../utils/responsive';
+import { portrait, bootstrap } from '../../../utils/responsive';
 
 const StyledSpan = styled.div`
-  padding: 5px 0 5px 7px;
+  padding: 10px;
   width: 50%;
-  height: 29px;
   background-color: var(--primary);
   border-radius: var(--border);
   letter-spacing: var(--spacing);
   overflow: hidden;
 
-  @media ${portrait.mobileM} {
-    padding: 5px 0 5px 5px !important;
-    height: 21px !important;
+  @media ${bootstrap.lg} {
+    padding: 5px 0 0 5px;
+    height: 27px;
+  }
+  @media ${bootstrap.sm} {
+    padding: 5px 0 0 5px;
+    height: 25px;
+  }
+  @media ${portrait.mobileL} {
+    padding: 5px 0 0 5px;
+    height: 23px;
   }
 `
 

@@ -33,15 +33,7 @@ const StyledServices = styled.div`
       p {
         color: var(--darkWhite);
         margin-bottom: 0px;
-      }
-    }
-  }
-  @media ${bootstrap.lg} {
-    .services {
-      .box {
-        p {
-          padding: 0 30px;
-        }
+        padding: 0 30px;
       }
     }
   }
@@ -86,7 +78,7 @@ const StyledServices = styled.div`
     .services {
       .first, .second {
         .box {
-          min-height: 150px;
+          min-height: 165px;
           .logo {
             padding: 7px;
           }

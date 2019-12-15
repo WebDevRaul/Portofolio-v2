@@ -5,17 +5,22 @@ const StyledReview = styled.div`
   margin-bottom: 10px;
   .review {
     overflow: hidden;
+    padding: 0 10px;
+    h5 {
+      :nth-child(1) {
+        padding: 0px;
+      }
+    }
     .box {
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0 25px;
       margin-top: 25px;
       h5 {
         color: var(--darkWhite);
         margin: 15px 10px;
-        padding: 0 30px 0px 41px;
+        padding: 0 10px 0 20px;
         opacity: 0.5;
         height: 75px;
         overflow: hidden;
@@ -31,8 +36,9 @@ const StyledReview = styled.div`
           border-radius: 50px;
         }
       }
-      .padding-top {
+      .padding {
         padding-top: 2px;
+        padding-left: 10px;
       }
     }
     .buttons {
@@ -41,7 +47,7 @@ const StyledReview = styled.div`
       div {
         margin: 0 10px;
         cursor: pointer;
-        color: var(--darkWhite);
+        color: var(--primary);
         svg {
           font-size: 2.5em;
         }
@@ -58,29 +64,14 @@ const StyledReview = styled.div`
   @media ${portrait.mobileL} {
     .review {
       .box {
-        padding: 0px;
         .photo {
           width: 50px;
           height: 50px;
         }
         h5 {
           margin-bottom: 20px;
-          padding: 0 10px 0px 21px;
           height: 50px;
         }
-      }
-    }
-    .review-bottom {
-      ::before, ::after {
-        top: 107px !important;
-      }
-    }
-    .review-top, .review-bottom {
-      ::before {
-        left: 10px !important;
-      }
-      ::after {
-        right: 10px !important;
       }
     }
   }

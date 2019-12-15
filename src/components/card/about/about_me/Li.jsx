@@ -10,7 +10,7 @@ const Li = ({ span, p }) => (
       <Span text={span} />
       <p className='mb-0'>{p}</p>
     </div>
-    <div className='d-flex'>
+    <div className='d-flex' style={{ padding: '1px 0' }}>
       <ToLeft isClass='' width={50} />
       <ToRight isClass='' width={50} />
     </div>
