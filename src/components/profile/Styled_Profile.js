@@ -10,12 +10,12 @@ const StyledProfile = styled.section`
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background: var(--grey);
-    border-radius: var(--border);
-    z-index: 10;
     height: calc(100vh - 100px);
     width: 100%;
+    border-radius: var(--border);
+    background: var(--grey);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
     ::before {
       content: '';
       position: absolute;
@@ -29,39 +29,39 @@ const StyledProfile = styled.section`
       z-index: -10;
     }
     .photo {
+      width: calc(100vw / 10);
+      height: calc(100vw / 10);
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 135px;
-      height: 135px;
-      margin-bottom: 40px;
+      transition: var(--transition);
       ::before {
         content: '';
         position: absolute;
-        width: 135px;
-        height: 135px;
-        border-radius: 75px;
+        width: calc(100vw / 10);
+        height: calc(100vw / 10);
+        border-radius: calc(100vw / 10);
         top: 10px;
         left: -10px;
         background: linear-gradient(135deg, rgba(120, 204, 109, .3) 0%, rgba(120, 204, 109, .01) 100%);
+        transition: var(--transition);
       }
       img {
-        border-radius: 75px;
+        border-radius: calc(100vw / 10);
+        transition: var(--transition);
       }
     }
     h5 {
       color: var(--primary);
       font-size: 1.1em;
-      margin-bottom: 30px;
-    }
-    h3 {
-      margin-bottom: 30px;
+      transition: var(--transition);
     }
     ul {
       display: flex;
       justify-content: center;
-      margin-bottom: 30px;
+      margin-bottom: 16px;
+      transition: var(--transition);
       li {
         margin: 0 5px;
         color: var(--darkWhite);
@@ -70,48 +70,59 @@ const StyledProfile = styled.section`
   }
   @media ${bootstrap.lg} {
     .profile {
+      height: calc(100vh - 50px);
       h3 {
         font-size: 2.2em;
       }
-      ul {
-        margin-bottom: 16px;
+      .photo {
+        width: 150px;
+        height: 150px;
+        ::before {
+          width: 150px;
+          height: 150px;
+          border-radius: 150px;
+        }
+        img {
+          border-radius: 150px;
+        }
       }
     }
   }
   @media ${bootstrap.sm} {
     .profile {
+      height: calc(100vh - 100px);
       margin-top: 95px;
+      ul, h3, h5 {
+        margin-bottom: 12px;
+      }
       .photo {
-        width: 118px;
-        height: 118px;
+        width: calc(100vw / 4);
+        height: calc(100vw / 4);
         ::before {
-          width: 118px;
-          height: 118px;
+          width: calc(100vw / 4);
+          height: calc(100vw / 4);
+          border-radius: calc(100vw / 4);
+        }
+        img {
+          border-radius: calc(100vw / 4);
         }
       }
     }
   }
   @media ${portrait.mobileL} {
     .profile {
-      .photo {
-        margin-bottom: 30px;
-        width: 110px;
-        height: 110px;
-        ::before {
-          width: 110px;
-          height: 110px;
-        }
-      }
-      ul {
-        margin-bottom: 30px;
-      }
-    }
-  }
-  @media ${portrait.mobileM} {
-    .profile {
       margin-top: 85px;
-      .photo, ul {
-        margin-bottom: 35px;
+      .photo {
+        width: calc(100vw / 3);
+        height: calc(100vw / 3);
+        ::before {
+          width: calc(100vw / 3);
+          height: calc(100vw / 3);
+          border-radius: calc(100vw / 3);
+        }
+        img {
+          border-radius: calc(100vw / 3);
+        }
       }
     }
   }

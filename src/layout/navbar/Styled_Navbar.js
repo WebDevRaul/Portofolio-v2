@@ -8,6 +8,7 @@ const StyledNavbar = styled.nav`
     background-color: var(--grey);
     border-radius: var(--border);
     margin: 15px 10px 0 auto;
+    z-index: 30;
     li {
       display: flex;
       flex-direction: column;
@@ -62,7 +63,6 @@ const StyledNavbar = styled.nav`
       position: fixed;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 20;
     }
   }
   @media ${bootstrap.sm} {

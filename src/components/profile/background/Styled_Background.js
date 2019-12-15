@@ -8,15 +8,19 @@ const StyledBckground = styled.div`
   border-radius: var(--border);
   overflow: hidden;
   z-index: -10;
+  .wrapper > div {
+    height: 100%;
+  }
   .wrapper {
     width: 100%;
+    height: 100%;
     background-position: bottom center;
     background-repeat: repeat-y;
     background-size: cover;
     .background {
       display: block;
       width: 100%;
-      height: calc((100vh / 2) - 50px);
+      height: 100%;
       ::after {
         content: '';
         display: block;

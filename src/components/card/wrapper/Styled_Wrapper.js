@@ -6,13 +6,11 @@ const StyledWrapper = styled.section`
   .wrapper {
     position: absolute;
     top: 0;
-    bottom: -12px;
-    height: 82vh;
+    height: calc(100vh - 120px);
     width: 100%;
     padding: 0 10px 0 18px;
     background-color: var(--grey);
     border-radius: var(--border);
-    backface-visibility: hidden;
     overflow: hidden;
     overflow-y: scroll;
     .content-top, .content-bottom {
@@ -27,7 +25,7 @@ const StyledWrapper = styled.section`
       top: 0;
     }
     .content-bottom {
-      bottom: 0;
+      bottom: -2px;
     }
   }
   .scroll {
