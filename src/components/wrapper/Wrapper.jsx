@@ -15,6 +15,7 @@ const Wrapper = () => {
         <div className='col-12 col-lg-5'>
           <div className='mobile-view-top'>
             <Navbar state={state} setState={setState} />
+            <i className='placeholder' />
             <Profile />
           </div>
         </div>

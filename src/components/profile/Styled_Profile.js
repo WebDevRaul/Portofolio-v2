@@ -5,7 +5,6 @@ const StyledProfile = styled.section`
   width: 100%;
   z-index: 20;
   .profile {
-    height: calc(100vh - 100px);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,6 +13,7 @@ const StyledProfile = styled.section`
     background: var(--grey);
     border-radius: var(--border);
     z-index: 10;
+    height: calc(100vh - 100px);
     width: 100%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
     ::before {
@@ -29,10 +29,13 @@ const StyledProfile = styled.section`
       z-index: -10;
     }
     .photo {
-      position: relative;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 135px;
       height: 135px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       ::before {
         content: '';
         position: absolute;
@@ -50,11 +53,15 @@ const StyledProfile = styled.section`
     h5 {
       color: var(--primary);
       font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    h3 {
+      margin-bottom: 30px;
     }
     ul {
       display: flex;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       li {
         margin: 0 5px;
         color: var(--darkWhite);
@@ -63,33 +70,11 @@ const StyledProfile = styled.section`
   }
   @media ${bootstrap.lg} {
     .profile {
-      .photo {
-        width: 140px;
-        height: 140px;
-        ::before {
-          width: 140px;
-          height: 140px;
-          top: 10px;
-          left: -10px;
-        }
-      }
       h3 {
         font-size: 2.2em;
       }
       ul {
-        margin-bottom: 15px;
-      }
-    }
-  }
-  @media ${portrait.tablet} {
-    .photo {
-      width: 110px;
-      height: 110px;
-      ::before {
-        width: 110px;
-        height: 110px;
-        top: 8px;
-        left: -8px;
+        margin-bottom: 16px;
       }
     }
   }
@@ -102,12 +87,7 @@ const StyledProfile = styled.section`
         ::before {
           width: 118px;
           height: 118px;
-          top: 9px;
-          left: -9px;
         }
-      }
-      ul {
-        margin-bottom: 20px;
       }
     }
   }
@@ -115,13 +95,11 @@ const StyledProfile = styled.section`
     .profile {
       .photo {
         margin-bottom: 30px;
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
         ::before {
-          width: 100px;
-          height: 100px;
-          top: 7px;
-          left: -7px;
+          width: 110px;
+          height: 110px;
         }
       }
       ul {
@@ -131,7 +109,10 @@ const StyledProfile = styled.section`
   }
   @media ${portrait.mobileM} {
     .profile {
-      margin-top: 85px !important;
+      margin-top: 85px;
+      .photo, ul {
+        margin-bottom: 35px;
+      }
     }
   }
 `

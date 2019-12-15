@@ -16,14 +16,14 @@ const StyledBckground = styled.div`
     .background {
       display: block;
       width: 100%;
-      height: 315px;
+      height: calc((100vh / 2) - 50px);
       ::after {
         content: '';
         display: block;
         position: absolute;
         width: 100%;
         height: 100px;
-        bottom: -20px;
+        bottom: -90px;
         left: -40px;
         transform: rotate(10deg);
         background: var(--grey);
@@ -34,7 +34,7 @@ const StyledBckground = styled.div`
         position: absolute;
         width: 100%;
         height: 100px;
-        bottom: -20px;
+        bottom: -90px;
         right: -40px;
         transform: rotate(-10deg);
         background: var(--grey);

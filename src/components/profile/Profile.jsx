@@ -12,11 +12,13 @@ const Profile = () => {
     <StyledProfile>
       <div className='profile'>
         <Background />
-        <Photo />
-        <h3>Savin Raul Calin</h3>
-        <h5>Web Developer</h5>
-        <Links />
-        <Footer />
+        <div style={{ height: 'calc((100vh / 2) - 50px)' }}>
+          <Photo />
+          <h3>Savin Raul Calin</h3>
+          <h5>Web Developer</h5>
+          <Links />
+          <Footer />
+        </div>
       </div>
     </StyledProfile>
   )

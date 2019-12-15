@@ -50,7 +50,7 @@ const StyledWrapper = styled.section`
       height: 100%;
       overflow: unset;
       overflow-y: unset;
-      padding: 0 50px;
+      padding: 0 20px;
       border-radius: unset;
     }
     .slideInRight, .slideOutRight {
@@ -60,11 +60,6 @@ const StyledWrapper = styled.section`
       -moz-transform: translateX(0%);
       -ms-transform: translateX(0%);
       -o-transform: translateX(0%);
-    }
-  }
-  @media ${portrait.tablet} {
-    .wrapper {
-      padding: 0 25px;
     }
   }
   @media ${bootstrap.sm} {

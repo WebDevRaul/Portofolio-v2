@@ -57,9 +57,12 @@ const StyledNavbar = styled.nav`
       border-top: 1px solid rgba(255, 255, 255, .2);
     }
   }
-  @media ${portrait.tablet} {
+  @media ${bootstrap.lg} {
     ul {
-      margin: 15px 10px 0 0;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 20;
     }
   }
   @media ${bootstrap.sm} {
@@ -67,6 +70,7 @@ const StyledNavbar = styled.nav`
       position: fixed;
       top: 0;
       left: 0;
+      transform: none;
       display: flex;
       justify-content: space-around;
       width: 100%;

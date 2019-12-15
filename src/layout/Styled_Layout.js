@@ -15,9 +15,7 @@ const StyledLayout = styled.main`
     font-size: .9em;
   }
   @media ${bootstrap.lg} {
-    padding: 30px 50px;
-  }
-  @media ${portrait.tablet} {
+    padding: 30px 0;
     font-size: .8em;
     h5 {
       font-size: 1.6em;
