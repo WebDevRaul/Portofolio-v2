@@ -45,7 +45,7 @@ const Card = ({ about, resume, projects, contact }) => {
   }
 
   return (
-    <div className='ml-3 mr-3 ml-sm-0 mr-sm-0' style={{ position: 'relative', margin: '10px 0' }}>
+    <div style={{ position: 'relative', margin: '10px 0', width: '100%' }}>
       <About slide={about} />
       <Resume slide={resume} />
       <Projects slide={projects} onOpen={onOpen} />

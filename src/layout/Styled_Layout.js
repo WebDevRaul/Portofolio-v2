@@ -6,10 +6,6 @@ const StyledLayout = styled.main`
   background-color: var(--black);
   color: var(--lightWhite);
   min-height: 100vh;
-  
-  @media ${bootstrap.sm} {
-    padding: 0px;
-  }
 
 
   @media ${portrait.laptopL} {
@@ -17,6 +13,9 @@ const StyledLayout = styled.main`
   }
   @media ${portrait.laptop} {
     font-size: .9em;
+  }
+  @media ${bootstrap.lg} {
+    padding: 30px 50px;
   }
   @media ${portrait.tablet} {
     font-size: .8em;
@@ -31,6 +30,7 @@ const StyledLayout = styled.main`
     }
   }
   @media ${bootstrap.sm} {
+    padding: 0 15px;
     h1 {
       font-size: 3.4em
     }

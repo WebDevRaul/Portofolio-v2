@@ -14,7 +14,7 @@ const StyledProfile = styled.section`
     background: var(--grey);
     border-radius: var(--border);
     z-index: 10;
-    max-width: 400px;
+    width: 100%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
     ::before {
       content: '';
@@ -63,7 +63,6 @@ const StyledProfile = styled.section`
   }
   @media ${bootstrap.lg} {
     .profile {
-      height: 468px;
       .photo {
         width: 140px;
         height: 140px;
@@ -96,7 +95,7 @@ const StyledProfile = styled.section`
   }
   @media ${bootstrap.sm} {
     .profile {
-      margin: 95px auto 0 auto;
+      margin-top: 95px;
       .photo {
         width: 118px;
         height: 118px;
@@ -114,8 +113,6 @@ const StyledProfile = styled.section`
   }
   @media ${portrait.mobileL} {
     .profile {
-      margin-left: 16px;
-      margin-right: 16px;
       .photo {
         margin-bottom: 30px;
         width: 100px;
