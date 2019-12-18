@@ -15,7 +15,9 @@ const StyledInfo = styled.div`
         padding: 10px 10px 15px 10px;
         margin: 5px 0;
         p {
+          width: 50%;
           text-align: end;
+          padding-right: 0px;
         }
       }
     }

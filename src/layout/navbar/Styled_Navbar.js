@@ -13,7 +13,6 @@ const StyledNavbar = styled.nav`
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 1px;
       ::after {
         content: '';
         width: 100%;

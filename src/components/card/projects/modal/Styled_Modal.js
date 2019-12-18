@@ -31,7 +31,6 @@ const StyledModal = styled.div`
         }
         span {
           transform: rotate(90deg);
-          padding-right: 1px;
         }
       }
     }

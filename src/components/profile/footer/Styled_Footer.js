@@ -6,7 +6,6 @@ const StyledFooter = styled.div`
   .footer {
     display: flex;
     width: 100%;
-    padding: 1px;
     .left {
       .btn {
         span {
