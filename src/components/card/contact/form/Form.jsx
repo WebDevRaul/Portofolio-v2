@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { navigateTo } from "gatsby-link";
 import Input from '../../../common/form/input/Input';
 import TextArea from '../../../common/form/textarea/Textarea';
 import KeyboardCapslockIcon from '@material-ui/icons/KeyboardCapslock';
@@ -6,6 +7,12 @@ import validateForm from './utils/validate';
 
 import StyledForm from './Styled_Form';
 import Title from '../../../common/title/Title';
+
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
 const Form = () => {
   const [state, setState] = useState({ name: '', email: '', text: '' });
@@ -24,21 +31,29 @@ const Form = () => {
     e.preventDefault();
     const { errors, isValid } = validateForm(state);
     if(!isValid) return setError({ ...error, ...errors });
+    const form = e.target;
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: JSON.stringify({ "form-name": "contact", ...state })
-      // body: encode({ "form-name": "contact", ...state })
+      body: encode({ "form-name": form.getAttribute("name"),...state })
     })
-      .then(() => alert("Success!"))
+      .then(() => navigateTo(form.getAttribute("action")))
       .catch(error => alert(error));
   }
 
   return (
     <StyledForm>
       <Title text='Contact Form' />
-      <form noValidate onSubmit={onSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form noValidate 
+        onSubmit={onSubmit} 
+        name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value="contact" />
+        <input name="bot-field" onChange={onChange} />
         <div className='data'>
           <Input
             name='name'
