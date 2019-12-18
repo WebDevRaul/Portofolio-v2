@@ -1,13 +1,15 @@
 import styled from 'styled-components';
+import { bootstrap } from '../../../../utils/responsive';
 
 const StyledCardTree = styled.div`
-  .card-two {
+  .card-tree {
     padding-bottom: 30px;
     .coding, .knowledge {
       padding: 10px 0;
       h5 {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 10px;
         svg {
           padding-bottom: 2px;
@@ -20,12 +22,13 @@ const StyledCardTree = styled.div`
       .box {
         padding: 18px 18px 0 0;
         .logo {
-          margin: 0 10px 10px 0;
+          margin: 0 5px;
           .outer-logo {
             position: relative;
             height: 50px;
             width: 100%;
             padding: 8px;
+            margin: 3px 0;
             .inner-logo {
               display: flex;
               justify-content: center;
@@ -49,11 +52,36 @@ const StyledCardTree = styled.div`
     .knowledge {
       .box {
         padding: 18px 0 0 18px;
-        p {
-          text-transform: uppercase;
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          p {
+            width: 100%;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+            text-align: start;
+          }
           svg {
             color: var(--primary);
-            padding-bottom: 4px;
+            margin-right: 10px;
+            padding-bottom: 1px;
+          }
+        }
+      }
+    }
+  }
+  @media ${bootstrap.lg} {
+    padding: 0 10px;
+    .card-tree {
+      .coding {
+        .box {
+          padding: 18px 5px 0 0;
+          .logo {
+            .outer-logo {
+              padding: 8px 0;
+            }
           }
         }
       }

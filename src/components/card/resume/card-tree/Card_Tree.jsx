@@ -9,7 +9,7 @@ import StyledCardTree from './Styled_Card_Tree';
 
 const CardTree = () => (
   <StyledCardTree>
-    <div className='card-two'>
+    <div className='card-tree'>
       <div className='row no-gutters'>
         <div className='col-6'>
           <ToRight width={50} isClass='right' />

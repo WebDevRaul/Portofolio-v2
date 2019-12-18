@@ -8,10 +8,10 @@ const Design = () => (
     <h5><ImportantDevicesIcon /> Design</h5>
     <ToRight width={100} isClass='' />
     <div className='row no-gutters'>
-      <div className='col-6'>
+      <div className='col-12 col-sm-6 web'>
         <BoxCircle text='Web' width={65} />
       </div>
-      <div className='col-6'>
+      <div className='col-12 col-sm-6 graphic'>
         <BoxCircle text='Graphic' width={65} />
       </div>
     </div>

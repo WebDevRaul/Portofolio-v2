@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bootstrap } from '../../../../utils/responsive';
 
 const StyledCardTwo = styled.div`
   h5 {
@@ -11,6 +12,7 @@ const StyledCardTwo = styled.div`
       h5 {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 10px;
         svg {
           padding-bottom: 2px;
@@ -45,6 +47,20 @@ const StyledCardTwo = styled.div`
           p {
             margin-bottom: 0px;
             font-size: .9em;
+          }
+        }
+      }
+    }
+  }
+  @media ${bootstrap.lg} {
+    padding: 0 10px;
+  }
+  @media ${bootstrap.sm} {
+    .card-two {
+      .design {
+        .web, .graphic {
+          .box-circle {
+            padding-bottom: 0px;
           }
         }
       }

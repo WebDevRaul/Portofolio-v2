@@ -11,10 +11,10 @@ const Knowledge = () => (
     <ToRight width={50} isClass='right' />
     <ToLeft width={50} isClass='left' />
     <div className='box'>
-      <p><CheckIcon /> Website hosting</p>
-      <p><CheckIcon /> Modern and mobile-ready</p>
-      <p><CheckIcon /> Graphics and animations</p>
-      <p><AddIcon/> And more<strong> . . . . </strong></p>
+      <div><CheckIcon /> <p>Website hosting</p></div>
+      <div><CheckIcon /> <p>Modern and mobile-ready</p></div>
+      <div><CheckIcon /> <p>Graphics and animations</p></div>
+      <div><AddIcon/> <p>And more<strong> . . . . </strong></p></div>
     </div>
   </div>
 )
