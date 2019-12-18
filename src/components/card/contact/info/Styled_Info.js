@@ -12,12 +12,17 @@ const StyledInfo = styled.div`
         justify-content: space-between;
         align-items: center;
         width: 50%;
-        padding: 10px 10px 15px 10px;
+        padding: 10px 5px 15px 10px;
         margin: 5px 0;
+        :nth-child(2) {
+          padding-left: 5px;
+          padding-right: 10px;
+        }
         p {
           width: 50%;
           text-align: end;
-          padding-right: 0px;
+          padding-left: 10px;
+          word-break: break-word;
         }
       }
     }

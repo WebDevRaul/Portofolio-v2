@@ -34,7 +34,7 @@ const StyledForm = styled.div`
       }
     }
   }
-  @media ${bootstrap.sm} {
+  @media ${bootstrap.lg} {
     padding-bottom: 5px;
     form {
       button {

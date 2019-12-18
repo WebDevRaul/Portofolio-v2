@@ -4,22 +4,25 @@ import { portrait, bootstrap } from '../../../utils/responsive';
 const StyledSpan = styled.div`
   padding: 10px;
   width: 50%;
+  height: 38.75px;
   background-color: var(--primary);
   border-radius: var(--border);
   letter-spacing: var(--spacing);
   overflow: hidden;
 
-  @media ${bootstrap.lg} {
-    padding: 5px 0 0 5px;
-    height: 27px;
+  @media ${portrait.laptop} {
+    height: 35px;
   }
   @media ${bootstrap.sm} {
-    padding: 5px 0 0 5px;
-    height: 25px;
+    padding: 8px;
+    height: 31px;
   }
   @media ${portrait.mobileL} {
-    padding: 5px 0 0 5px;
-    height: 23px;
+    padding: 7px;
+    height: 27px;
+  }
+  @media ${portrait.mobileM} {
+    height: 25px;
   }
 `
 
