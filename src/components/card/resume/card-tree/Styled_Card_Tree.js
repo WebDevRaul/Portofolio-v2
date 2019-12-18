@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledCardTree = styled.div`
   .card-two {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     .coding, .knowledge {
       padding: 10px 0;
       h5 {

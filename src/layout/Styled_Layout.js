@@ -28,7 +28,7 @@ const StyledLayout = styled.main`
     }
   }
   @media ${bootstrap.sm} {
-    padding: 0 15px;
+    padding: 0 15px 15px 15px;
     h1 {
       font-size: 3.4em
     }

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { portrait } from '../../../../utils/responsive';
 
 const StyledReview = styled.div`
-  margin-bottom: 10px;
+  padding-bottom: 20px;
   .review {
     overflow: hidden;
     padding: 0 10px;

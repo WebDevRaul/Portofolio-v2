@@ -36,6 +36,9 @@ const StyledForm = styled.div`
   }
   @media ${bootstrap.lg} {
     padding-bottom: 5px;
+    ::after {
+      content: '';
+    }
     form {
       button {
         margin: auto;

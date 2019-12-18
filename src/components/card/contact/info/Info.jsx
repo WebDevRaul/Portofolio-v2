@@ -10,7 +10,7 @@ const Info = () => (
         <Li span='Email . . . . . . .' p='MyEmail@email.com' />
       </div>
       <div className='second'>
-        <Li span='Phone' p='078 123 456' />
+        <Li span='Phone . . . . . . .' p='078 123 456' />
         <Li span='Freelance . . . . . . .' p='Available' />
       </div>
     </div>

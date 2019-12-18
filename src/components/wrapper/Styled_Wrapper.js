@@ -13,7 +13,7 @@ const StyledWrapper = styled.div`
     .mobile-view-top, .mobile-view-card {
       display: flex;
       max-width: 550px;
-      margin: 0 auto 10px auto;
+      margin: 0 auto;
     }
     .placeholder {
       padding: 40px;

@@ -4,6 +4,7 @@ import { bootstrap } from '../../../../utils/responsive';
 const StyledAboutMe = styled.div`
   .about-me {
     margin-bottom: 30px;
+    padding-top: 20px;
     .list {
       display: flex;
       justify-content: space-between;
