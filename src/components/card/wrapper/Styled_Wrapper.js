@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { bootstrap, portrait } from '../../../utils/responsive';
+import { bootstrap } from '../../../utils/responsive';
 
 const StyledWrapper = styled.section`
   position: relative;
@@ -60,7 +60,7 @@ const StyledWrapper = styled.section`
       -o-transform: translateX(0%);
     }
   }
-  @media ${bootstrap.sm} {
+  @media ${bootstrap.lg} {
     .wrapper {
       padding: 0px;
       .content-bottom, .content-top {

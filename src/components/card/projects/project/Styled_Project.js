@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bootstrap } from '../../../../utils/responsive';
 
 const StyledProject = styled.div`
   .project {
@@ -41,6 +42,10 @@ const StyledProject = styled.div`
         position: relative;
       }
     }
+  }
+
+  @media ${bootstrap.lg} {
+    padding-bottom: 20px;
   }
 `
 

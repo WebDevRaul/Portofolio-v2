@@ -4,6 +4,7 @@ import { portrait, bootstrap } from '../../../../utils/responsive';
 const StyledModal = styled.div`
   position: absolute;
   width: 100%;
+  height: 100%;
   left: 0px;
   top: 0;
   z-index: 50;
@@ -13,10 +14,12 @@ const StyledModal = styled.div`
     }
   }
   .project-modal {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    h5 {
-      padding: 15px 0;
+    justify-content: space-between;
+    h5, p {
+      padding: 0 10px;
     }
     .address {
       display: flex;
@@ -63,7 +66,7 @@ const StyledModal = styled.div`
   }
   @media ${bootstrap.sm} {
     .close-modal {
-      top: 84px;
+      top: 82px;
       span {
         height: 20px;
       }
@@ -71,12 +74,12 @@ const StyledModal = styled.div`
   }
   @media ${portrait.mobileL} {
     .close-modal {
-      top: 77px;
+      top: 75px;
     }
   }
   @media ${portrait.mobileM} {
     .close-modal {
-      top: 69px;
+      top: 67px;
     }
   }
 `

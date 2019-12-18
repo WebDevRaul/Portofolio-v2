@@ -101,16 +101,16 @@ input:-webkit-autofill:focus {
 }
 @media (max-width: 575px) {
   .modal-scrollIntoView-hook {
-    bottom: 58px;
+    bottom: 82px;
   }
 }
 @media (max-width: 425px) {
   .modal-scrollIntoView-hook {
-    bottom: 50px;
+    bottom: 74px;
   }
 }
 @media (max-width: 375px) {
   .modal-scrollIntoView-hook {
-    bottom: 43px;
+    bottom: 67px;
   }
 }
