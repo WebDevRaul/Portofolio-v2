@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { bootstrap } from '../../utils/responsive';
+import { bootstrap, orientation } from '../../utils/responsive';
 
 const StyledWrapper = styled.div`
   .mobile-view-top, .mobile-view-card {

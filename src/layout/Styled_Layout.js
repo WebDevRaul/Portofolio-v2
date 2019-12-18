@@ -7,7 +7,6 @@ const StyledLayout = styled.main`
   color: var(--lightWhite);
   min-height: 100vh;
 
-
   @media ${portrait.laptopL} {
     font-size: 1em;
   }
@@ -28,7 +27,7 @@ const StyledLayout = styled.main`
     }
   }
   @media ${bootstrap.sm} {
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 0 15px;
     h1 {
       font-size: 3.4em
     }

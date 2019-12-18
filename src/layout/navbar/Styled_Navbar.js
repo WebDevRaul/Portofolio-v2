@@ -62,6 +62,7 @@ const StyledNavbar = styled.nav`
       position: fixed;
       top: 50%;
       transform: translateY(-50%);
+      margin: 0px;
     }
   }
   @media ${bootstrap.sm} {
