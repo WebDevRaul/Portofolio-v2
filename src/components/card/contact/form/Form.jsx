@@ -24,13 +24,13 @@ const Form = () => {
     e.preventDefault();
     const { errors, isValid } = validateForm(state);
     if(!isValid) return setError({ ...error, ...errors });
-    console.log('proceed')
+    e.target.submit();
   }
 
   return (
     <StyledForm>
       <Title text='Contact Form' />
-      <form noValidate onSubmit={onSubmit}>
+      <form noValidate onSubmit={onSubmit} method="post" netlify-honeypot="bot-field" data-netlify="true">
         <div className='data'>
           <Input
             name='name'

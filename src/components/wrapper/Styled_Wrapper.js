@@ -32,9 +32,6 @@ const StyledWrapper = styled.div`
       display: none;
     }
   }
-  @media ${portrait.laptopL} and (min-height: 767px) {
-
-  }
 `
 
 export default StyledWrapper;
