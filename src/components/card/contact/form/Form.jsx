@@ -24,13 +24,21 @@ const Form = () => {
     e.preventDefault();
     const { errors, isValid } = validateForm(state);
     if(!isValid) return setError({ ...error, ...errors });
-    e.target.submit();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: JSON.stringify({ "form-name": "contact", ...state })
+      // body: encode({ "form-name": "contact", ...state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
   }
 
   return (
     <StyledForm>
       <Title text='Contact Form' />
-      <form noValidate onSubmit={onSubmit} method="post" netlify-honeypot="bot-field" data-netlify="true">
+      <form noValidate onSubmit={onSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
         <div className='data'>
           <Input
             name='name'
