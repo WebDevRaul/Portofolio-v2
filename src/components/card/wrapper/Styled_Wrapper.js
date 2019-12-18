@@ -7,7 +7,6 @@ const StyledWrapper = styled.section`
     position: absolute;
     top: 0;
     height: calc(100vh - 120px);
-    max-height: 730px;
     width: 100%;
     padding: 0 10px 0 18px;
     background-color: var(--grey);

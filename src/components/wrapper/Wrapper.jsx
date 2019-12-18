@@ -11,20 +11,13 @@ const Wrapper = () => {
 
   return (
     <StyledWrapper>
-      <div className='row no-gutters'>
-        <div className='col-12 col-lg-5'>
-          <div className='mobile-view-top'>
-            <Navbar state={state} setState={setState} />
-            <i className='placeholder' />
-            <Profile />
-          </div>
-        </div>
-        <div className='col-12 col-lg-7'>
-          <div className='mobile-view-card'>
-            <i className='placeholder' />
-            <Card { ...state } />
-          </div>
-        </div>
+      <div className='mobile-view-top'>
+        <Navbar state={state} setState={setState} />
+        <Profile />
+      </div>
+      <div className='mobile-view-bottom'>
+        <i className='placeholder' />
+        <Card { ...state } />
       </div>
     </StyledWrapper>
   )

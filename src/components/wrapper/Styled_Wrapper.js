@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { bootstrap, orientation } from '../../utils/responsive';
+import { bootstrap, portrait } from '../../utils/responsive';
 
 const StyledWrapper = styled.div`
-  .mobile-view-top, .mobile-view-card {
+  display: flex;
+  .mobile-view-top, .mobile-view-bottom {
     display: flex;
     width: 100%;
   }
@@ -10,7 +11,8 @@ const StyledWrapper = styled.div`
     display: none;
   }
   @media ${bootstrap.lg} {
-    .mobile-view-top, .mobile-view-card {
+    flex-direction: column;
+    .mobile-view-top, .mobile-view-bottom {
       display: flex;
       max-width: 550px;
       margin: 0 auto;
@@ -21,7 +23,7 @@ const StyledWrapper = styled.div`
     }
   }
   @media ${bootstrap.sm} {
-    .mobile-view-top, .mobile-view-card {
+    .mobile-view-top, .mobile-view-bottom {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -29,6 +31,9 @@ const StyledWrapper = styled.div`
     .placeholder {
       display: none;
     }
+  }
+  @media ${portrait.laptopL} and (min-height: 767px) {
+
   }
 `
 

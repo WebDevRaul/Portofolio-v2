@@ -4,6 +4,7 @@ import { portrait, bootstrap, landscape } from '../../utils/responsive';
 const StyledProfile = styled.section`
   width: 100%;
   z-index: 20;
+  display: flex;
   .profile {
     position: relative;
     display: flex;
@@ -11,7 +12,6 @@ const StyledProfile = styled.section`
     justify-content: flex-end;
     align-items: center;
     height: calc(100vh - 100px);
-    max-height: 750px;
     width: 100%;
     border-radius: var(--border);
     background: var(--grey);

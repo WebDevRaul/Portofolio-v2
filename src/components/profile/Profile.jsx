@@ -10,6 +10,7 @@ import StyledProfile from './Styled_Profile';
 const Profile = () => {
   return (
     <StyledProfile>
+      <i className='placeholder' />
       <div className='profile'>
         <Background />
         <Photo />
