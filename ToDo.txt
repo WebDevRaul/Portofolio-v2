@@ -1,22 +1,3 @@
-gatsby svg
-
-linear-gradient(var(--black) 70%, transparent 100%);
 typeof window !== 'undefined' && window
 
 // eslint-disable-next-line
-
-@media ${portrait.laptopL} {
-
-}
-@media ${portrait.laptop} {
-
-}
-@media ${portrait.tablet} {
-
-}
-@media ${portrait.mobileL} {
-
-}
-@media ${portrait.mobileM} {
-  
-}
