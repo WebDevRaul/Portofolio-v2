@@ -12,7 +12,10 @@ const Error = ({ onClose, slide }) => (
         <span onClick={onClose}><CloseIcon /></span>
       </div>
       <div className='message'>
-        error
+        <div className='logo error'><CloseIcon /></div>
+        <h1>Ooops</h1>
+        <p>Something went wrong on our end.</p>
+        <p>Please go back and try again.</p>
       </div>
     </Wrapper>
   </StyledMessage>

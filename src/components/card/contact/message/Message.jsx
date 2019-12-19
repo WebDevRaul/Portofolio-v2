@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CloseIcon from '@material-ui/icons/Close';
 import Wrapper from '../../wrapper/Wrapper';
+import DoneIcon from '@material-ui/icons/Done';
 
 import StyledMessage from './Styled_Message';
 
@@ -12,7 +13,9 @@ const Message = ({ onClose, slide }) => (
         <span onClick={onClose}><CloseIcon /></span>
       </div>
       <div className='message'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt fugiat maiores non minima ab recusandae culpa qui rem tenetur beatae?
+        <div className='logo'><DoneIcon /></div>
+        <h1>Thank you</h1>
+        <p>Your message has been successfully sent.</p>
       </div>
     </Wrapper>
   </StyledMessage>
