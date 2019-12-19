@@ -33,7 +33,8 @@ const Form = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...state })
+      body: JSON.stringify({ "form-name": "contact", ...state })
+      // body: encode({ "form-name": "contact", ...state })
     })
       .then(() => alert('alert'))
       .catch(error => alert(error));

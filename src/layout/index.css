@@ -78,6 +78,7 @@ input:-webkit-autofill:focus {
 }
 
 .no-height {
+  position: relative;
   height: 0px;
   transition: var(--transition);
 }

@@ -5,7 +5,7 @@ const StyledModal = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0px;
+  left: 0;
   top: 0;
   z-index: 50;
   .wrapper {
@@ -55,6 +55,11 @@ const StyledModal = styled.div`
         cursor: pointer;
         color: var(--primary);
       }
+    }
+  }
+  @media ${bootstrap.lg} {
+    .project-modal {
+      height: 750px;
     }
   }
   @media ${bootstrap.sm} {
