@@ -90,7 +90,7 @@ input:-webkit-autofill:focus {
   height: 100%;
   transition: var(--transition);
 }
-.modal-scrollIntoView-hook {
+.modal-scrollIntoView-hook, .message-scrollIntoView-hook {
   position: absolute;
   height: 1px;
   bottom: 0;
@@ -104,10 +104,14 @@ input:-webkit-autofill:focus {
     height: 750px;
   }
   .height-message {
-    height: 300px;
+    margin-top: 10px;
+    height: 250px;
   }
 }
 @media (max-width: 575px) {
+  .height-message {
+    height: 200px;
+  }
   .modal-scrollIntoView-hook {
     bottom: 82px;
   }

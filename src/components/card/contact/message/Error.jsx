@@ -13,7 +13,7 @@ const Error = ({ onClose, slide }) => (
       </div>
       <div className='message'>
         <div className='logo error'><CloseIcon /></div>
-        <h1>Ooops</h1>
+        <h3>Ooops</h3>
         <p>Something went wrong on our end.</p>
         <p>Please go back and try again.</p>
       </div>

@@ -56,12 +56,14 @@ const Card = ({ about, resume, projects, contact }) => {
     if(mobile) return setState({ ...state, slideModal: false, modal: false });
     setState({ ...state, slideModal: false });
   };
-
+  
   const openMessage = ({ success }) => {
+    if(mobile) setTimeout(() => document.querySelector('.message-scrollIntoView-hook').scrollIntoView({ behavior: 'smooth', block: 'start' }),500);
     if(success) return setMessage({ ...message, slideMessage: true, success: true });
     setMessage({ ...message, slideMessage: true, error: true });
   };
   const onCloseMessage = () => {
+    if(mobile) return setMessage({ success: false, slideMessage: false, error: false });
     setMessage({ ...message, slideMessage: false });
   };
 
@@ -78,6 +80,7 @@ const Card = ({ about, resume, projects, contact }) => {
         { success && <Message onClose={onCloseMessage} slide={slideMessage} /> }
         { error && <Error onClose={onCloseMessage} slide={slideMessage} /> }
       </div>
+      <i className='message-scrollIntoView-hook' />
     </div>
   )
 }

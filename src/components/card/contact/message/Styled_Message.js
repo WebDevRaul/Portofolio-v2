@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bootstrap } from '../../../../utils/responsive';
 
 const StyledMessage = styled.div`
   position: absolute;
@@ -7,6 +8,9 @@ const StyledMessage = styled.div`
   left: 0;
   bottom: 0;
   z-index: 50;
+  > section {
+    height: 100%
+  }
   .wrapper-message {
     display: flex;
     flex-direction: column;
@@ -26,7 +30,7 @@ const StyledMessage = styled.div`
         color: var(--primary);
         margin-bottom: 16px;
         svg {
-          font-size: 5em;
+          font-size: 4em;
         }
       }
       .error {
@@ -52,6 +56,11 @@ const StyledMessage = styled.div`
         cursor: pointer;
         color: var(--primary);
       }
+    }
+  }
+  @media ${bootstrap.lg} {
+    .close-message {
+      right: 10px;
     }
   }
 `

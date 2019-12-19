@@ -14,7 +14,7 @@ const Message = ({ onClose, slide }) => (
       </div>
       <div className='message'>
         <div className='logo'><DoneIcon /></div>
-        <h1>Thank you</h1>
+        <h3>Thank you</h3>
         <p>Your message has been successfully sent.</p>
       </div>
     </Wrapper>

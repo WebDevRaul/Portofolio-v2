@@ -40,7 +40,7 @@ const Form = ({ openMessage }) => {
       .then(() => openMessage({ success: true }))
       .catch(err => openMessage({ success: false }));
 
-    // setState({ name: '', email: '', text: ''  });
+    setState({ name: '', email: '', text: ''  });
   }
 
   return (
