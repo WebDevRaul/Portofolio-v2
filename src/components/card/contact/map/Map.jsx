@@ -18,9 +18,9 @@ const Map = () => {
           defaultCenter={{ lat:47.0247, lng:28.8326 }}
           defaultZoom={5}
         >
-          {/* <div className='marker' lat={47.0247} lng={28.8326}>
+          <div className='marker' lat={47.0247} lng={28.8326}>
             <RoomIcon />
-          </div> */}
+          </div>
         </GoogleMapReact>
       </div>
     </StyledMap>
