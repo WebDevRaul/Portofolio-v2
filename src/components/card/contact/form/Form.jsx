@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Input from '../../../common/form/input/Input';
 import TextArea from '../../../common/form/textarea/Textarea';
 import KeyboardCapslockIcon from '@material-ui/icons/KeyboardCapslock';
@@ -13,7 +14,7 @@ function encode(data) {
     .join("&");
 }
 
-const Form = () => {
+const Form = ({ openMessage }) => {
   const [state, setState] = useState({ name: '', email: '', text: '' });
   const [error, setError] = useState({ name: '', email: '', text: '' });
   const { name, email, text } = state;
@@ -33,13 +34,12 @@ const Form = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: JSON.stringify({ "form-name": "contact", ...state })
-      // body: encode({ "form-name": "contact", ...state })
+      body: encode({ "form-name": "contact", ...state })
     })
-      .then(() => alert('alert'))
-      .catch(error => alert(error));
+      .then(() => openMessage({ success: true }))
+      .catch(err => openMessage({ success: false }));
     // Clear state
-    setState({ name: '', email: '', text: ''  })
+    // setState({ name: '', email: '', text: ''  });
   }
 
   return (
@@ -52,7 +52,7 @@ const Form = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        <input name="form-name" value="contact" hidden />
+        <input name="form-name" value="contact" hidden readOnly/>
         <input name="bot-field" onChange={onChange} hidden />
         <div className='data'>
           <Input
@@ -89,6 +89,10 @@ const Form = () => {
       </form>
     </StyledForm>
   )
+}
+
+Form.propTypes = {
+  openMessage: PropTypes.func.isRequired
 }
 
 export default Form;

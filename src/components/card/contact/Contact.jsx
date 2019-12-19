@@ -5,19 +5,20 @@ import Info from './info/Info';
 import Form from './form/Form';
 import Wrapper from '../wrapper/Wrapper';
 
-const Contact = ({ slide }) => {
+const Contact = ({ slide, openMessage }) => {
   return(
     <Wrapper slide={slide} isClass='contact-wrapper'>
       <i className='contact' style={{ position: 'absolute', top: '-70px' }} />
       <Map />
       <Info />
-      <Form />
+      <Form openMessage={openMessage} />
     </Wrapper>
   )
 }
 
 Contact.propTypes = {
-  slide: PropTypes.bool.isRequired
+  slide: PropTypes.bool.isRequired,
+  openMessage: PropTypes.func.isRequired
 }
 
 export default Contact;

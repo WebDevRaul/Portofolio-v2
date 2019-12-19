@@ -6,6 +6,7 @@ const StyledLayout = styled.main`
   background-color: var(--black);
   color: var(--lightWhite);
   min-height: 100vh;
+  overflow: hidden;
 
   @media ${portrait.laptopL} {
     font-size: 1em;

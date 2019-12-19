@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { bootstrap, portrait } from '../../../../utils/responsive';
+import { bootstrap } from '../../../../utils/responsive';
 
 const StyledCardOne = styled.div`
   h5 {
