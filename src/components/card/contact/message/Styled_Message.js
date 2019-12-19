@@ -5,7 +5,7 @@ const StyledMessage = styled.div`
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0;
+  bottom: 0;
   z-index: 50;
   .wrapper-message {
     display: flex;

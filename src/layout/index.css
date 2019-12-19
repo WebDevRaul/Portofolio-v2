@@ -77,12 +77,16 @@ input:-webkit-autofill:focus {
   border-radius: 50px;
 }
 
-.no-height {
+.no-height-modal, .no-height-message {
   position: relative;
   height: 0px;
   transition: var(--transition);
 }
-.height {
+.height-modal {
+  height: 100%;
+  transition: var(--transition);
+}
+.height-message {
   height: 100%;
   transition: var(--transition);
 }
@@ -96,8 +100,11 @@ input:-webkit-autofill:focus {
 }
 
 @media (max-width: 991px) {
-  .height {
+  .height-modal {
     height: 750px;
+  }
+  .height-message {
+    height: 300px;
   }
 }
 @media (max-width: 575px) {

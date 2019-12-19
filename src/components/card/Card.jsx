@@ -70,12 +70,14 @@ const Card = ({ about, resume, projects, contact }) => {
       <About slide={about} />
       <Resume slide={resume} />
       <Projects slide={projects} onOpen={onOpenModal} />
-      <div className={classnames('no-height', {'height' : modal})}>
+      <div className={classnames('no-height-modal', {'height-modal' : modal})}>
         { modal && <Modal { ...data } onClose={onCloseModal} slide={slideModal} /> }
       </div>
       <Contact slide={contact} openMessage={openMessage} />
-      { success && <Message onClose={onCloseMessage} slide={slideMessage} /> }
-      { error && <Error onClose={onCloseMessage} slide={slideMessage} /> }
+      <div className={classnames('no-height-message', {'height-message' : (success || error)})}>
+        { success && <Message onClose={onCloseMessage} slide={slideMessage} /> }
+        { error && <Error onClose={onCloseMessage} slide={slideMessage} /> }
+      </div>
     </div>
   )
 }
