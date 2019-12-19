@@ -7,8 +7,9 @@ import RoomIcon from '@material-ui/icons/Room';
 import StyledMap from './Styled_Map';
 import ToRight from '../../../common/content/To_Right';
 
+const Marker = () => <div className='marker'><RoomIcon /></div>;
+
 const Map = () => {
-  console.log(GOOGLE_MAP_API_KEY)
   return(
     <StyledMap>
       <Title text='Get in Touch' />
@@ -19,9 +20,10 @@ const Map = () => {
           defaultCenter={{ lat:47.0247, lng:28.8326 }}
           defaultZoom={5}
         >
-          <div className='marker' lat={47.0247} lng={28.8326}>
-            <RoomIcon />
-          </div>
+          <Marker
+            lat={47.0247}
+            lng={28.8326}
+          />
         </GoogleMapReact>
       </div>
     </StyledMap>
