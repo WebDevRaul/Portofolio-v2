@@ -3,16 +3,18 @@ import PropTypes from 'prop-types';
 import CustomButton from '../../common/button/Custom_Button';
 import GetApp from '@material-ui/icons/GetApp';
 import KeyboardCapslockIcon from '@material-ui/icons/KeyboardCapslock';
+import pdf from './CV.pdf';
 
 import StyledFooter from './Styled_Footer';
 
 const Footer = ({ onRedirect }) => {
-  const onDownload = () => {};
   return (
     <StyledFooter>
       <div className='footer'>
         <div className='right'>
-          <CustomButton text='download cv' onClick={onDownload} isLogo={<GetApp />} />
+          <a href={pdf} download={pdf}>
+            <CustomButton text='download cv' onClick={() => {}} isLogo={<GetApp />} />
+          </a>
         </div>
         <div className='middle' />
         <div className='left'>
