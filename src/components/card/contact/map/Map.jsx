@@ -8,6 +8,7 @@ import StyledMap from './Styled_Map';
 import ToRight from '../../../common/content/To_Right';
 
 const Map = () => {
+  console.log(GOOGLE_MAP_API_KEY)
   return(
     <StyledMap>
       <Title text='Get in Touch' />
