@@ -12,6 +12,11 @@ const StyledMap = styled.div`
     height: 260px;
     div > div {
       border-radius: var(--border);
+      > div {
+        :nth-child(2) {
+          display: none;
+        }
+      }
     }
     .marker {
       position: absolute;
