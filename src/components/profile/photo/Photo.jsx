@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 const Photo = () => {
-  const img = useStaticQuery(photo).photo.childImageSharp.fluid;
+  const img = useStaticQuery(photo).file.childImageSharp.fluid;
 
   return (
     <div className='photo'>
@@ -13,15 +13,15 @@ const Photo = () => {
 }
 
 const photo = graphql`
-  query {
-    photo: file(relativePath: { eq: "photo.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 200) {
-          ...GatsbyImageSharpFluid
-        }
+query {
+  file(relativePath: {eq: "photo.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 200) {
+        ...GatsbyImageSharpFluid
       }
     }
   }
+}
 `
 
 export default Photo;

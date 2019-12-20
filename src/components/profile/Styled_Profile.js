@@ -30,27 +30,31 @@ const StyledProfile = styled.section`
       z-index: -10;
     }
     .photo {
-      width: calc(100vw / 10);
-      height: calc(100vw / 10);
+      width: calc(100vh / 5);
+      height: calc(100vh / 5);
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      transition: var(--transition);
+      display: block;
+      border-radius: 50px;
       ::before {
         content: '';
         position: absolute;
-        width: calc(100vw / 10);
-        height: calc(100vw / 10);
-        border-radius: calc(100vw / 10);
+        width: calc(100vh / 5);
+        height: calc(100vh / 5);
+        border-radius: calc(100vh / 5);
         top: 10px;
         left: -10px;
         background: linear-gradient(135deg, rgba(120, 204, 109, .3) 0%, rgba(120, 204, 109, .01) 100%);
-        transition: var(--transition);
+      }
+      > div {
+        height: calc(100vh / 5);
+        height: calc(100vh / 5);
       }
       img {
-        border-radius: calc(100vw / 10);
-        transition: var(--transition);
+        border-radius: calc(100vh / 5);
+        object-position: top !important;
       }
     }
     h5 {
@@ -75,18 +79,6 @@ const StyledProfile = styled.section`
       h3 {
         font-size: 2.2em;
       }
-      .photo {
-        width: 150px;
-        height: 150px;
-        ::before {
-          width: 150px;
-          height: 150px;
-          border-radius: 150px;
-        }
-        img {
-          border-radius: 150px;
-        }
-      }
     }
   }
   @media ${bootstrap.sm}{
@@ -96,60 +88,26 @@ const StyledProfile = styled.section`
       ul, h3, h5 {
         margin-bottom: 12px;
       }
-      .photo {
-        width: calc(100vw / 4);
-        height: calc(100vw / 4);
-        ::before {
-          width: calc(100vw / 4);
-          height: calc(100vw / 4);
-          border-radius: calc(100vw / 4);
-        }
-        img {
-          border-radius: calc(100vw / 4);
-        }
-      }
     }
   }
   @media ${portrait.mobileL} {
     .profile {
       margin-top: 85px;
-      .photo {
-        width: calc(100vw / 3);
-        height: calc(100vw / 3);
-        ::before {
-          width: calc(100vw / 3);
-          height: calc(100vw / 3);
-          border-radius: calc(100vw / 3);
-        }
-        img {
-          border-radius: calc(100vw / 3);
-        }
-      }
     }
   }
   @media ${landscape.mobile} {
     .profile {
       .photo {
-        top: 25px;
+        top: 50px;
         left: 50%;
         transform: translate(-50%);
-        width: calc(100vh / 4);
-        height: calc(100vh / 4);
-        ::before {
-          width: calc(100vh / 4);
-          height: calc(100vh / 4);
-          border-radius: calc(100vh / 4);
-        }
-        img {
-          border-radius: calc(100vh / 4);
-        }
       }
     }
   }
   @media ${landscape.mobileM} {
     .profile {
       .photo {
-        top: 10px;
+        top: 20px;
       }
     }
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from 'gatsby-background-image';
 
 import StyledBckground from './Styled_Background';
 
