@@ -10,15 +10,15 @@ const Experience = () => (
     <Box
       from='2018'
       to='Present'
-      title='Lorem ipsum'
-      description='Lorem ipsum dolor sit amet, consectetur adipisicing elit?'
+      title='Web developer'
+      description='Building websites ever since.'
     />
     <ToLeft width={100} isClass='' />
     <Box
       from='2017'
       to='2018'
-      title='Lorem ipsum'
-      description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, dolores?'
+      title='Junior web developer'
+      description='Learning the basic of programming from different sources like: Codecademy, freeCodeCamp & Udemy.'
     />
   </div>
 )

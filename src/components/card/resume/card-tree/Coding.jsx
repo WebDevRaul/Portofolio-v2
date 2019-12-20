@@ -23,8 +23,8 @@ const Coding = () => (
         </div>
         <div className='col-6'>
           <Logo logo={<Gatsby width='50px' height='50px' />} text='Gatsby' />
-          <Logo logo={<Redux width='25px' height='25px' />} text='Redux' />
           <Logo logo={<GraphQl width='25px' height='25px' />} text='Graph Ql' />
+          <Logo logo={<Redux width='25px' height='25px' />} text='Redux' />
           <Logo logo={<Css width='25px' height='25px' />} text='Css' />
           <Logo logo={<Sass width='25px' height='25px' />} text='Sass' />
           <Logo logo={<Bootstrap width='25px' height='25px' />} text='Bootstrap' />
