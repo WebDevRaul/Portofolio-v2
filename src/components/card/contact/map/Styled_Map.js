@@ -14,7 +14,22 @@ const StyledMap = styled.div`
       border-radius: var(--border);
       > div {
         :nth-child(2) {
-          display: none;
+          background: transparent !important;
+          border: none !important;
+          > div, table {
+            background: transparent;
+            color: transparent;
+            span {
+              color: transparent !important;
+            }
+            tr {
+              td {
+                .dismissButton {
+                  display: none !important;
+                }
+              }
+            }
+          }
         }
       }
     }
