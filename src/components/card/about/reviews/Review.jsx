@@ -11,10 +11,10 @@ const Review = () => {
   const [photo, setPhoto] = useState(0);
   const [state, setState] = useState({ animate: false, left: false, right: false });
   const [active, setActive] = useState(false);
-  const { allImageSharp } = useStaticQuery(image);
+  const { allFile } = useStaticQuery(image);
 
-  const node = allImageSharp.nodes[photo].fluid;
-  const length = allImageSharp.nodes.length - 1
+  const node = allFile.nodes[photo].childImageSharp.fluid;
+  const length = allFile.nodes.length - 1;
   
   const onNext = () => {
     if(active) return;
@@ -51,14 +51,18 @@ const Review = () => {
 
 const image = graphql`
   query {
-    allImageSharp {
+    allFile(filter: {relativeDirectory: {eq: "review"}}) {
       nodes {
-        fluid(maxHeight: 75, maxWidth: 75) {
-          ...GatsbyImageSharpFluid
+        childImageSharp {
+          fluid(maxHeight: 75, maxWidth: 75) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
   }
 `
+
+
 
 export default Review;

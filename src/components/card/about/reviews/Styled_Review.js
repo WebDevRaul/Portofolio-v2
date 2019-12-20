@@ -31,7 +31,7 @@ const StyledReview = styled.div`
       .photo {
         width: 75px;
         height: 75px;
-        margin-bottom: 14px;
+        margin: 0 auto 14px auto;
         img {
           border-radius: 50px;
         }
