@@ -14,7 +14,6 @@ const StyledModal = styled.div`
     }
   }
   .project-modal {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

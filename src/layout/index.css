@@ -78,7 +78,9 @@ input:-webkit-autofill:focus {
 }
 
 .no-height-modal, .no-height-message {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
   height: 0px;
   transition: var(--transition);
 }
@@ -100,6 +102,9 @@ input:-webkit-autofill:focus {
 }
 
 @media (max-width: 991px) {
+  .no-height-modal, .no-height-message {
+    position: relative;
+  }
   .height-modal {
     height: 750px;
   }
