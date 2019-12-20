@@ -1,23 +1,23 @@
 const Users = [
   {
-    name: 'Gatsby 112',
-    photo: '/gatsby-icon.png',
-    text: 'Gatsby da Lorem ipsum dolor sit amet sd sd dsdad sda daf fasf'
+    name: 'Saffa Stout',
+    photo: '/SaffaStout.jpg',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio possimus magni commodi animi maiores mollitia accusamus iure ratione iusto dolores.'
   },
   {
-    name: 'Background',
-    photo: '/background.jpg',
-    text: 'Background Lorem ipsum dolor sit amet. Sed quas ea dsf  temporibus iste commodi ipsam tempore enim modi ducimus veniam.'
+    name: 'Nasir Hutchinson',
+    photo: '/NasirHutchinson.jpg',
+    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, fugit.'
   },
   {
-    name: 'Trandafir',
-    photo: '/placeholder.jpg',
-    text: 'Trandafir Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    name: 'Greta Lara',
+    photo: '/GretaLara.jpg',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt voluptas labore impedit sapiente repellat qui veniam nesciunt, maxime officiis in neque dolorem quo ducimus placeat nihil sequi, quisquam cum.'
   },
   {
-    name: 'Joe 154',
-    photo: '/images2.jpg',
-    text: 'Trandafir Lorem ipsum dolor sit amet sd sd dsdad sda daf fasf wfrawfsfsf consectda adad adada dadaetur adipisic dsa dasda dasdasda asdasdsd dsds ddsing el'
+    name: 'Dominik Ortiz',
+    photo: '/DominikOrtiz.jpg',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, consequatur consectetur quia dolore esse earum.'
   },
 ];
 

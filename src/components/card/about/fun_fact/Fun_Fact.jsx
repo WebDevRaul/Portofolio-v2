@@ -2,10 +2,10 @@ import React from 'react';
 
 import Title from '../../../common/title/Title';
 import Box from './Box';
-import MusicNoteIcon from '@material-ui/icons/MusicNote';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import FlagIcon from '@material-ui/icons/Flag';
-import TheatersIcon from '@material-ui/icons/Theaters';
+import PetsIcon from '@material-ui/icons/Pets';
 
 import StyledFunFact from './Styled_Fun_Fact';
 import ToRight from '../../../common/content/To_Right';
@@ -19,15 +19,15 @@ const FunFact = () => (
       <ToLeft width={50} isClass='left' />
       <ToRight width={50} isClass='right' />
       <div className='d-flex justify-content-around w-50 position-relative'>
-        <Box logo={<MusicNoteIcon />} text='lorem lorem' />
+        <Box logo={<GitHubIcon />} text='2000 contributions over the past year.' />
         <FromTop height={100} isClass='top' />
-        <Box logo={<LocalCafeIcon />} text='lorem lorem' />
+        <Box logo={<LocalCafeIcon />} text='42 Cups of coffee.' />
         <FromTop height={100} isClass='top right' />
       </div>
       <div className='d-flex justify-content-around w-50 position-relative'>
-        <Box logo={<FlagIcon />} text='lorem lorem' />
+        <Box logo={<FlagIcon />} text='11 Countries visited.' />
         <FromTop height={100} isClass='top' />
-        <Box logo={<TheatersIcon />} text='lorem lorem' />
+        <Box logo={<PetsIcon />} text='I like hamsters.' />
       </div>
     </div>
   </StyledFunFact>

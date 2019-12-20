@@ -16,6 +16,9 @@ const StyledFunFact = styled.div`
         margin-bottom: 10px;
         color: var(--primary);
       }
+      p {
+        text-align: center;
+      }
     }
   }
 `

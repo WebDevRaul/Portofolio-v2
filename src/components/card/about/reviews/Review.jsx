@@ -12,7 +12,7 @@ const Review = () => {
   const [state, setState] = useState({ animate: false, left: false, right: false });
   const [active, setActive] = useState(false);
   const { allImageSharp } = useStaticQuery(image);
-  
+
   const node = allImageSharp.nodes[photo].fluid;
   const length = allImageSharp.nodes.length - 1
   
@@ -35,7 +35,7 @@ const Review = () => {
     setState({ animate: !state.animate, left: false, right: true});
     setActive(true);
   }
-
+  
   const user = Users.filter(el => el.photo === node.src.slice(node.src.lastIndexOf('/')))[0];
 
   return(

@@ -14,7 +14,7 @@ const Photo = () => {
 
 const photo = graphql`
   query {
-    photo: file(relativePath: { eq: "placeholder.jpg" }) {
+    photo: file(relativePath: { eq: "photo.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200, maxHeight: 200) {
           ...GatsbyImageSharpFluid

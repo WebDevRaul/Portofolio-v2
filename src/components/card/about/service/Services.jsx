@@ -28,7 +28,7 @@ const Services = () => (
         <Box logo={<HeadsetMicIcon />} title='Support' text='Finding and fixing issues in your website, to keep you and your customers happy.'>
           <ToLeft width={100} isClass='n-top' />
         </Box>
-        <Box logo={<SupervisorAccountIcon />} title='Review' text='Website review'>
+        <Box logo={<SupervisorAccountIcon />} title='Review' text='Website review.'>
           <FromTop height={100} isClass='n-left top' />
         </Box>
       </div>
