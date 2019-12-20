@@ -20,7 +20,7 @@ const Wrapper = () => {
       </div>
       <div className='mobile-view-bottom'>
         <i className='placeholder' />
-        <Card { ...state } />
+        <Card { ...state } onRedirect={onRedirect} />
       </div>
     </StyledWrapper>
   )

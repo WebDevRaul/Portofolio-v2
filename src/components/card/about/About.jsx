@@ -8,19 +8,20 @@ import Review from './reviews/Review';
 import Wrapper from '../wrapper/Wrapper';
 
 
-const About = ({ slide }) => (
+const About = ({ slide, onRedirect }) => (
   <Wrapper slide={slide} isClass='about-wrapper' >
     <i className='about' style={{ position: 'absolute', top: '-70px' }} />
     <AboutMe />
     <Services />
-    <Pricing />
+    <Pricing onRedirect={onRedirect} />
     <FunFact />
     <Review />
   </Wrapper>
 )
 
 About.propTypes = {
-  slide: PropTypes.bool.isRequired
+  slide: PropTypes.bool.isRequired,
+  onRedirect: PropTypes.func.isRequired
 }
 
 export default About;

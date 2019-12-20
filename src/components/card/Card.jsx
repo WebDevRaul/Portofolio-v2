@@ -10,7 +10,7 @@ import Modal from './projects/modal/Modal';
 import Message from './contact/message/Message';
 import Error from './contact/message/Error';
 
-const Card = ({ about, resume, projects, contact }) => {
+const Card = ({ about, resume, projects, contact, onRedirect }) => {
   const [state, setState] = useState({ modal: false, slideModal: false, data: {} });
   const [message, setMessage] = useState({ success: false, slideMessage: false, error: false });
   const [mobile, setMobile] = useState(false);
@@ -69,7 +69,7 @@ const Card = ({ about, resume, projects, contact }) => {
 
   return (
     <div style={{ position: 'relative', marginTop: '10px',marginBottom: '20px', width: '100%' }}>
-      <About slide={about} />
+      <About slide={about} onRedirect={onRedirect} />
       <Resume slide={resume} />
       <Projects slide={projects} onOpen={onOpenModal} />
       <div className={classnames('no-height-modal', {'height-modal' : modal})}>
@@ -89,7 +89,8 @@ Card.propTypes = {
   about: PropTypes.bool.isRequired,
   resume: PropTypes.bool.isRequired,
   projects: PropTypes.bool.isRequired,
-  contact: PropTypes.bool.isRequired
+  contact: PropTypes.bool.isRequired,
+  onRedirect: PropTypes.func.isRequired
 }
 
 export default Card;
