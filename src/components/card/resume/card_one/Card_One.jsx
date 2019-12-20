@@ -4,7 +4,7 @@ import ToRight from '../../../common/content/To_Right';
 import ToLeft from '../../../common/content/To_Left';
 import FromTop from '../../../common/content/From_Top';
 import Experience from './Experience';
-import Education from './Education';
+import Activities from './Activities';
 
 import StyledCardOne from './Styled_Card_One';
 
@@ -20,7 +20,7 @@ const CardOne = () => (
         </div>
         <div className='col-6'>
           <ToRight width={100} isClass='' />
-          <Education />
+          <Activities />
         </div>
       </div>
     </div>

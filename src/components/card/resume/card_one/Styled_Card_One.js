@@ -7,7 +7,7 @@ const StyledCardOne = styled.div`
   }
   .card-one {
     margin-bottom: 30px;
-    .experience, .education {
+    .experience, .activities {
       padding: 10px 0;
       h5 {
         display: flex;
@@ -45,7 +45,7 @@ const StyledCardOne = styled.div`
         padding-right: 18px;
       }
     }
-    .education {
+    .activities {
       .box {
         padding-left: 18px;
       }

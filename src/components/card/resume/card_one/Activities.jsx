@@ -1,11 +1,11 @@
 import React from 'react';
-import SchoolIcon from '@material-ui/icons/School';
+import ExploreIcon from '@material-ui/icons/Explore';
 import ToRight from '../../../common/content/To_Right';
 import Box from './Box';
 
-const Education = () => (
-  <div className='education'>
-    <h5><SchoolIcon /> Education</h5>
+const Activities = () => (
+  <div className='activities'>
+    <h5><ExploreIcon /> Activities</h5>
     <ToRight width={100} isClass='left' />
     <Box
       from='2018'
@@ -16,4 +16,4 @@ const Education = () => (
   </div>
 )
 
-export default Education;
+export default Activities;

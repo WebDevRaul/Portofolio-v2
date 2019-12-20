@@ -42,7 +42,7 @@ a {
 }
 a:hover {
   transition: var(--transition);
-  color: var(--secondary);
+  color: var(--secondary) !important;
   cursor: pointer;
 }
 
