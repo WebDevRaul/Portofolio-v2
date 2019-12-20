@@ -16,8 +16,8 @@ const Box = ({ icon, option, price, basic }) => (
     <h5>Web Development</h5>
     <h5>Web Support</h5>
     <h5>Web Review</h5>
-    <h5 className={classnames('', {'basic': basic})}>Lorem, ipsum.</h5>
-    <h5 className={classnames('', {'basic': basic})}>Lorem, ipsum.</h5>
+    <h5 className={classnames('', {'basic': basic})}>Web Design</h5>
+    <h5 className={classnames('', {'basic': basic})}>UX/UI Experience</h5>
   </div>
 )
 

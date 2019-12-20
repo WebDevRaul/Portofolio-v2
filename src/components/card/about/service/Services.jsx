@@ -20,15 +20,15 @@ const Services = () => (
         <Box logo={<DevicesOtherIcon />} title='Web Development' text='Modern and mobile-ready website that will help you reach all of your marketing.'>
           <FromBottom height={100} isClass='right top' />
         </Box>
-        <Box logo={<ImportantDevicesIcon />} title='Web Design' text='Lorem ipsum dolor sit amet.'>
+        <Box logo={<ImportantDevicesIcon />} title='Web Design' text='Awesome design that grab customer attention.'>
           <ToRight width={100} isClass='bottom' />
         </Box>
       </div>
       <div className='d-flex second'>
-        <Box logo={<HeadsetMicIcon />} title='Support' text='Lorem ipsum dolor sit amet.'>
+        <Box logo={<HeadsetMicIcon />} title='Support' text='Finding and fixing issues in your website, to keep you and your customers happy.'>
           <ToLeft width={100} isClass='n-top' />
         </Box>
-        <Box logo={<SupervisorAccountIcon />} title='Review' text='Lorem ipsum dolor sit amet.'>
+        <Box logo={<SupervisorAccountIcon />} title='Review' text='Website review'>
           <FromTop height={100} isClass='n-left top' />
         </Box>
       </div>

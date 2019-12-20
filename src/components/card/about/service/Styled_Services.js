@@ -10,7 +10,7 @@ const StyledServices = styled.div`
       flex-direction: column;
       align-items: center;
       width: 50%;
-      min-height: 230px;
+      min-height: 260px;
       height: 100%;
       padding: 10px;
       .logo {
@@ -29,11 +29,12 @@ const StyledServices = styled.div`
       }
       h5 {
         color: var(--lightWhite);
+        text-align: center
       }
       p {
         color: var(--darkWhite);
         margin-bottom: 0px;
-        padding: 0 30px;
+        padding: 0 20px;
       }
     }
   }
