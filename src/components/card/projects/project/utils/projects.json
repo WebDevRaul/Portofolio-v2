@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "title": "background",
-    "description": "background",
-    "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates ipsa minima maxime pariatur ipsum repudiandae earum labore aperiam mollitia.",
-    "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur tenetur ipsa commodi, hic quae dignissimos nulla minima dolores deserunt saepe nemo incidunt dolore culpa, mollitia consequatur magni sunt? Cumque mollitia est ea modi fuga ex incidunt corrupti culpa magni.",
-    "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit, ratione sint quia illum est quae maxime, blanditiis, laudantium officia accusamus reiciendis enim harum explicabo autem voluptatum itaque natus nam nemo vitae quis aspernatur! Tempora veritatis aperiam quo reprehenderit ratione aut est totam. A similique cumque numquam iure! Repudiandae eaque omnis quos quis facere iusto esse veritatis, consequatur tempora nostrum",
-    "address": "https://www.google.com",
-    "photo": "/background.jpg"
+    "title": "Protein Tracker",
+    "description": "Lose weight,bulk up, or maintain a healthy lifestyle by tracking your caloric intake quickly and easily.",
+    "p1": "Calculate your BMR or Set your daily target intake",
+    "p2": "Choose your meal of the day!",
+    "p3": "Add or Edit your product & Clear all meals 'button'.",
+    "address": "https://my-macro-calculator-v2.herokuapp.com",
+    "photo": "/proteinTracker.png"
   },
   {
     "id": 2,
-    "title": "gatsby",
-    "description": "gatsby",
-    "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates ipsa minima maxime pariatur ipsum repudiandae earum labore aperiam mollitia.",
-    "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur tenetur ipsa commodi, hic quae dignissimos nulla minima dolores deserunt saepe nemo incidunt dolore culpa, mollitia consequatur magni sunt? Cumque mollitia est ea modi fuga ex incidunt corrupti culpa magni.",
-    "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit, ratione sint quia illum est quae maxime, blanditiis, laudantium officia accusamus reiciendis enim harum explicabo autem voluptatum itaque natus nam nemo vitae quis aspernatur! Tempora veritatis aperiam quo reprehenderit ratione aut est totam. A similique cumque numquam iure! Repudiandae eaque omnis quos quis facere iusto esse veritatis, consequatur tempora nostrum",
-    "address": "https://www.google.com",
-    "photo": "/gatsby-icon.png"
+    "title": "Live Currency",
+    "description": "This site is an exercise. The data displayed here is not to be considered a model of reference.",
+    "p1": "Today's exchange rates from throughout the world. Select your currency and we'll show you how it's faring against other currencies throughout the world.",
+    "p2": "Currency Convertor",
+    "p3": "With our free Currency Converter tool, you can convert any amount of money from one foreign currency to another with one click of a button.",
+    "address": "https://live-currency-and-convertor-v2.herokuapp.com",
+    "photo": "/liveCurrency.jpg"
   },
   {
     "id": 3,

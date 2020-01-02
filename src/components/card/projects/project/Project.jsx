@@ -7,14 +7,14 @@ import StyledProject from './Styled_Project.js';
 const projects = require('./utils/projects.json');
 
 const Project = ({ onOpen }) => {
-  const { nodes } = useStaticQuery(image).allImageSharp;
+  const { nodes } = useStaticQuery(image).allFile;
   return (
     <StyledProject>
       <div className='project row no-gutters'>
         {
           nodes.map((node, index) => {
-            const project = projects.filter(el => el.photo === node.fluid.src.slice(node.fluid.src.lastIndexOf('/')))[0];
-            return <Box onOpen={onOpen} key={index} image={node.fluid} {...project} />
+            const project = projects.filter(el => el.photo === node.childImageSharp.fluid.src.slice(node.childImageSharp.fluid.src.lastIndexOf('/')))[0];
+            return <Box onOpen={onOpen} key={index} image={node.childImageSharp.fluid} {...project} />
           })
         }
       </div>
@@ -24,10 +24,12 @@ const Project = ({ onOpen }) => {
 
 const image = graphql`
   query {
-    allImageSharp {
+    allFile(filter: {relativeDirectory: {eq: "projects"}}) {
       nodes {
-        fluid(maxWidth: 600, maxHeight: 400) {
-          ...GatsbyImageSharpFluid
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }

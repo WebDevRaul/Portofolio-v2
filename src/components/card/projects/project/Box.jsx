@@ -7,7 +7,7 @@ const Box = ({ image, title, description, p1, p2, p3, address, onOpen }) => {
   const rest = { image, title, description, p1, p2, p3, address };
   return (
     <>
-      <div className='col-5 m-auto'>
+      <div className='col-6 p-2'>
         <div className='project-box'>
           <Photo image={image} onClick={() => onOpen(rest)} />
           <h5>{title}</h5>
