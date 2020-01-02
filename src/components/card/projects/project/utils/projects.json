@@ -5,7 +5,7 @@
     "description": "Lose weight,bulk up, or maintain a healthy lifestyle by tracking your caloric intake quickly and easily.",
     "p1": "Calculate your BMR or Set your daily target intake",
     "p2": "Choose your meal of the day!",
-    "p3": "Add or Edit your product & Clear all meals 'button'.",
+    "p3": "Created with the help of: ",
     "address": "https://my-macro-calculator-v2.herokuapp.com",
     "photo": "/proteinTracker.png"
   },
@@ -14,29 +14,59 @@
     "title": "Live Currency",
     "description": "This site is an exercise. The data displayed here is not to be considered a model of reference.",
     "p1": "Today's exchange rates from throughout the world. Select your currency and we'll show you how it's faring against other currencies throughout the world.",
-    "p2": "Currency Convertor",
-    "p3": "With our free Currency Converter tool, you can convert any amount of money from one foreign currency to another with one click of a button.",
+    "p2": "With our free Currency Converter tool, you can convert any amount of money from one foreign currency to another with one click of a button.",
+    "p3": "Created with the help of: ",
     "address": "https://live-currency-and-convertor-v2.herokuapp.com",
     "photo": "/liveCurrency.jpg"
   },
   {
     "id": 3,
-    "title": "image",
-    "description": "image",
-    "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates ipsa minima maxime pariatur ipsum repudiandae earum labore aperiam mollitia.",
-    "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur tenetur ipsa commodi, hic quae dignissimos nulla minima dolores deserunt saepe nemo incidunt dolore culpa, mollitia consequatur magni sunt? Cumque mollitia est ea modi fuga ex incidunt corrupti culpa magni.",
-    "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit, ratione sint quia illum est quae maxime, blanditiis, laudantium officia accusamus reiciendis enim harum explicabo autem voluptatum itaque natus nam nemo vitae quis aspernatur! Tempora veritatis aperiam quo reprehenderit ratione aut est totam. A similique cumque numquam iure! Repudiandae eaque omnis quos quis facere iusto esse veritatis, consequatur tempora nostrum",
-    "address": "https://www.google.com",
-    "photo": "/images2.jpg"
+    "title": "Face-Recognition",
+    "description": "This Magic Brain will detect faces in your pictures",
+    "p1": "Drag 'n' drop your photo here, or click to select photo",
+    "p2": "Whether you have one photo or more, you are only steps away from using artificial intelligence to recognize the face in your photo.",
+    "p3": "Created with the help of: ",
+    "address": "https://ai-face-recognition.netlify.com/",
+    "photo": "/faceRecognition.jpg"
   },
   {
     "id": 4,
-    "title": "placeholder",
-    "description": "placeholder",
-    "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates ipsa minima maxime pariatur ipsum repudiandae earum labore aperiam mollitia.",
-    "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur tenetur ipsa commodi, hic quae dignissimos nulla minima dolores deserunt saepe nemo incidunt dolore culpa, mollitia consequatur magni sunt? Cumque mollitia est ea modi fuga ex incidunt corrupti culpa magni.",
-    "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit, ratione sint quia illum est quae maxime, blanditiis, laudantium officia accusamus reiciendis enim harum explicabo autem voluptatum itaque natus nam nemo vitae quis aspernatur! Tempora veritatis aperiam quo reprehenderit ratione aut est totam. A similique cumque numquam iure! Repudiandae eaque omnis quos quis facere iusto esse veritatis, consequatur tempora nostrum",
-    "address": "https://www.google.com",
-    "photo": "/placeholder.jpg"
+    "title": "PostgreSQL-CRUD",
+    "description": "CREATE - READ - UPDATE - DELETE with PostgreSQL",
+    "p1": "",
+    "p2": "",
+    "p3": "Created with the help of: ",
+    "address": "https://postgresql-crud-v2.herokuapp.com/",
+    "photo": "/postgresql.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Pagination",
+    "description": "Pagination examples",
+    "p1": "Two different pagination examples with data from JSONPlaceholder & The Movie Database.",
+    "p2": "The JSONPlaceholder is a simple example of pagination and The Movie Database is a more complex one.",
+    "p3": "Created with the help of: ",
+    "address": "https://gatsby-pagination.netlify.com/",
+    "photo": "/pagination.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Monster",
+    "description": "A simple monster filter.",
+    "p1": "Just search for a monster name, nothing more nothing less.",
+    "p2": "",
+    "p3": "Created with the help of: ",
+    "address": "https://monster-fun.netlify.com/",
+    "photo": "/monster.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Old Portfolio",
+    "description": "",
+    "p1": "",
+    "p2": "",
+    "p3": "Created with the help of: ",
+    "address": "https://savin-raul.herokuapp.com/",
+    "photo": "/portfolio.jpg"
   }
 ]
