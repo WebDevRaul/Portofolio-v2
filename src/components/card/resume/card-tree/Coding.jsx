@@ -2,7 +2,7 @@ import React from 'react';
 import ToRight from '../../../common/content/To_Right';
 import ToLeft from '../../../common/content/To_Left';
 import CodeIcon from '@material-ui/icons/Code';
-import { Html, Css, Javascript, ReactJs, JQuery, Redux, NodeJs, MongoDB, PostgreSQL, Sass, Bootstrap, GraphQl, Github, Gatsby } from '../../../../svg/bundle';
+import { Html, Css, Javascript, ReactJs, JQuery, Redux, NodeJs, MongoDB, PostgreSQL, Sass, Bootstrap, GraphQl, Github, Gatsby, StyledComponents } from '../../../../svg/bundle';
 import Logo from './Logo';
 
 const Coding = () => (
@@ -28,6 +28,12 @@ const Coding = () => (
           <Logo logo={<Css width='25px' height='25px' />} text='Css' />
           <Logo logo={<Sass width='25px' height='25px' />} text='Sass' />
           <Logo logo={<Bootstrap width='25px' height='25px' />} text='Bootstrap' />
+          <Logo logo={<StyledComponents width='25px' height='25px' />} text='Styled Components' />
+        </div>
+      </div>
+      <div className='row no-gutters'>
+        <div className='col-6'></div>
+        <div className='col-6'>
           <Logo logo={<Github width='25px' height='25px' />} text='GitHub' />
         </div>
       </div>
