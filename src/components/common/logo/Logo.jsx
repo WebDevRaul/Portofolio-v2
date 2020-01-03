@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ToLeft from '../../../common/content/To_Left';
-import ToRight from '../../../common/content/To_Right';
+import ToLeft from '../content/To_Left';
+import ToRight from '../content/To_Right';
 
 const Logo = ({ logo, text }) => (
   <div className='logo'>

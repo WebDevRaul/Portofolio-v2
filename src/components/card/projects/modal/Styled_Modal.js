@@ -22,8 +22,52 @@ const StyledModal = styled.div`
         background-size: contain;
       }
     }
+    .background-container {
+      height: 300px;
+    }
     h5, p {
       padding: 0 10px;
+    }
+    h5 {
+      :nth-child(1) {
+        padding-top: 16px;
+      }
+    }
+    .skill {
+      h5 {
+        font-size: 1em;
+      }
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      .logo {
+        width: 100px;
+        margin: 0 10px;
+        p {
+          font-size: .8em;
+          text-align: center;
+          margin-bottom: 0px;
+          text-transform: uppercase;
+          letter-spacing: var(--spacing);
+        }
+        .outer-logo {
+          position: relative;
+          height: 50px;
+          width: 100%;
+          padding: 8px;
+          margin: 3px 0;
+          .inner-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: var(--lightWhite);
+            border-radius: var(--border);
+          }
+        }
+      }
     }
     .address {
       display: flex;
@@ -75,6 +119,9 @@ const StyledModal = styled.div`
     }
   }
   @media ${portrait.mobileL} {
+    .background-container {
+      height: 200px !important;
+    }
     .close-modal {
       top: 75px;
     }

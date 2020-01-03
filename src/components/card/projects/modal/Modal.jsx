@@ -6,10 +6,12 @@ import BackgroundImage from 'gatsby-background-image'
 import Title from '../../../common/title/Title';
 import KeyboardCapslockIcon from '@material-ui/icons/KeyboardCapslock';
 import CustomButton from '../../../common/button/Custom_Button';
+import Logo from '../../../common/logo/Logo';
+import * as Skills from '../../../../svg/bundle';
 
 import StyledModal from './Styled_Modal';
 
-const Modal = ({ slide, onClose, image, title, description, p1, p2, address }) => {
+const Modal = ({ slide, onClose, image, title, description, p1, p2, frontEnd, backEnd, address }) => {
   return (
     <StyledModal>
       <Wrapper slide={slide} isClass='wrapper-modal'>
@@ -18,12 +20,29 @@ const Modal = ({ slide, onClose, image, title, description, p1, p2, address }) =
         </div>
         <div className='project-modal'>
           <BackgroundImage fluid={image}>
-            <div className='background-container' style={{ height: '300px' }} />
+            <div className='background-container'/>
           </BackgroundImage>
           <Title text={title} />
           <p className='description'>{description}</p>
           <p>{p1}</p>
           <p>{p2}</p>
+          <div className='skill'><Title text='Front-End :' /></div>
+          <div className='skills'>
+            {
+              frontEnd.map((el, index) => {
+                const Skill = Skills[el];
+                return <Logo key={index} logo={<Skill width='25px' height='25px' />} text={el} />
+              })
+            }
+          </div>
+          { backEnd && <div className='skill'><Title text='Backend :' /></div>}
+          <div className='skills'>
+            { backEnd && backEnd.map((el, index) => {
+                const Skill = Skills[el];
+                return <Logo key={index} logo={<Skill width='25px' height='25px' />} text={el} />
+              })
+            }
+          </div>
           <div className='address'>
             <a href={address} target='_blank' rel="noopener noreferrer">
               <CustomButton text='View Project' isLogo={<KeyboardCapslockIcon />} />
@@ -45,6 +64,8 @@ Modal.propTypes = {
   description: PropTypes.string.isRequired,
   p1: PropTypes.string.isRequired,
   p2: PropTypes.string.isRequired,
+  frontEnd: PropTypes.array.isRequired,
+  backEnd: PropTypes.array,
   address: PropTypes.string.isRequired
 }
 

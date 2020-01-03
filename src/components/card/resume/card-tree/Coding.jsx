@@ -3,7 +3,7 @@ import ToRight from '../../../common/content/To_Right';
 import ToLeft from '../../../common/content/To_Left';
 import CodeIcon from '@material-ui/icons/Code';
 import { Html, Css, Javascript, ReactJs, JQuery, Redux, NodeJs, MongoDB, PostgreSQL, Sass, Bootstrap, GraphQl, Github, Gatsby, StyledComponents } from '../../../../svg/bundle';
-import Logo from './Logo';
+import Logo from '../../../common/logo/Logo';
 
 const Coding = () => (
   <div className='coding'>
