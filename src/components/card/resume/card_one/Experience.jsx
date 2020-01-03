@@ -18,7 +18,7 @@ const Experience = () => (
       from='2017'
       to='2018'
       title='Junior web developer'
-      description='Learning the basic of programming from different sources like: Codecademy, freeCodeCamp & Udemy.'
+      description='Learning the basics of programming from different sources like Codecademy, freeCodeCamp & Udemy.'
     />
   </div>
 )
