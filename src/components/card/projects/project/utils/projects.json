@@ -4,8 +4,7 @@
     "title": "Protein Tracker",
     "description": "Lose weight,bulk up, or maintain a healthy lifestyle by tracking your caloric intake quickly and easily.",
     "p1": "Calculate your BMR or Set your daily target intake",
-    "p2": "Choose your meal of the day!",
-    "p3": "Created with the help of: ",
+    "p2": "Created with the help of: ",
     "address": "https://my-macro-calculator-v2.herokuapp.com",
     "photo": "/proteinTracker.png"
   },
@@ -23,9 +22,8 @@
     "id": 3,
     "title": "Face-Recognition",
     "description": "This Magic Brain will detect faces in your pictures",
-    "p1": "Drag 'n' drop your photo here, or click to select photo",
-    "p2": "Whether you have one photo or more, you are only steps away from using artificial intelligence to recognize the face in your photo.",
-    "p3": "Created with the help of: ",
+    "p1": "Whether you have one photo or more, you are only steps away from using artificial intelligence to recognize the face in your photo.",
+    "p2": "Created with the help of: ",
     "address": "https://ai-face-recognition.netlify.com/",
     "photo": "/faceRecognition.png"
   },
@@ -34,18 +32,16 @@
     "title": "PostgreSQL-CRUD",
     "description": "CREATE - READ - UPDATE - DELETE with PostgreSQL",
     "p1": "",
-    "p2": "",
-    "p3": "Created with the help of: ",
+    "p2": "Created with the help of: ",
     "address": "https://postgresql-crud-v2.herokuapp.com/",
     "photo": "/postgreSQLcrud.png"
   },
   {
     "id": 5,
     "title": "Pagination",
-    "description": "Pagination examples",
-    "p1": "Two different pagination examples with data from JSONPlaceholder & The Movie Database.",
-    "p2": "The JSONPlaceholder is a simple example of pagination and The Movie Database is a more complex one.",
-    "p3": "Created with the help of: ",
+    "description": "Two different pagination examples with data from JSONPlaceholder & The Movie Database.",
+    "p1": "The JSONPlaceholder is a simple example of pagination and The Movie Database is a more complex one.",
+    "p2": "Created with the help of: ",
     "address": "https://gatsby-pagination.netlify.com/",
     "photo": "/pagination.png"
   },
@@ -54,8 +50,7 @@
     "title": "Monster",
     "description": "A simple monster filter.",
     "p1": "Just search for a monster name, nothing more nothing less.",
-    "p2": "",
-    "p3": "Created with the help of: ",
+    "p2": "Created with the help of: ",
     "address": "https://monster-fun.netlify.com/",
     "photo": "/monster.png"
   },
@@ -64,8 +59,7 @@
     "title": "Old Portfolio",
     "description": "",
     "p1": "",
-    "p2": "",
-    "p3": "Created with the help of: ",
+    "p2": "Created with the help of: ",
     "address": "https://savin-raul.herokuapp.com/",
     "photo": "/portfolio.png"
   }

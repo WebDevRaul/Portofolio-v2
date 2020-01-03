@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Photo from './photo/Photo';
 
 
-const Box = ({ image, title, description, p1, p2, p3, address, onOpen }) => {
-  const rest = { image, title, description, p1, p2, p3, address };
+const Box = ({ image, title, description, p1, p2, address, onOpen }) => {
+  const rest = { image, title, description, p1, p2, address };
   return (
     <>
       <div className='col-6 p-2'>
@@ -23,7 +23,6 @@ Box.propTypes = {
   description: PropTypes.string.isRequired,
   p1: PropTypes.string.isRequired,
   p2: PropTypes.string.isRequired,
-  p3: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
   onOpen: PropTypes.func.isRequired
 }
