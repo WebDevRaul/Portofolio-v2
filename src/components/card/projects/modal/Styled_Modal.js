@@ -25,9 +25,6 @@ const StyledModal = styled.div`
     h5, p {
       padding: 0 10px;
     }
-    h5 {
-      padding-top: 16px;
-    }
     .address {
       display: flex;
       justify-content: center;
