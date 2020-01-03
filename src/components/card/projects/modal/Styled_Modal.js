@@ -17,6 +17,11 @@ const StyledModal = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    > div {
+      ::before {
+        background-size: contain;
+      }
+    }
     h5, p {
       padding: 0 10px;
     }

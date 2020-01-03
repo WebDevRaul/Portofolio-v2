@@ -27,7 +27,7 @@ const image = graphql`
     allFile(filter: {relativeDirectory: {eq: "projects"}}) {
       nodes {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxHeight: 300) {
             ...GatsbyImageSharpFluid
           }
         }

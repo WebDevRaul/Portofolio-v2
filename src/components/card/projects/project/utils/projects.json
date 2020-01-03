@@ -27,7 +27,7 @@
     "p2": "Whether you have one photo or more, you are only steps away from using artificial intelligence to recognize the face in your photo.",
     "p3": "Created with the help of: ",
     "address": "https://ai-face-recognition.netlify.com/",
-    "photo": "/faceRecognition.jpg"
+    "photo": "/faceRecognition.png"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "p2": "",
     "p3": "Created with the help of: ",
     "address": "https://postgresql-crud-v2.herokuapp.com/",
-    "photo": "/postgresql.jpg"
+    "photo": "/postgreSQLcrud.png"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "p2": "The JSONPlaceholder is a simple example of pagination and The Movie Database is a more complex one.",
     "p3": "Created with the help of: ",
     "address": "https://gatsby-pagination.netlify.com/",
-    "photo": "/pagination.jpg"
+    "photo": "/pagination.png"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "p2": "",
     "p3": "Created with the help of: ",
     "address": "https://monster-fun.netlify.com/",
-    "photo": "/monster.jpg"
+    "photo": "/monster.png"
   },
   {
     "id": 7,
@@ -67,6 +67,6 @@
     "p2": "",
     "p3": "Created with the help of: ",
     "address": "https://savin-raul.herokuapp.com/",
-    "photo": "/portfolio.jpg"
+    "photo": "/portfolio.png"
   }
 ]
