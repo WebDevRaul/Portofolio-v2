@@ -11,7 +11,7 @@ import * as Skills from '../../../../svg/bundle';
 
 import StyledModal from './Styled_Modal';
 
-const Modal = ({ slide, onClose, image, title, description, p1, p2, frontEnd, backEnd, address }) => {
+const Modal = ({ slide, onClose, image, title, description, p, frontEnd, backEnd, address }) => {
   return (
     <StyledModal>
       <Wrapper slide={slide} isClass='wrapper-modal'>
@@ -24,8 +24,8 @@ const Modal = ({ slide, onClose, image, title, description, p1, p2, frontEnd, ba
           </BackgroundImage>
           <Title text={title} />
           <p className='description'>{description}</p>
-          <p>{p1}</p>
-          <p>{p2}</p>
+          <p>{p}</p>
+          <p className='mb-0'>Created with the help of :</p>
           <div className='skill'><Title text='Front-End :' /></div>
           <div className='skills'>
             {
@@ -62,8 +62,7 @@ Modal.propTypes = {
   image: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  p1: PropTypes.string.isRequired,
-  p2: PropTypes.string.isRequired,
+  p: PropTypes.string.isRequired,
   frontEnd: PropTypes.array.isRequired,
   backEnd: PropTypes.array,
   address: PropTypes.string.isRequired
