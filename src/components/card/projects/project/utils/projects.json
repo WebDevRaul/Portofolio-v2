@@ -4,8 +4,16 @@
     "title": "Protein Tracker",
     "description": "Lose weight,bulk up, or maintain a healthy lifestyle by tracking your caloric intake quickly and easily.",
     "p": "Calculate your BMR or Set your daily target intake",
-    "frontEnd": [ "ReactJs", "Javascript", "Redux", "Bootstrap" ],
-    "backEnd": [ "NodeJs", "MongoDB" ],
+    "frontEnd": [
+      { "skill": "ReactJs", "text": "React Js" },
+      { "skill": "Javascript", "text": "Javascript" },
+      { "skill": "Redux", "text": "Redux" },
+      { "skill": "Bootstrap", "text": "Bootstrap" }
+    ],
+    "backEnd": [
+      { "skill": "NodeJs", "text": "Node Js" },
+      { "skill": "MongoDB", "text": "Mongo DB" }
+    ],
     "address": "https://my-macro-calculator-v2.herokuapp.com",
     "photo": "/1proteinTracker.png"
   },
@@ -14,8 +22,14 @@
     "title": "Face-Recognition",
     "description": "This Magic Brain will detect faces in your pictures.",
     "p": "Whether you have one photo or more, you are only steps away from using artificial intelligence to recognize the face in your photo.",
-    "frontEnd": [ "ReactJs", "Javascript", "Redux", "Bootstrap" ],
-    "backEnd": [ "NodeJs", "MongoDB" ],
+    "frontEnd": [
+      { "skill": "ReactJs", "text": "React Js" },
+      { "skill": "Javascript", "text": "Javascript" },
+      { "skill": "Gatsby", "text": "Gatsby" },
+      { "skill": "GraphQl", "text": "GraphQl" },
+      { "skill": "Bootstrap", "text": "Bootstrap" }
+    ],
+    "backEnd": [],
     "address": "https://ai-face-recognition.netlify.com/",
     "photo": "/2faceRecognition.png"
   },
@@ -23,9 +37,14 @@
     "id": 3,
     "title": "Live Currency",
     "description": "This site is an exercise. The data displayed here is not to be considered a model of reference.",
-    "p": "Today's exchange rates from throughout the world. Select your currency and we'll show you how it's faring against other currencies throughout the world.",
-    "p2": "With our free Currency Converter tool, you can convert any amount of money from one foreign currency to another with one click of a button.",
-    "p3": "Created with the help of: React, Redux, Axios, React-world-flags, Validator, Styled-components & more",
+    "p": "Today's exchange rates from throughout the world. Select your currency and we'll show you how it's faring against other currencies throughout the world. With our free Currency Converter tool, you can convert any amount of money from one foreign currency to another with one click of a button.",
+    "frontEnd": [
+      { "skill": "ReactJs", "text": "React Js" },
+      { "skill": "Javascript", "text": "Javascript" },
+      { "skill": "Redux", "text": "Redux" },
+      { "skill": "StyledComponents", "text": "styled components" }
+    ],
+    "backEnd": [],
     "address": "https://live-currency-and-convertor-v2.herokuapp.com",
     "photo": "/3liveCurrency.jpg"
   },
@@ -34,6 +53,16 @@
     "title": "PostgreSQL-CRUD",
     "description": "CREATE - READ - UPDATE - DELETE with PostgreSQL",
     "p": "",
+    "frontEnd": [
+      { "skill": "ReactJs", "text": "React Js" },
+      { "skill": "Javascript", "text": "Javascript" },
+      { "skill": "Redux", "text": "Redux" },
+      { "skill": "Bootstrap", "text": "Bootstrap" }
+    ],
+    "backEnd": [
+      { "skill": "NodeJs", "text": "Node Js" },
+      { "skill": "PostgreSQL", "text": "PostgreSQL" }
+    ],
     "address": "https://postgresql-crud-v2.herokuapp.com/",
     "photo": "/4postgreSQLcrud.png"
   },
@@ -42,6 +71,15 @@
     "title": "Pagination",
     "description": "Two different pagination examples with data from JSONPlaceholder & The Movie Database.",
     "p": "The JSONPlaceholder is a simple example of pagination and The Movie Database is a more complex one.",
+    "frontEnd": [
+      { "skill": "ReactJs", "text": "React Js" },
+      { "skill": "Javascript", "text": "Javascript" },
+      { "skill": "Gatsby", "text": "Gatsby" },
+      { "skill": "GraphQl", "text": "GraphQl" },
+      { "skill": "Redux", "text": "Redux" },
+      { "skill": "StyledComponents", "text": "styled components" }
+    ],
+    "backEnd": [],
     "address": "https://gatsby-pagination.netlify.com/",
     "photo": "/5pagination.png"
   },
@@ -50,6 +88,14 @@
     "title": "Old Portfolio",
     "description": "",
     "p": "",
+    "frontEnd": [
+      { "skill": "ReactJs", "text": "React Js" },
+      { "skill": "Javascript", "text": "Javascript" },
+      { "skill": "Redux", "text": "Redux" },
+      { "skill": "Bootstrap", "text": "Bootstrap" },
+      { "skill": "Css", "text": "Css" }
+    ],
+    "backEnd": [],
     "address": "https://savin-raul.herokuapp.com/",
     "photo": "/6portfolio.png"
   },
@@ -58,6 +104,14 @@
     "title": "Monster",
     "description": "A simple monster filter.",
     "p": "Just search for a monster name, nothing more nothing less.",
+    "frontEnd": [
+      { "skill": "ReactJs", "text": "React Js" },
+      { "skill": "Javascript", "text": "Javascript" },
+      { "skill": "Gatsby", "text": "Gatsby" },
+      { "skill": "GraphQl", "text": "GraphQl" },
+      { "skill": "Css", "text": "Css" }
+    ],
+    "backEnd": [],
     "address": "https://monster-fun.netlify.com/",
     "photo": "/7monster.png"
   }

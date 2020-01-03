@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import isEmpty from '../../../common/utils/is_Empty';
 import Wrapper from '../../wrapper/Wrapper';
 import CloseIcon from '@material-ui/icons/Close';
 import BackgroundImage from 'gatsby-background-image'
@@ -29,17 +30,17 @@ const Modal = ({ slide, onClose, image, title, description, p, frontEnd, backEnd
           <div className='skill'><Title text='Front-End :' /></div>
           <div className='skills'>
             {
-              frontEnd.map((el, index) => {
-                const Skill = Skills[el];
-                return <Logo key={index} logo={<Skill width='25px' height='25px' />} text={el} />
+              frontEnd.map(({ skill, text }, index) => {
+                const Skill = Skills[skill];
+                return <Logo key={index} logo={<Skill width='25px' height='25px' />} text={text} />
               })
             }
           </div>
-          { backEnd && <div className='skill'><Title text='Backend :' /></div>}
+          { !isEmpty(backEnd) && <div className='skill'><Title text='Backend :' /></div>}
           <div className='skills'>
-            { backEnd && backEnd.map((el, index) => {
-                const Skill = Skills[el];
-                return <Logo key={index} logo={<Skill width='25px' height='25px' />} text={el} />
+            { !isEmpty(backEnd) && backEnd.map(({ skill, text }, index) => {
+                const Skill = Skills[skill];
+                return <Logo key={index} logo={<Skill width='25px' height='25px' />} text={text} />
               })
             }
           </div>
@@ -63,8 +64,8 @@ Modal.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   p: PropTypes.string.isRequired,
-  frontEnd: PropTypes.array.isRequired,
-  backEnd: PropTypes.array,
+  frontEnd: PropTypes.arrayOf(PropTypes.object).isRequired,
+  backEnd: PropTypes.arrayOf(PropTypes.object),
   address: PropTypes.string.isRequired
 }
 

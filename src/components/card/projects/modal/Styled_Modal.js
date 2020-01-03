@@ -48,6 +48,7 @@ const StyledModal = styled.div`
           font-size: .8em;
           text-align: center;
           margin-bottom: 0px;
+          padding: 0px;
           text-transform: uppercase;
           letter-spacing: var(--spacing);
         }

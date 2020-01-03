@@ -22,8 +22,8 @@ Box.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   p: PropTypes.string.isRequired,
-  frontEnd: PropTypes.string.isRequired,
-  backEnd: PropTypes.string,
+  frontEnd: PropTypes.arrayOf(PropTypes.object),
+  backEnd: PropTypes.arrayOf(PropTypes.object),
   address: PropTypes.string.isRequired,
   onOpen: PropTypes.func.isRequired
 }
