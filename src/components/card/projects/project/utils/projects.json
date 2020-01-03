@@ -51,7 +51,7 @@
   {
     "id": 4,
     "title": "PostgreSQL-CRUD",
-    "description": "CREATE - READ - UPDATE - DELETE with PostgreSQL",
+    "description": "CREATE - READ - UPDATE - DELETE with PostgreSQL.",
     "p": "",
     "frontEnd": [
       { "skill": "ReactJs", "text": "React Js" },
@@ -86,8 +86,8 @@
   {
     "id": 6,
     "title": "Old Portfolio",
-    "description": "",
-    "p": "",
+    "description": "This is my first portfolio website which I created in 2019.",
+    "p": "by Savin Raul Calin.",
     "frontEnd": [
       { "skill": "ReactJs", "text": "React Js" },
       { "skill": "Javascript", "text": "Javascript" },
