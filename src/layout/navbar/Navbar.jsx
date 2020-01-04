@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Mode from './Mode';
 import StyledNavbar from './Styled_Navbar';
 import Li from './Li';
 import PersonOutline from '@material-ui/icons/PersonOutline';
@@ -32,6 +33,7 @@ const Navbar = ({ state, setState }) => {
           <Li text='resume' icon={<ListAlt />} onClick={onClick} active={resume} />
           <Li text='projects' icon={<Build />} onClick={onClick} active={projects} />
           <Li text='contact' icon={<RecentActors />} onClick={onClick} active={contact} />
+          <Mode />
         </ul>
       </div>
     </StyledNavbar>

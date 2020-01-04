@@ -3,7 +3,7 @@ import { bootstrap, portrait } from '../utils/responsive';
 
 const StyledLayout = styled.main`
   padding: 50px;
-  background-color: var(--black);
+  background: var(--black);
   color: var(--lightWhite);
   min-height: 100vh;
   overflow: hidden;

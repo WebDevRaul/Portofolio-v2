@@ -46,7 +46,7 @@ const StyledProfile = styled.section`
         border-radius: calc(100vh / 5);
         top: 10px;
         left: -10px;
-        background: linear-gradient(135deg, rgba(120, 204, 109, .3) 0%, rgba(120, 204, 109, .01) 100%);
+        background: var(--bgColor);
       }
       > div {
         height: calc(100vh / 5);
