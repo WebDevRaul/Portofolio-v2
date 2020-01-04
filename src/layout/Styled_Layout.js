@@ -15,6 +15,7 @@ const StyledLayout = styled.main`
     font-size: .9em;
   }
   @media ${bootstrap.lg} {
+    overflow: unset !important;
     padding: 30px 0 0 0;
     font-size: .8em;
     h5 {

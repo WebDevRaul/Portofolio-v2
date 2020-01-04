@@ -108,7 +108,7 @@ const StyledModal = styled.div`
   }
   @media ${bootstrap.lg} {
     .project-modal {
-      height: 750px;
+      height: 850px;
     }
   }
   @media ${bootstrap.sm} {
@@ -122,6 +122,9 @@ const StyledModal = styled.div`
   @media ${portrait.mobileL} {
     .background-container {
       height: 200px !important;
+    }
+    .project-modal {
+      height: 750px;
     }
     .close-modal {
       top: 75px;
