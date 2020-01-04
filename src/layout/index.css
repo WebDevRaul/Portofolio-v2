@@ -22,10 +22,10 @@
   --darkWhite: rgb(100, 100, 100);
   --black: linear-gradient(135deg, rgba(120, 205, 110, .5) 0%, rgba(120, 205, 110, 0) 100%);
   --grey: rgb(255, 255, 255);
-  --bgToRight: radial-gradient(ellipse at right, rgba(25, 25, 25, 0.2) 0%, rgba(25, 25, 25, 0) 70%); 
-  --bgToLeft: radial-gradient(ellipse at left, rgba(25, 25, 25, .2) 0%, rgba(25, 25, 25, 0) 70%); 
-  --bgFromTop: radial-gradient(ellipse at top, rgba(25, 25, 25, .2) 0%, rgba(25, 25, 25, 0) 70%);
-  --bgFromBottom: radial-gradient(ellipse at bottom, rgba(25, 25, 25, .2) 0%, rgba(25, 25, 25, 0) 70%);
+  --bgToRight: radial-gradient(ellipse at right, rgba(25, 25, 25, .3) 0%, rgba(25, 25, 25, 0) 70%); 
+  --bgToLeft: radial-gradient(ellipse at left, rgba(25, 25, 25, .3) 0%, rgba(25, 25, 25, 0) 70%); 
+  --bgFromTop: radial-gradient(ellipse at top, rgba(25, 25, 25, .3) 0%, rgba(25, 25, 25, 0) 70%);
+  --bgFromBottom: radial-gradient(ellipse at bottom, rgba(25, 25, 25, .3) 0%, rgba(25, 25, 25, 0) 70%);
   --bgColor: linear-gradient(135deg, rgb(120, 205, 110) 0%, rgba(120, 205, 110, .5) 100%);
   --borderColor: rgba(100, 100, 100, .4);
 }
