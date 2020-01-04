@@ -14,6 +14,7 @@
   --bgFromTop: radial-gradient(ellipse at top, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%);
   --bgFromBottom: radial-gradient(ellipse at bottom, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 70%);
   --bgColor: linear-gradient(135deg, rgba(120, 205, 110, .5) 0%, rgba(120, 205, 110, 0) 100%);
+  --borderColor: rgba(255,255,255,.4);
 }
 
 [data-theme="dark"] {
@@ -26,6 +27,7 @@
   --bgFromTop: radial-gradient(ellipse at top, rgba(25, 25, 25, .2) 0%, rgba(25, 25, 25, 0) 70%);
   --bgFromBottom: radial-gradient(ellipse at bottom, rgba(25, 25, 25, .2) 0%, rgba(25, 25, 25, 0) 70%);
   --bgColor: linear-gradient(135deg, rgb(120, 205, 110) 0%, rgba(120, 205, 110, .5) 100%);
+  --borderColor: rgba(100, 100, 100, .4);
 }
 
 * {

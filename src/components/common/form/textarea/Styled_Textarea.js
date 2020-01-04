@@ -8,7 +8,7 @@ const StyledTextarea = styled.div`
     width: 100%;
     padding: 10px;
     border: 1px solid;
-    border-color: ${({ val, err }) => err ? 'var(--red)' : val ? 'var(--primary)' : 'rgba(255, 255, 255, .4)'};
+    border-color: ${({ val, err }) => err ? 'var(--red)' : val ? 'var(--primary)' : 'var(--borderColor)'};
     border-radius: var(--border);
     overflow-y: hidden;
     resize: none;
@@ -66,7 +66,7 @@ const StyledTextarea = styled.div`
     margin: 5px;
     background: var(--grey);
     border: 1px solid;
-    border-color: ${({ err }) => err ? 'var(--red)' : 'rgba(255, 255, 255, .2)'};
+    border-color: ${({ err }) => err ? 'var(--red)' : 'var(--borderColor)'};
     border-radius: var(--border);
     color: ${({ err }) => err ? 'var(--red)' : 'var(--primary)'};
   }

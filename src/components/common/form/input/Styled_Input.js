@@ -11,7 +11,7 @@ const StyledInput = styled.div`
     border: none;
     color: var(--darkWhite);
     border-bottom: 1px solid;
-    border-color: ${({ val, err }) => err ? 'var(--red)' : val ? 'var(--primary)' : 'rgba(255, 255, 255, .4)'};
+    border-color: ${({ val, err }) => err ? 'var(--red)' : val ? 'var(--primary)' : 'var(--borderColor)'};
     :focus {
       border-color: var(--primary);
     }

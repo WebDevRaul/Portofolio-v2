@@ -64,7 +64,7 @@ const StyledModal = styled.div`
             align-items: center;
             width: 100%;
             height: 100%;
-            background: var(--lightWhite);
+            background: rgb(225, 225, 225);
             border-radius: var(--border);
           }
         }
