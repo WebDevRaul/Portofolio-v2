@@ -92,7 +92,7 @@ const StyledProfile = styled.section`
   }
   @media ${portrait.mobileL} {
     .profile {
-      margin-top: 85px;
+      margin-top: 90px;
     }
   }
   @media ${landscape.mobile} {

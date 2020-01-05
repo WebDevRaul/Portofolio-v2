@@ -114,6 +114,10 @@ input:-webkit-autofill:focus {
   background: transparent;
   display: block;
 }
+.about-i, .resume-i, .projects-i, .contact-i {
+  position: absolute;
+  top: 0;
+}
 
 @media (max-width: 991px) {
   .no-height-modal, .no-height-message {
@@ -126,6 +130,15 @@ input:-webkit-autofill:focus {
     margin-top: 10px;
     height: 250px;
   }
+  .about-i {
+    top: 0;
+  }
+  .resume-i, .projects-i {
+    top: -20px;
+  }
+  .contact-i {
+    top: -10px;
+  }
 }
 @media (max-width: 575px) {
   .height-message {
@@ -135,9 +148,29 @@ input:-webkit-autofill:focus {
     bottom: 82px;
   }
 }
+@media (max-width: 567px) {
+  .about-i {
+    top: -65px;
+  }
+  .resume-i, .projects-i {
+    top: -85px;
+  }
+  .contact-i {
+    top: -75px;
+  }
+}
 @media (max-width: 425px) {
   .modal-scrollIntoView-hook {
     bottom: 74px;
+  }
+  .about-i {
+    top: -60px;
+  }
+  .resume-i, .projects-i {
+    top: -80px;
+  }
+  .contact-i {
+    top: -70px;
   }
   .height-modal {
     height: 750px;
@@ -146,5 +179,14 @@ input:-webkit-autofill:focus {
 @media (max-width: 375px) {
   .modal-scrollIntoView-hook {
     bottom: 67px;
+  }
+  .about-i {
+    top: -50px;
+  }
+  .resume-i, .projects-i {
+    top: -70px;
+  }
+  .contact-i {
+    top: -60px;
   }
 }

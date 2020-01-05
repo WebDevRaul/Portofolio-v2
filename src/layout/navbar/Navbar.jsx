@@ -11,7 +11,7 @@ import RecentActors from '@material-ui/icons/RecentActors';
 const Navbar = ({ state, setState }) => {
 
   const onClick = name => {
-    document.querySelector(`.${name}`).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.querySelector(`.${name}-i`).scrollIntoView({ behavior: 'smooth', block: 'start' });
     
     // Find the active state
     const active = Object.entries(state).filter(([key, val]) => val !== false);

@@ -79,6 +79,7 @@ const StyledNavbar = styled.nav`
       z-index: 100;
       ::after {
         display: block;
+        background: rgb(200, 235, 195);
       }
       li {
         width: 100%;

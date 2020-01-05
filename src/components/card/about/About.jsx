@@ -10,7 +10,7 @@ import Wrapper from '../wrapper/Wrapper';
 
 const About = ({ slide, onRedirect }) => (
   <Wrapper slide={slide} isClass='about-wrapper' >
-    <i className='about' style={{ position: 'absolute', top: '-70px' }} />
+    <i className='about-i' />
     <AboutMe />
     <Services />
     <Pricing onRedirect={onRedirect} />

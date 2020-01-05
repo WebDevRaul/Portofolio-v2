@@ -8,7 +8,7 @@ const Projects = ({ slide, onOpen }) => {
   return (
     <>
       <Wrapper slide={slide} isClass='projects-wrapper'>
-      <i className='projects' style={{ position: 'absolute', top: '-70px' }} />
+      <i className='projects-i' />
         <Title text='Recent Projects' />
         <Project onOpen={onOpen} />
       <i className='modal-scrollIntoView-hook' />
