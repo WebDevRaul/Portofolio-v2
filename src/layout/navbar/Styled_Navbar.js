@@ -54,7 +54,7 @@ const StyledNavbar = styled.nav`
       position: absolute;
       bottom: -20px;
       background: var(--black);
-      border-top: 1px solid rgba(255, 255, 255, .2);
+      border-top: 1px solid var(--borderColor);
     }
   }
   @media ${bootstrap.lg} {
@@ -75,7 +75,7 @@ const StyledNavbar = styled.nav`
       justify-content: space-around;
       width: 100%;
       margin: 0 0 25px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, .2);
+      border-bottom: 1px solid var(--borderColor);
       z-index: 100;
       ::after {
         display: block;
@@ -85,10 +85,13 @@ const StyledNavbar = styled.nav`
         border-top: none !important;
         border-bottom: none !important;
         :nth-child(2) {
-          border: 1px solid rgba(255, 255, 255, .2);
+          border: 1px solid var(--borderColor);
         }
         :nth-child(3) {
-          border-right: 1px solid rgba(255, 255, 255, .2);
+          border-right: 1px solid var(--borderColor);
+        }
+        :nth-child(4) {
+          border-right: 1px solid var(--borderColor);
         }
         ::after {
           display: none;
