@@ -95,12 +95,9 @@ const StyledModal = styled.div`
     justify-content: flex-end;
     z-index: 50;
     span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 25px;
-      background: var(--grey);
+      padding: 0 0 36px 20px;
       svg {
+        background: var(--grey);
         cursor: pointer;
         color: var(--primary);
       }
@@ -110,13 +107,15 @@ const StyledModal = styled.div`
     .project-modal {
       height: 850px;
     }
+    .close-modal {
+      span {
+        padding: 0 0 47px 20px;
+      }
+    }
   }
   @media ${bootstrap.sm} {
     .close-modal {
       top: 82px;
-      span {
-        height: 20px;
-      }
     }
   }
   @media ${portrait.mobileL} {
@@ -128,6 +127,9 @@ const StyledModal = styled.div`
     }
     .close-modal {
       top: 75px;
+      span {
+        padding: 0 0 41px 20px;
+      }
     }
   }
   @media ${portrait.mobileM} {

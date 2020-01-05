@@ -20,9 +20,11 @@ const Modal = ({ slide, onClose, image, title, description, p, frontEnd, backEnd
           <span onClick={onClose}><CloseIcon /></span>
         </div>
         <div className='project-modal'>
-          <BackgroundImage fluid={image}>
-            <div className='background-container'/>
-          </BackgroundImage>
+          <a href={address} target='_blank' rel="noopener noreferrer">
+            <BackgroundImage fluid={image}>
+              <div className='background-container'/>
+            </BackgroundImage>
+          </a>
           <Title text={title} />
           <p className='description'>{description}</p>
           <p>{p}</p>
