@@ -4,6 +4,7 @@
   --lightWhite: rgb(225, 225, 225);
   --darkWhite: rgb(180, 180, 180);
   --black: rgb(40, 40, 45);
+  --blackLight: rgb(40, 40, 45);
   --grey: rgb(50, 50, 60);
   --red: rgb(255, 70, 70);
   --transition: all .3s linear;
@@ -21,6 +22,7 @@
   --lightWhite: rgb(25, 25, 25);
   --darkWhite: rgb(100, 100, 100);
   --black: linear-gradient(135deg, rgba(120, 205, 110, .5) 0%, rgba(120, 205, 110, 0) 100%);
+  --blackLight: rgb(200, 235, 195);
   --grey: rgb(255, 255, 255);
   --bgToRight: radial-gradient(ellipse at right, rgba(25, 25, 25, .3) 0%, rgba(25, 25, 25, 0) 70%); 
   --bgToLeft: radial-gradient(ellipse at left, rgba(25, 25, 25, .3) 0%, rgba(25, 25, 25, 0) 70%); 

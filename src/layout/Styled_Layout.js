@@ -30,7 +30,7 @@ const StyledLayout = styled.main`
   }
   @media ${bootstrap.sm} {
     padding: 0 15px 0 15px;
-    background: rgb(200, 235, 195);
+    background: var(--blackLight);
     h1 {
       font-size: 3.4em
     }
