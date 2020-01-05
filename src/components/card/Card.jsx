@@ -52,7 +52,7 @@ const Card = ({ about, resume, projects, contact, onRedirect }) => {
     if(mobile) document.querySelector('.modal-scrollIntoView-hook').scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   const onCloseModal = () => {
-    if(mobile) document.querySelector('.projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if(mobile) document.querySelector('.projects-i').scrollIntoView({ behavior: 'smooth', block: 'start' });
     if(mobile) return setState({ ...state, slideModal: false, modal: false });
     setState({ ...state, slideModal: false });
   };

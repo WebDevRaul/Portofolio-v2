@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Brightness1Icon from '@material-ui/icons/Brightness1';
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import Brightness3Icon from '@material-ui/icons/Brightness3';
 
 const Mode = () => {
@@ -14,7 +14,7 @@ const Mode = () => {
   return (
     <li>
       <div onClick={onClick}>
-        { mode ? <Brightness1Icon /> : <Brightness3Icon /> }
+        { mode ? <WbSunnyIcon /> : <Brightness3Icon /> }
         <span>Mode</span>   
       </div> 
   </li>
