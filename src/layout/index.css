@@ -17,7 +17,7 @@
   --borderColor: rgba(255,255,255,.4);
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
   --lightWhite: rgb(25, 25, 25);
   --darkWhite: rgb(100, 100, 100);
   --black: linear-gradient(135deg, rgba(120, 205, 110, .5) 0%, rgba(120, 205, 110, 0) 100%);

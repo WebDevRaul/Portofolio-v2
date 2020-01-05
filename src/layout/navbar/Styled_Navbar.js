@@ -84,14 +84,8 @@ const StyledNavbar = styled.nav`
         width: 100%;
         border-top: none !important;
         border-bottom: none !important;
-        :nth-child(2) {
+        :nth-child(2), :nth-child(3), :nth-child(4) {
           border: 1px solid var(--borderColor);
-        }
-        :nth-child(3) {
-          border-right: 1px solid var(--borderColor);
-        }
-        :nth-child(4) {
-          border-right: 1px solid var(--borderColor);
         }
         ::after {
           display: none;

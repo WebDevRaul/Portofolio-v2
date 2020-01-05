@@ -7,7 +7,7 @@ const Mode = () => {
 
   const onClick = () => {
     setMode(!mode);
-    const theme = mode ? 'light' : 'dark';
+    const theme = mode ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', theme);
   }
 
