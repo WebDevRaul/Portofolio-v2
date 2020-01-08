@@ -8,6 +8,10 @@ import pdf from './CV.pdf';
 import StyledFooter from './Styled_Footer';
 
 const Footer = ({ onRedirect }) => {
+  const onClick = () => {
+    onRedirect();
+    document.querySelector('.contact-i').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
   return (
     <StyledFooter>
       <div className='footer'>
@@ -18,7 +22,7 @@ const Footer = ({ onRedirect }) => {
         </div>
         <div className='middle' />
         <div className='left'>
-          <CustomButton text='contact me' onClick={onRedirect} isLogo={<KeyboardCapslockIcon />} />
+          <CustomButton text='contact me' onClick={onClick} isLogo={<KeyboardCapslockIcon />} />
         </div>
       </div>
     </StyledFooter>
