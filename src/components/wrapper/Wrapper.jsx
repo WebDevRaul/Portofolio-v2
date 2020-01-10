@@ -10,7 +10,10 @@ const Wrapper = () => {
   const [state, setState] = useState({ about: true, resume: false, projects: false, contact: false });
   const { contact } = state;
 
-  const onRedirect = () => !contact && setState({ about: false, resume: false, projects: false, contact: true });
+  const onRedirect = () => {
+    !contact && setState({ about: false, resume: false, projects: false, contact: true });
+    document.querySelector('.contact-i').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   return (
     <StyledWrapper>
