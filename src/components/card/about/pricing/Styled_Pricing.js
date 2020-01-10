@@ -47,6 +47,10 @@ const StyledPricing = styled.div`
         .hour {
           display: flex;
           align-items: baseline;
+          h5 {
+            color: var(--secondary);
+            font-weight: bold;
+          }
           h1 {
             margin-right: 5px;
           }

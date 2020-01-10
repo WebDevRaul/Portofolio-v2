@@ -9,9 +9,10 @@ const Box = ({ icon, option, price, basic }) => (
     </div>
     <h5>{option}</h5>
     <div className='hour'>
-      <span>£</span>
+      <h5>Negotiable</h5>
+      {/* <span>£</span>
       <h1>{price}</h1>
-      <p>hour</p>
+      <p>hour</p> */}
     </div>
     <h5>Web Development</h5>
     <h5>Web Support</h5>
