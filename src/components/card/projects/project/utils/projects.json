@@ -15,7 +15,7 @@
       { "skill": "MongoDB", "text": "Mongo DB" }
     ],
     "address": "https://my-macro-calculator-v2.herokuapp.com",
-    "photo": "/1proteinTracker.png"
+    "photo": "/proteinTracker.png"
   },
   {
     "id": 2,
@@ -31,7 +31,7 @@
     ],
     "backEnd": [],
     "address": "https://ai-face-recognition.netlify.com/",
-    "photo": "/2faceRecognition.png"
+    "photo": "/.png"
   },
   {
     "id": 3,
@@ -46,7 +46,7 @@
     ],
     "backEnd": [],
     "address": "https://live-currency-and-convertor-v2.herokuapp.com",
-    "photo": "/3liveCurrency.png"
+    "photo": "/liveCurrency.png"
   },
   {
     "id": 4,
@@ -64,7 +64,7 @@
       { "skill": "PostgreSQL", "text": "PostgreSQL" }
     ],
     "address": "https://postgresql-crud-v2.herokuapp.com/",
-    "photo": "/4postgreSQLcrud.png"
+    "photo": "/postgreSQLcrud.png"
   },
   {
     "id": 5,
@@ -81,7 +81,7 @@
     ],
     "backEnd": [],
     "address": "https://gatsby-pagination.netlify.com/",
-    "photo": "/5pagination.png"
+    "photo": "/pagination.png"
   },
   {
     "id": 6,
@@ -97,7 +97,7 @@
     ],
     "backEnd": [],
     "address": "https://savin-raul.herokuapp.com/",
-    "photo": "/6portfolio.png"
+    "photo": "/portfolio.png"
   },
   {
     "id": 7,
@@ -113,6 +113,22 @@
     ],
     "backEnd": [],
     "address": "https://monster-fun.netlify.com/",
-    "photo": "/7monster.png"
+    "photo": "/monster.png"
+  },
+  {
+    "id": 8,
+    "title": "Coffee Shop",
+    "description": "A simple Gatsby website that is using Contentful as CMS. It Accepts credit card payments managed by Stripe. Contentful & Stripe Webhooks.",
+    "p": "Other notable tools used: Redux-persist.",
+    "frontEnd": [
+      { "skill": "ReactJs", "text": "React Js" },
+      { "skill": "Javascript", "text": "Javascript" },
+      { "skill": "Gatsby", "text": "Gatsby" },
+      { "skill": "GraphQl", "text": "GraphQl" },
+      { "skill": "Bootstrap", "text": "Bootstrap" }
+    ],
+    "backEnd": [],
+    "address": "https://the-coffee-store.netlify.com/",
+    "photo": "/coffee.png"
   }
 ]
