@@ -22,8 +22,8 @@ const AboutMe = () => (
         <div className='col-6'>
           <ToRight isClass='' width={100} />
           <Li span='Age . . . . . . . .' p='36' />
-          <Li span='Country . . . . . .' p='Moldova' />
-          <Li span='Address . . . . . .' p='Chisinau, MDA' />
+          <Li span='Country . . . . . .' p='United Kingdom' />
+          <Li span='Address . . . . . .' p='Reading, UK' />
           <Li span='Freelance . . . . .' p='Available' />
         </div>
       </div>

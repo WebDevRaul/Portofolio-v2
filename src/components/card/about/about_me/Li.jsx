@@ -15,11 +15,11 @@ const Li = ({ span, p }) => (
       <ToRight isClass='' width={50} />
     </div>
   </>
-)
+);
 
 Li.propTypes = {
   span: PropTypes.string.isRequired,
   p: PropTypes.string.isRequired
-}
+};
 
 export default Li;
