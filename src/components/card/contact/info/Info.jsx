@@ -7,7 +7,7 @@ const Info = () => (
     <div className='info'>
       <div className='first'>
         <Li span='Address . . . . . . .' p='Reading, UK' />
-        <Li span='Email . . . . . . .' p='texterror404@gmail.com' />
+        <Li span='Email . . . . . . .' p='texterror401@gmail.com' />
       </div>
       <div className='second'>
         <Li span='Phone . . . . . . .' p='+40 789 544 0744' />
