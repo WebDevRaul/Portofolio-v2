@@ -2,7 +2,7 @@ import React from 'react';
 import ToRight from '../../../common/content/To_Right';
 import ToLeft from '../../../common/content/To_Left';
 import CodeIcon from '@material-ui/icons/Code';
-import { Html, Css, Javascript, ReactJs, JQuery, Redux, NodeJs, MongoDB, PostgreSQL, Sass, Bootstrap, GraphQl, Github, Gatsby, StyledComponents } from '../../../../svg/bundle';
+import { Html, Css, Javascript, ReactJs, JQuery, Redux, NodeJs, MongoDB, PostgreSQL, Sass, Bootstrap, GraphQl, Github, Gatsby, StyledComponents, TypeScript } from '../../../../svg/bundle';
 import Logo from '../../../common/logo/Logo';
 
 const Coding = () => (
@@ -15,6 +15,7 @@ const Coding = () => (
         <div className='col-6'>
           <Logo logo={<Html width='25px' height='25px' />} text='Html' />
           <Logo logo={<Javascript width='25px' height='25px' />} text='Javascript' />
+          <Logo logo={<TypeScript width='25px' height='25px' />} text='TypeScript' />
           <Logo logo={<ReactJs width='25px' height='25px' />} text='React Js' />
           <Logo logo={<JQuery width='25px' height='25px' />} text='JQuery' />
           <Logo logo={<NodeJs width='40px' height='40px' />} text='Node Js' />
