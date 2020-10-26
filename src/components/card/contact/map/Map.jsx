@@ -17,12 +17,12 @@ const Map = () => {
       <div className='map'>
         <GoogleMapReact
           bootstrapURLKeys={{ key: GOOGLE_MAP_API_KEY }}
-          defaultCenter={{ lat:47.0247, lng:28.8326 }}
+          defaultCenter={{ lat:51.4543, lng:0.9781 }}
           defaultZoom={5}
         >
           <Marker
-            lat={47.0247}
-            lng={28.8326}
+            lat={51.4543}
+            lng={0.9781}
           />
         </GoogleMapReact>
       </div>

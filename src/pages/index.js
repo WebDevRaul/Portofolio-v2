@@ -6,7 +6,7 @@ import Wrapper from "../components/wrapper/Wrapper";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Savin" />
+    <SEO title="Savin Raul Web Developer" />
     <Wrapper />
   </Layout>
 )
