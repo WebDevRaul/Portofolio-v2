@@ -30,11 +30,6 @@ const Coding = () => (
           <Logo logo={<Sass width='25px' height='25px' />} text='Sass' />
           <Logo logo={<Bootstrap width='25px' height='25px' />} text='Bootstrap' />
           <Logo logo={<StyledComponents width='25px' height='25px' />} text='Styled Components' />
-        </div>
-      </div>
-      <div className='row no-gutters'>
-        <div className='col-6'></div>
-        <div className='col-6'>
           <Logo logo={<Github width='25px' height='25px' />} text='GitHub' />
         </div>
       </div>
